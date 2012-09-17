@@ -1,0 +1,78 @@
+.collectionWrap iframe {
+	width: 695px;
+	height: 700px;
+	border: none;
+	overflow: hidden;
+	padding: 20px;
+	background: white;
+	border: solid 1px whiteSmoke;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+#institucionalContent {
+	padding: 20px;
+	background: white;
+	width: 694px;
+	border: solid 1px whiteSmoke;
+	border-radius: 5px;
+}
+
+#institucionalContent p {
+	color: #6E6F70;
+	margin-bottom: 20px;
+}
+
+#institucionalContent p.assinaturaMariaPresenteira {
+	display: block;
+	height: 35px;
+	background: url('/arquivos/assinatura-maria-presenteira.gif') no-repeat right top;
+	margin: 0 20px;
+	text-indent: -90000px;
+}
+
+#institucionalContent a.conhecaBlog {
+	text-indent: -90000px;
+	clear: both;
+	width: 468px;
+	height: 103px;
+	display: block;
+	background: url('/arquivos/conheca-meu-blog.gif') no-repeat;
+}
+
+#institucionalContent h3 {
+	font-size: 18px;
+	color: #5A5283;
+	padding: 0 20px 20px 0;
+}
+
+#institucionalContent a {
+	color: #36C;
+}
+
+#institucionalContent a:hover {
+	text-decoration:underline;
+}
+
+#institucionalContent ul {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	color: #6E6F70;
+}
+
+#institucionalContent ul li {
+	list-style: disc;
+	list-style-position: inside;
+	padding: 5px 0;
+}
+
+#btnVoltar_contato{display: none;
+    display:block;
+    width: 105px;
+    height: 41px;
+    background: url(/arquivos/btn_voltar.png) no-repeat top center;
+    text-indent: -9999px;
+    position:absolute;
+    top:460px;
+    left:40px;
+}

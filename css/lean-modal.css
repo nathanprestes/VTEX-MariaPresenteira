@@ -1,0 +1,76 @@
+/* ---------------------------------------- */
+/* modal                                    */
+/* ---------------------------------------- */
+.modal{background:transparent url("/arquivos/bg-galeria-pop.png") no-repeat;font-size:11px;text-align:left;}
+
+/* ---------------------------------------- */
+/* mais imagens do produto                  */
+/* ---------------------------------------- */
+#productMoreImages{padding-top:25px;position:relative;width:555px;}
+
+#productMoreImages div{overflow:auto;width:560px;}
+#productMoreImages div div{width:auto;}
+#productMoreImages dl{width:410px;height:385px;padding:5px 10px;float:left;overflow:hidden;}
+#productMoreImages dt{margin-bottom:5px;}
+#productMoreImages .lightBox-productDescription{color:#172f6c;font-weight:700;line-height:1.2em;}
+
+#productMoreImages .mais-imagens{float:left;background:#ecf2ff;width:85px;height:392px;padding:5px 17px 0;margin-left:5px;overflow:hidden;}
+#productMoreImages .mais-imagens span{line-height:1.2em;}
+#productMoreImages .maisImagensInner{height:auto !important;overflow:hidden;margin-left:7px;}
+#productMoreImages .mais-imagens img{width:65px;height:65px;padding-bottom:5px;cursor:pointer;}
+
+#productMoreImages .carrosselProdutos{margin-top:5px;}
+
+#productMoreImages h3{margin:0;margin-bottom:5px;font-weight:700;font-size:12px;}
+#productMoreImages .image-main-continner{border:none;}
+
+#productMoreImages .btCarrossel{display:none;}
+
+.wmSlider{position:relative;padding:22px 0;height:280px;}
+.wmSlider .container{overflow:hidden !important;position:relative;height:280px;}
+.wmSlider .maisImagensWrapper{position:absolute;}
+
+.wmSlider .next,
+.wmSlider .prev{background-image:url("/arquivos/sprite-collection-slider.png");position:absolute;z-index:999;width:79px;left:0;height:15px;text-indent:-999em;cursor:pointer;}
+.wmSlider .prev{top:5px;background-position:-250px 0;}
+.wmSlider .next{bottom:5px;background-position:-250px -20px;}
+.wmSlider .prev:hover{background-position:-250px -40px;}
+.wmSlider .next:hover{background-position:-250px -60px;}
+
+/* ---------------------------------------- */
+/* espiar                                   */
+/* ---------------------------------------- */
+#productQuickView .buy-button,
+#productQuickView #productViewDetails{background-image:url("/arquivos/sprite-product.gif");}
+
+#productQuickView a{color:#5088e6;}
+#productQuickView #all{width:530px;margin:5px 0 0 10px;}
+#productQuickView #title{color:#fff;text-transform:uppercase;font-weight:700;font-size:12px;display:block;margin-bottom:10px;}
+
+#productQuickView #productImages{margin-right:10px;}
+
+#productQuickView .productName{font-size:11px;text-transform:uppercase;color:#267f9c;overflow:auto;margin-bottom:8px;display:block;}
+
+#productQuickView #productRating{width:100px;float:none;}
+#productQuickView #productRating span{margin:0;}
+
+#productQuickView .thumbs,
+#productQuickView .ampliar{display:none;}
+#productQuickView #productRating strong{display:none;}
+
+#productQuickView #productBuy{margin-top:8px;}
+#productQuickView #productBuyBox{width:194px;padding:8px 0 34px 12px;}
+#productQuickView #productBuyBox .economia-de{color:#0052d6;font-size:11px;margin-top:0;}
+
+#productQuickView .buy-button{width:98px;height:21px;background-position:-150px -390px;right:auto;top:auto;bottom:12px;left:12px;}
+
+#productQuickView .notifyme{background:none;float:none;width:auto;padding:0;}
+#productQuickView .notifyme fieldset{display:none;}
+#productQuickView .notifymetitle{background:url("/arquivos/flag-vitrine-produto-esgotado.png") 0 center no-repeat;text-transform:capitalize;font-size:12px;padding:0 0 0 35px;border:0;}
+
+#productQuickView #productAddToList h4{text-transform:none;color:#223e92;font-weight:700;margin-bottom:4px;}
+#productQuickView #productDescription{border-top:1px solid #ddd;height:60px;width:100%;overflow-y:auto;padding:8px 0 0;}
+
+#productQuickView #productViewDetails{width:135px;height:17px;background-position:-150px -360px;float:right;}
+
+#productQuickView #productSelection select{margin:10px 0 0;width:210px;}

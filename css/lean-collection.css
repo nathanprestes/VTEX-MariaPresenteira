@@ -1,0 +1,388 @@
+/* ---------------------------------------- */
+/* background sprites                       */
+/* ---------------------------------------- */
+.quick-view,
+.rating-produto,
+.departamento .lista-produto p.departamento,
+.departamento .lista-texto p.departamento,
+.sku .lista-produto p.departamento,
+.lista-imagem p.departamento,
+.lista-percentual p.departamento,
+.sku .lista-texto p.departamento{background-image:url("/arquivos/sprite-collection.gif");background-repeat:no-repeat;}
+
+/* ---------------------------------------- */
+/* lista de produtos / percentual           */
+/* ---------------------------------------- */
+.lista-produto,
+.lista-percentual{overflow:auto;}
+.lista-produto li,
+.lista-percentual li{float:left;display:block;position:relative;width:151px !important;padding:0 0 24px 5px;margin-right:21px;text-align:center;}
+.lista-produto li.last,
+.lista-percentual li.last{margin:0}
+.lista-produto h3,
+.lista-percentual h3{padding:2px 5px;margin:0;text-align:left;}
+.lista-produto h3 a,
+.lista-percentual h3 a{display:block;font-size:11px;font-weight:bold;color:#172f6c;}
+.lista-produto img,
+.lista-percentual img{display:inline;}
+.preco{text-align:left;}
+
+.lista-produto .rating-produto,
+.lista-imagem .rating-produto{margin:0 0 6px 3px;}
+
+.home .lista-produto ul li{background:none;}
+
+.departamento .lista-produto li,
+.sku .lista-produto li{background:url("/arquivos/bg-vitrine.png") 0 bottom no-repeat;}
+.departamento .lista-produto p.departamento,
+.departamento .lista-texto p.departamento,
+.sku .lista-produto p.departamento,
+.lista-imagem p.departamento,
+.lista-percentual p.departamento,
+.sku .lista-texto p.departamento{background-position:-500px 0;background-repeat:no-repeat;display:block;position:absolute;top:0;left:0;z-index:100;height:70px;text-indent:-999em;width:4px;}
+
+/* ---------------------------------------- */
+/* lista percentual                         */
+/* ---------------------------------------- */
+.wmSlider{position:relative;_height:1%;}
+.wmSlider .container{overflow:hidden;position:relative;width:918px;margin:0 28px;}
+.wmSlider ul{position:absolute;}
+
+.wmSlider .next,
+.wmSlider .prev{background-image:url("/arquivos/sprite-collection-slider.png");position:absolute;z-index:99;top:20px;width:20px;height:220px;text-indent:-999em;cursor:pointer;}
+.wmSlider .prev{left:0;background-position:0 0;}
+.wmSlider .next{right:10px;background-position:-30px 0;}
+.wmSlider .prev:hover{background-position:-60px 0;}
+.wmSlider .next:hover{background-position:-90px 0;}
+
+
+.lista-percentual{width:983px;position:relative;overflow:hidden;}
+.lista-percentual li{background:url("/arquivos/bg-box-porcentagem.png") center bottom no-repeat;width:202px !important;margin-right:30px;padding-bottom:16px;text-align:center;}
+.lista-percentual h3{padding-left:62px;margin:0;width:130px;}
+
+.lista-percentual .departamento{margin-top:20px;}
+
+.lista-percentual .percentual{background:#e6e6e6;position:absolute;left:4px;font-size:22px;height:33px;padding:6px 0 0 2px;text-align:center;width:56px;}
+.lista-percentual .first-item{background:#639ae0;color:#fff;}
+.lista-percentual .rating-produto{float:none;clear:both;margin:0 0 6px 60px;}
+.lista-percentual .texto-adicional{display:block;color:#172f6c;font-weight:700;text-align:left;margin:0 0 6px -5px;}
+.lista-percentual img{clear:both;display:block;margin:0 auto;padding:5px 24px;}
+
+/* ---------------------------------------- */
+/* lista de imagens                        */
+/* ---------------------------------------- */
+.lista-imagem{overflow:hidden;}
+.lista-imagem li{float:left;width:185px;position:relative;padding:20px 63px 0 0;}
+.lista-imagem li.last{padding:20px 0 0 0;}
+.lista-imagem a{position:absolute;top:20px;}
+.lista-imagem h3 a,
+.lista-imagem .preco a{position:relative;top:0;}
+
+.lista-texto h3 a,
+.lista-imagem h3 a{font-size:11px;font-weight:bold;color:#172f6c}
+.lista-imagem .preco a{padding:8px 0 0 0;}
+.lista-imagem li .quick-view{display:none;}
+.lista-imagem li p.departamento{height:42px;display:none;}
+.lista-imagem h3,
+.lista-imagem .preco,
+.lista-imagem .rating-produto{float:right;width:110px;}
+.lista-imagem p.flag{display:none;}
+
+/* ---------------------------------------- */
+/* lista de texto                           */
+/* ---------------------------------------- */
+.departamento .lista-texto .preco em br{display:none;}
+.departamento .lista-texto li{margin-bottom:16px;position:relative;}
+.departamento .lista-texto h2{width:83%;}
+.departamento .lista-texto h3{padding-left:8px;width:90%;}
+.departamento .lista-texto p.departamento{height:42px;}
+
+/* ---------------------------------------- */
+/* geral                                    */
+/* ---------------------------------------- */
+/* espiar */
+.quick-view{margin-right:10px;width:45px;height:16px;background-position:-400px 0;display:block;float:right;text-indent:-9999em;margin-bottom:18px;}
+
+/* rating produto */
+.avaliacao50{background-position:0 0;}
+.avaliacao45{background-position:0 -20px;}
+.avaliacao40{background-position:0 -40px;}
+.avaliacao35{background-position:0 -60px;}
+.avaliacao30{background-position:0 -80px;}
+.avaliacao25{background-position:0 -100px;}
+.avaliacao20{background-position:0 -120px;}
+.avaliacao15{background-position:0 -140px;}
+.avaliacao10{background-position:0 -160px;}
+.avaliacao05{background-position:0 -180px;}
+.avaliacao0{background-position:0 -200px;}
+
+/* preco */
+.preco a{display:block;color:#0052d6 !important;padding-left:8px;}
+.preco a .valor-de{color:#4e4e4e;font-style:normal}
+.preco a .valor-de strong{text-decoration:line-through;font-weight:normal;}
+.preco a .valor-por{font-size:12px;font-style:normal}
+.preco a .valor-dividido{font-style:normal;font-weight:bold}
+.preco a .valor-dividido strong{font-size:14px;font-weight:bold;font-style:normal}
+
+
+/* ---------------------------------------- */
+/* flags                                    */
+/* ---------------------------------------- */
+.produto-exclusivo,
+.produtos-exclusivos,
+.produtos-exclusivos-wal-mart,
+.entrega-24hs-sp,
+.desconto-de-5--boleto-para-compras-acima-de-r--498{display:block;margin:10px 0;background-position:center center;background-repeat:no-repeat;}
+
+.produto-exclusivo,
+.produtos-exclusivos,
+.produtos-exclusivos-wal-mart{background-image:url("/arquivos/selo-produto-exclusivo.png");height:19px;}
+.prateleira .entrega-24hs-sp{background-image:url("/arquivos/entrega-garantida-24hrs-vitrine.png");height:20px;}
+.desconto-de-5--boleto-para-compras-acima-de-r--498{background-image:url("/arquivos/selo10desc.jpg");height:28px;}
+
+/* ---------------------------------------- */
+/* frete gratis                             */
+/* ---------------------------------------- */
+.lista-produto .frete-gratis,
+.lista-produto .frete-gratis-brasil,
+.lista-produto .frete-gratis-sudeste,
+.lista-produto .frete-gratis-nordeste,
+.lista-produto .frete-gratis-norte,
+.lista-produto .frete-gratis-centro-oeste,
+.lista-produto .frete-gratis-sul,
+.lista-percentual .frete-gratis,
+.lista-percentual .frete-gratis-brasil,
+.lista-percentual .frete-gratis-sudeste,
+.lista-percentual .frete-gratis-nordeste,
+.lista-percentual .frete-gratis-norte,
+.lista-percentual .frete-gratis-centro-oeste,
+.lista-percentual .frete-gratis-sul{display:block;position:absolute;bottom:3px;right:4px;width:148px!important;height:15px !important;margin:0 !important;padding:8px 3px 0 0;text-align:right !important;font-size:0.8em;color:#995800;font-weight:bold;font-family:tahoma;background:url(/arquivos/bg-vitrine-frete-home.png) no-repeat}
+
+p.fg---frete-gratis-ssd-sul---maior-que-r--0,
+p.fg---frete-gratis-ssd-sul---maior-que-r--48,
+p.fg---frete-gratis-ssd-sul---maior-que-r--98,
+p.fg---frete-gratis-ssd-sul---maior-que-r--148,
+p.fg---frete-gratis-ssd-sul---maior-que-r--198,
+p.fg---frete-gratis-ssd-sul---maior-que-r--298,
+p.fg---frete-gratis-ssd-sul---maior-que-r--398,
+p.fg---frete-gratis-ssd-sul---maior-que-r--498,
+p.fg---frete-gratis-ssd-sul---maior-que-r--698,
+p.fg---frete-gratis-ssd-sul---maior-que-r--998,
+p.fg---frete-gratis-ssd-sul---maior-que-r--1498,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--0,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--48,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--98,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--148,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--198,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--298,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--398,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--498,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--698,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--998,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--1498,
+p.fg---frete-gratis-sul-e-sudeste---sem-limite-de-valor,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--0,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--48,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--98,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--148,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--198,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--298,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--398,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--498,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--698,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--998,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--1498,
+p.frete-gratis-sudeste---brinquedos, 
+p.frete-gratis-sudeste---beleza-e-saude, 
+p.frete-gratis-sudeste---eletroportateis,
+p.frete-gratis-sudeste---esporte-e-lazer, 
+p.frete-gratis-sudeste---eletronicos, 
+p.frete-gratis-sudeste---informatica-i, 
+p.frete-gratis-sudeste---informatica-ii,
+p.fg---frete-gratis-sudeste---sem-limite-de-valor,
+p.fg---frete-gratis-sudeste---maior-que-r--0,
+p.fg---frete-gratis-sudeste---maior-que-r--48,
+p.fg---frete-gratis-sudeste---maior-que-r--98,
+p.fg---frete-gratis-sudeste---maior-que-r--148,
+p.fg---frete-gratis-sudeste---maior-que-r--198,
+p.fg---frete-gratis-sudeste---maior-que-r--298,
+p.fg---frete-gratis-sudeste---maior-que-r--398,
+p.fg---frete-gratis-sudeste---maior-que-r--498,
+p.fg---frete-gratis-sudeste---maior-que-r--698,
+p.fg---frete-gratis-sudeste---maior-que-r--998,
+p.fg---frete-gratis-sudeste---maior-que-r--1498,
+p.frete-gratis-brasil---games, 
+p.frete-gratis-brasil---relogios, 
+p.frete-gratis-brasil---telefonia, 
+p.frete-gratis-brasil---cineefoto, 
+p.frete-gratis-br---excecoes, 
+p.frete-gratis-brasil---eletromesticos,
+p.fg---frete-gratis-brasil---sem-limite-de-valor,
+p.fg---frete-gratis-brasil---maior-que-r--0,
+p.fg---frete-gratis-brasil---maior-que-r--48,
+p.fg---frete-gratis-brasil---maior-que-r--98,
+p.fg---frete-gratis-brasil---maior-que-r--78,
+p.fg---frete-gratis-brasil---maior-que-r--148,
+p.fg---frete-gratis-brasil---maior-que-r--198,
+p.fg---frete-gratis-brasil---maior-que-r--298,
+p.fg---frete-gratis-brasil---maior-que-r--398,
+p.fg---frete-gratis-brasil---maior-que-r--498,
+p.fg---frete-gratis-brasil---maior-que-r--698,
+p.fg---frete-gratis-brasil---maior-que-r--998,
+p.fg---frete-gratis-brasil---maior-que-r--1498,
+p.fg---frete-gratis-sul---sem-limite-de-valor,
+p.fg---frete-gratis-sul---maior-que-r--0,
+p.fg---frete-gratis-sul---maior-que-r--48,
+p.fg---frete-gratis-sul---maior-que-r--98,
+p.fg---frete-gratis-sul---maior-que-r--148,
+p.fg---frete-gratis-sul---maior-que-r--198,
+p.fg---frete-gratis-sul---maior-que-r--298,
+p.fg---frete-gratis-sul---maior-que-r--398,
+p.fg---frete-gratis-sul---maior-que-r--498,
+p.fg---frete-gratis-sul---maior-que-r--698,
+p.fg---frete-gratis-sul---maior-que-r--998,
+p.fg---frete-gratis-sul---maior-que-r--1498,
+p.fg---frete-gratis-nordeste---sem-limite-de-valor,
+p.fg---frete-gratis-nordeste---maior-que-r--0,
+p.fg---frete-gratis-nordeste---maior-que-r--48,
+p.fg---frete-gratis-nordeste---maior-que-r--98,
+p.fg---frete-gratis-nordeste---maior-que-r--148,
+p.fg---frete-gratis-nordeste---maior-que-r--198,
+p.fg---frete-gratis-nordeste---maior-que-r--298,
+p.fg---frete-gratis-nordeste---maior-que-r--398,
+p.fg---frete-gratis-nordeste---maior-que-r--498,
+p.fg---frete-gratis-nordeste---maior-que-r--698,
+p.fg---frete-gratis-nordeste---maior-que-r--998,
+p.fg---frete-gratis-nordeste---maior-que-r--1498,
+p.fg---frete-gratis-centro-oeste---sem-limite-de-valor,
+p.fg---frete-gratis-centro-oeste---maior-que-r--0,
+p.fg---frete-gratis-centro-oeste---maior-que-r--48,
+p.fg---frete-gratis-centro-oeste---maior-que-r--98,
+p.fg---frete-gratis-centro-oeste---maior-que-r--148,
+p.fg---frete-gratis-centro-oeste---maior-que-r--198,
+p.fg---frete-gratis-centro-oeste---maior-que-r--298,
+p.fg---frete-gratis-centro-oeste---maior-que-r--398,
+p.fg---frete-gratis-centro-oeste---maior-que-r--498,
+p.fg---frete-gratis-centro-oeste---maior-que-r--698,
+p.fg---frete-gratis-centro-oeste---maior-que-r--998,
+p.fg---frete-gratis-centro-oeste---maior-que-r--1498{background:url("/arquivos/sprite-collection.gif") no-repeat;display:block;position:absolute;bottom:6px;left:3px;width:150px;height:25px;margin:0;padding:0;}
+
+/*SUL E SUDESTE*/
+p.fg---frete-gratis-ssd-sul---maior-que-r--0,
+p.fg---frete-gratis-ssd-sul---maior-que-r--48,
+p.fg---frete-gratis-ssd-sul---maior-que-r--98,
+p.fg---frete-gratis-ssd-sul---maior-que-r--148,
+p.fg---frete-gratis-ssd-sul---maior-que-r--198,
+p.fg---frete-gratis-ssd-sul---maior-que-r--298,
+p.fg---frete-gratis-ssd-sul---maior-que-r--398,
+p.fg---frete-gratis-ssd-sul---maior-que-r--498,
+p.fg---frete-gratis-ssd-sul---maior-que-r--698,
+p.fg---frete-gratis-ssd-sul---maior-que-r--998,
+p.fg---frete-gratis-ssd-sul---maior-que-r--1498,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--0,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--48,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--98,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--148,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--198,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--298,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--398,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--498,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--698,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--998,
+p.fg---frete-gratis-ssd-sudeste---maior-que-r--1498,
+p.fg---frete-gratis-sul-e-sudeste---sem-limite-de-valor,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--0,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--48,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--98,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--148,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--198,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--298,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--398,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--498,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--698,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--998,
+p.fg---frete-gratis-sul-e-sudeste---maior-que-r--1498{background-position:-200px -30px;}
+
+/*SUDESTE*/
+p.frete-gratis-sudeste---brinquedos, 
+p.frete-gratis-sudeste---beleza-e-saude, 
+p.frete-gratis-sudeste---eletroportateis,
+p.frete-gratis-sudeste---esporte-e-lazer, 
+p.frete-gratis-sudeste---eletronicos, 
+p.frete-gratis-sudeste---informatica-i, 
+p.frete-gratis-sudeste---informatica-ii,
+p.fg---frete-gratis-sudeste---sem-limite-de-valor,
+p.fg---frete-gratis-sudeste---maior-que-r--0,
+p.fg---frete-gratis-sudeste---maior-que-r--48,
+p.fg---frete-gratis-sudeste---maior-que-r--98,
+p.fg---frete-gratis-sudeste---maior-que-r--148,
+p.fg---frete-gratis-sudeste---maior-que-r--198,
+p.fg---frete-gratis-sudeste---maior-que-r--298,
+p.fg---frete-gratis-sudeste---maior-que-r--398,
+p.fg---frete-gratis-sudeste---maior-que-r--498,
+p.fg---frete-gratis-sudeste---maior-que-r--698,
+p.fg---frete-gratis-sudeste---maior-que-r--998,
+p.fg---frete-gratis-sudeste---maior-que-r--1498{background-position:-200px -60px;}
+
+/*BRASIL*/
+p.frete-gratis-brasil---games, 
+p.frete-gratis-brasil---relogios, 
+p.frete-gratis-brasil---telefonia, 
+p.frete-gratis-brasil---cineefoto, 
+p.frete-gratis-br---excecoes, 
+p.frete-gratis-brasil---eletromesticos,
+p.fg---frete-gratis-brasil---sem-limite-de-valor,
+p.fg---frete-gratis-brasil---maior-que-r--0,
+p.fg---frete-gratis-brasil---maior-que-r--48,
+p.fg---frete-gratis-brasil---maior-que-r--98,
+p.fg---frete-gratis-brasil---maior-que-r--78,
+p.fg---frete-gratis-brasil---maior-que-r--148,
+p.fg---frete-gratis-brasil---maior-que-r--198,
+p.fg---frete-gratis-brasil---maior-que-r--298,
+p.fg---frete-gratis-brasil---maior-que-r--398,
+p.fg---frete-gratis-brasil---maior-que-r--498,
+p.fg---frete-gratis-brasil---maior-que-r--698,
+p.fg---frete-gratis-brasil---maior-que-r--998,
+p.fg---frete-gratis-brasil---maior-que-r--1498{background-position:-200px 0px;}
+
+/*SUL*/
+p.fg---frete-gratis-sul---sem-limite-de-valor,
+p.fg---frete-gratis-sul---maior-que-r--0,
+p.fg---frete-gratis-sul---maior-que-r--48,
+p.fg---frete-gratis-sul---maior-que-r--98,
+p.fg---frete-gratis-sul---maior-que-r--148,
+p.fg---frete-gratis-sul---maior-que-r--198,
+p.fg---frete-gratis-sul---maior-que-r--298,
+p.fg---frete-gratis-sul---maior-que-r--398,
+p.fg---frete-gratis-sul---maior-que-r--498,
+p.fg---frete-gratis-sul---maior-que-r--698,
+p.fg---frete-gratis-sul---maior-que-r--998,
+p.fg---frete-gratis-sul---maior-que-r--1498{}
+
+/*NORDESTE*/
+p.fg---frete-gratis-nordeste---sem-limite-de-valor,
+p.fg---frete-gratis-nordeste---maior-que-r--0,
+p.fg---frete-gratis-nordeste---maior-que-r--48,
+p.fg---frete-gratis-nordeste---maior-que-r--98,
+p.fg---frete-gratis-nordeste---maior-que-r--148,
+p.fg---frete-gratis-nordeste---maior-que-r--198,
+p.fg---frete-gratis-nordeste---maior-que-r--298,
+p.fg---frete-gratis-nordeste---maior-que-r--398,
+p.fg---frete-gratis-nordeste---maior-que-r--498,
+p.fg---frete-gratis-nordeste---maior-que-r--698,
+p.fg---frete-gratis-nordeste---maior-que-r--998,
+p.fg---frete-gratis-nordeste---maior-que-r--1498{}
+
+/*CENTRO OESTE*/
+p.fg---frete-gratis-centro-oeste---sem-limite-de-valor,
+p.fg---frete-gratis-centro-oeste---maior-que-r--0,
+p.fg---frete-gratis-centro-oeste---maior-que-r--48,
+p.fg---frete-gratis-centro-oeste---maior-que-r--98,
+p.fg---frete-gratis-centro-oeste---maior-que-r--148,
+p.fg---frete-gratis-centro-oeste---maior-que-r--198,
+p.fg---frete-gratis-centro-oeste---maior-que-r--298,
+p.fg---frete-gratis-centro-oeste---maior-que-r--398,
+p.fg---frete-gratis-centro-oeste---maior-que-r--498,
+p.fg---frete-gratis-centro-oeste---maior-que-r--698,
+p.fg---frete-gratis-centro-oeste---maior-que-r--998,
+p.fg---frete-gratis-centro-oeste---maior-que-r--1498{}

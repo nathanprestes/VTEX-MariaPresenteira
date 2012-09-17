@@ -1,0 +1,334 @@
+/* ---------------------------------------- */
+/* resets                                   */
+/* ---------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+img{border:none;}
+button::-moz-focus-inner{border:0;padding:0;}
+:focus{outline:0;}
+
+/* ---------------------------------------- */
+/* layout geral                             */
+/* ---------------------------------------- */
+#all{width:1003px;margin:0 auto 12px;text-align:left;position:relative; overflow:hidden !important;}
+#content,
+.footer1{background:#fff;}
+#top{overflow:hidden !important;}
+/*#middle{float:none;clear:both;overflow:auto;position:relative;padding-top:3px;}*/
+#middle{overflow:hidden !important;*height:1%;padding-top:3px;}
+.box2Columns,
+.box2Columns2{overflow:hidden !important;float:left;width:850px;}
+/*.departamento .box2Columns{margin:5px 0 8px;}*/
+.box2Columns{margin-bottom:13px;}
+.box2Columns2{margin:8px 0;}
+.box2ColumnsLeft{float:left; width:575px;}
+.box2ColumnsRight{float:left;margin-left:10px; width:257px;}
+
+#boxLeft{margin:0 8px 10px 0;width:142px;float:left;}
+#boxLeftContent{padding-top:12px;}
+#boxCenter{float:left;width:688px;overflow:hidden !important;}
+#boxRight{padding-right:12px;width:140px;float:right;}
+#boxRight li,
+#boxLeftContent li{margin-bottom:8px;}
+
+.boxCenter{overflow:hidden !important;}
+.halfBoxCenter{float:left;width:50%;}
+
+#boxCenter .box-banner{margin-top:10px;}
+
+/* ---------------------------------------- */
+/* elementos gerais                         */
+/* ---------------------------------------- */
+body{background:#fff url("/arquivos/bg-BodyHome.jpg") repeat-x;text-align:center;}
+body,
+input,
+select,
+textarea{font:normal 11px Arial, Helvetica, sans-serif;color:#000;}
+input,
+textarea{padding:1px 0 0 2px;background:url("/arquivos/sprite-general.png") 0 -460px;border:1px solid #b5b5b5;}
+a,
+a:visited{text-decoration:none;color:#000000;}
+a:hover{text-decoration:underline;}
+hr{display:none;}
+.newsletter-client-name, .newsletter-client-email{background-color:#fff;}
+
+/* ---------------------------------------- */
+/* classes gerais                           */
+/* ---------------------------------------- */
+.flag{display:none;text-indent:-999em;}
+.clear{float:none;clear:both;}
+.hide{display:none !important;}
+.imgRp,
+.imgRp a{display:block;text-indent:-999em;font-size:1px;overflow:hidden;line-height:1px;}
+.btn-buscar{border:0;cursor:pointer;padding:0;margin:0;text-indent:-999em;font-size:0;line-height:0;}
+
+.btnMeuCarrinho a{background:url("/arquivos/sprite-general.png") 0 -360px;width:157px;height:34px;}
+input.bt-voltar{background:url("/arquivos/news-btn-voltar.png") no-repeat left top;display:block;cursor:pointer;}
+
+.lt,.rt,.lb,.rb{background-image:url("/arquivos/sprite-home.gif");background-repeat:no-repeat;position:absolute;display:block;font-size:1px;line-height:1px;width:6px;height:6px;}
+.lt{left:-2px;top:-2px;background-position:-100px -500px;}
+.rt{right:-2px;top:-2px;background-position:-106px -500px;}
+.lb{left:-2px;bottom:-2px;background-position:-100px -506px;}
+.rb{right:-2px;bottom:-2px;background-position:-106px -506px;}
+
+/* ---------------------------------------- */
+/* titulos                                  */
+/* ---------------------------------------- */
+#boxCenter h2,
+.buscas-dia h3{display:block;overflow:hidden;margin:14px 0 10px 0;font-size:14px;font-weight:700;}
+
+/* ---------------------------------------- */
+/* box vitrine destaque                     */
+/* ---------------------------------------- */
+.boxVitrineDestaque{width:850px;overflow:hidden;}
+.boxVitrineDestaque .lista-produto ul li{margin:0 13px 0 0;}
+.boxVitrineDestaque h2{width:795px;overflow:hidden;padding:5px 0 10px 50px;margin:16px 0 10px 0;font-size:14px !important;font-weight:700;}
+
+/* ---------------------------------------- */
+/* rating de produtos                       */
+/* ---------------------------------------- */
+.rating-produto,
+.rating-demonstrativo{display:block;text-indent:-999em;width:65px;height:11px;}
+
+/* ---------------------------------------- */
+/* lojas especiais                          */
+/* ---------------------------------------- */
+#boxLojasEspeciais{position:relative;background:#fff;width:136px;border:2px solid #cfcfcf;margin-bottom:6px;}
+#boxLojasEspeciais h2{height:21px;display:block;padding:4px 0 0 12px;font-size:14px;font-weight:700;color:#fff;border-bottom:3px solid #1362b0;background:#1a75cf;}
+#boxLojasEspeciais li{padding:5px 0 7px 6px;}
+#boxLojasEspeciais a{display:block;}
+
+
+/* ---------------------------------------- */
+/* pretty photo                             */
+/* ---------------------------------------- */
+
+div.pp_overlay {
+background: #000;
+display: none;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 9500;
+}
+
+div.pp_pic_holder {
+display: none;
+position: absolute;
+width: 100px;
+z-index: 10000;
+}
+
+.pp_top {
+height: 20px;
+position: relative;
+}
+* html .pp_top { padding: 0 20px; }
+
+.pp_top .pp_left {
+height: 20px;
+left: 0;
+position: absolute;
+width: 20px;
+}
+.pp_top .pp_middle {
+height: 20px;
+left: 20px;
+position: absolute;
+right: 20px;
+}
+* html .pp_top .pp_middle {
+left: 0;
+position: static;
+}
+
+.pp_top .pp_right {
+height: 20px;
+left: auto;
+position: absolute;
+right: 0;
+top: 0;
+width: 20px;
+}
+
+.pp_content { height: 40px; }
+
+.pp_fade { display: none; }
+
+.pp_content_container {
+position: relative;
+text-align: left;
+width: 100%;
+}
+
+.pp_content_container .pp_left { padding-left: 20px; }
+.pp_content_container .pp_right { padding-right: 20px; }
+
+.pp_content_container .pp_details {
+float: left;
+margin: 10px 0 2px 0;
+}
+.pp_description {
+display: none;
+margin: 0 0 5px 0;
+}
+
+.pp_nav {
+clear: left;
+float: left;
+margin: 3px 0 0 0;
+}
+
+.pp_nav p {
+float: left;
+margin: 2px 4px;
+}
+
+.pp_hoverContainer {
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 2000;
+display:block !important;
+height:0 !important;
+line-height:0;
+}
+
+.pp_gallery {
+left: 50%;
+margin-top: -50px;
+position: absolute;
+z-index: 10000;
+}
+
+.pp_gallery ul {
+float: left;
+height: 35px;
+margin: 0 0 0 5px;
+overflow: hidden;
+padding: 0;
+position: relative;
+}
+
+.pp_gallery ul a {
+border: 1px #000 solid;
+border: 1px rgba(0,0,0,0.5) solid;
+display: block;
+float: left;
+height: 33px;
+overflow: hidden;
+}
+
+.pp_gallery ul a:hover,
+.pp_gallery li.selected a { border-color: #fff; }
+
+.pp_gallery ul a img { border: 0; }
+
+.pp_gallery li {
+display: block;
+float: left;
+margin: 0 5px 0 0;
+}
+
+.pp_gallery li.default a {
+display: block;
+height: 33px;
+width: 50px;
+}
+
+a.pp_close {
+display: block;
+line-height:1.3em;
+text-indent:0;
+color:#fff !important;
+position:absolute;
+top:5px;
+left:518px;
+padding-right:15px;
+background:url("/arquivos/ico-fechar-pop.gif") right 3px no-repeat;
+width:auto;
+}
+
+.pp_bottom {
+height: 20px;
+position: relative;
+}
+* html .pp_bottom { padding: 0 20px; }
+
+.pp_bottom .pp_left {
+height: 20px;
+left: 0;
+position: absolute;
+width: 20px;
+}
+.pp_bottom .pp_middle {
+height: 20px;
+left: 20px;
+position: absolute;
+right: 20px;
+}
+* html .pp_bottom .pp_middle {
+left: 0;
+position: static;
+}
+
+.pp_bottom .pp_right {
+height: 20px;
+left: auto;
+position: absolute;
+right: 0;
+top: 0;
+width: 20px;
+}
+
+.pp_loaderIcon {
+background:url("/arquivos/indique-enviando.gif") center center no-repeat;
+display: block;
+height: 15px;
+left: 50%;
+margin: -7px 0 0 -64px;
+position: absolute;
+top: 50%;
+width: 128px;
+}
+
+#pp_full_res {
+line-height: 1 !important;
+}
+
+#pp_full_res .pp_inline {
+text-align: left;
+}
+
+#pp_full_res .pp_inline p { margin: 0 0 15px 0; }
+
+div.ppt {
+color: #fff;
+display: none;
+font-size: 17px;
+margin: 0 0 5px 15px;
+z-index: 9999;
+}
+
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

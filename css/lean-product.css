@@ -1,0 +1,463 @@
+/* ---------------------------------------- */
+/* background-sprites                       */
+/* ---------------------------------------- */
+#productDetailsIndex a,		/* icone indice de detalhes do produto */
+.linkPageTop,				/* link subir */
+#pageSearch label,			/* label da busca */
+#btnBuscaPagina,			/* botao da busca */
+.btn-add-product-tag,		/* botao de adicionar tag*/
+.rating-demonstrativo,		/* estrelas do rating */
+.rating-opiniao,
+#productUserReview .rating-produto,
+.emptyRatingStar,			/* estrela apagada */
+.filledRatingStar,			/* estrela acesa */
+#lnkPubliqueResenha,		/* bota publicar opiniao */
+#lnkAjudou,					/* botao sim */
+#lnkNaoAjudou,				/* botao nao */
+.ver-todos-comentarios a,	/* link ver todos os comentarios */
+#productSkuLinks a,			/* links rss e indique a amigo */
+#productShipping a,			/* icone frete */
+#productAddToList .outras-listas,		/* icones adicionar a lista */
+#productPageIndex a,		/* icone indice da pagina */
+#productBuyTogether #lnkVejaMais,
+.maisInfos,					/* icone de mais */
+.other-payment-method-content a,
+#userReviewShowAllComments,
+#productExtendedWarranty .veja-mais-detalhes,
+#lnkComprar,				/* botao compre junto */
+#productBuyTogether em,		/* icone + compre junto */
+#vtex_ctrl_UserReview .bt-enviar,
+#productBuy .aviso-erro span,	/* cantos arredondados vermelhos */
+#productImages .ampliar,	/* ampliar imagens */
+#productImages .thumbs,		/* mais imagens */
+#productSugestion .bt-comprar a,/* comprar o produto sugerido */
+.box-preco-atualizado .btn-batch-buy	/* comprar itens selecionados */
+{background-image:url("/arquivos/sprite-product.gif");background-repeat:no-repeat;}
+
+
+/* ---------------------------------------- */
+/* geral                                    */
+/* ---------------------------------------- */
+#middle.sku{padding:10px;}
+.sku a,
+.sku a:visited{color:#5088e6;}
+.sku a:hover{text-decoration:underline;}
+.wrap{background-color:#ff0000;color:#fff;}
+.productList{float:none;clear:both;}
+
+/* ---------------------------------------- */
+/* titulos                                  */
+/* ---------------------------------------- */
+.sku .sku h2,
+.sku .sku h3,
+.sku .sku h4{font-size:12px;font-weight:700;}
+.sku .sku h2{display:block;float:none;clear:both;overflow:hidden;margin:22px 0 10px;padding:4px 0 12px 45px;color:#1a75cf;background:url("/arquivos/bg-vitrine-h2.png") 0 bottom no-repeat;}
+.lista-percentual h2{text-transform:uppercase;}
+.sku .sku h3,
+.sku .sku h4{margin:15px 0;color:#172f6c;}
+
+
+/* ---------------------------------------- */
+/* bread crumbs                             */
+/* ---------------------------------------- */
+.bread-crumb{overflow:auto;}
+.bread-crumb,
+.bread-crumb a{color:#5088e6;}
+.bread-crumb li{background:url("/arquivos/ico-seta-azul-footer.gif") no-repeat right center;float:left;padding-right:10px;margin-right:6px;}
+.bread-crumb li.last{background:none;}
+
+
+/* ---------------------------------------- */
+/* nome do produto                          */
+/* ---------------------------------------- */
+.sku h1{float:none;clear:both;margin:6px 50px 10px 0;}
+.productName{font-weight:700;font-size:18px;display:inline;margin-right:10px;}
+.brandName{display:inline;}
+.brandName a{color:#0052D6;}
+
+
+/* ---------------------------------------- */
+/* rating                                   */
+/* ---------------------------------------- */
+#productRating{float:left;width:305px;overflow:auto;}
+#productRating strong,
+#productRating .rating-produto{float:left;}
+#productRating .rating-produto{margin-left:10px}
+
+
+/* ---------------------------------------- */
+/* imagens                                  */
+/* ---------------------------------------- */
+#productImages{width:305px;margin:14px 0 25px;float:left;clear:left;}
+#productImages #image{text-align:center;}
+#productImages .ampliar{display:block;margin:25px auto 10px;background-position:-430px -280px;width:62px;height:26px;text-indent:-999em;}
+#productImages .thumbs{padding-left:75px;background-position:-415px -320px;overflow:auto;}
+#productImages .thumbs li{float:left;}
+#productImages .thumbs a{display:block;border:1px solid #e1e1e1;margin-right:8px;}
+
+
+/* ---------------------------------------- */
+/* selecao de SKU                           */
+/* ---------------------------------------- */
+#productSelection select{background:#ebf2ff;border:1px solid #0052d6;font-size:11px;width:327px;color:#223e92;margin-bottom:10px;}
+
+/* ---------------------------------------- */
+/* preco/comprar                            */
+/* ---------------------------------------- */
+#productBuy{padding:4px 0;position:relative;color:#4e4e4e;overflow:hidden;height:1%;}
+#productBuyBox{border:2px solid #cfcfcf;position:relative;padding:8px 15px;width:640px;}
+#productBuyBox em{display:block;font-style:normal;}
+#productBuyBox .valor-de strong{text-decoration:line-through;font-weight:normal;}
+#productBuyBox .valor-por,
+#productBuyBox .valor-dividido{color:#0052d6;}
+#productBuyBox .valor-de strong,
+#productBuyBox .valor-por strong,
+#productBuyBox .valor-dividido,
+#productBuyBox .economia-de{font-weight:700;}
+#productBuyBox .valor-por strong{font-size:14px;}
+#productBuyBox .valor-dividido strong{font-size:18px;}
+#productBuyBox .economia-de{margin-top:12px;font-size:12px;}
+#productBuyGroup{position:relative;}
+
+.buy-button,
+.unavailable-button{background:url("/arquivos/btn-verde-comprar-produto.png");display:block;width:154px;height:37px;position:absolute;top:50%;margin-top:-19px;right:10px;text-indent:-999em;}
+.unavailable-button{filter:alpha(opacity=45);-moz-opacity:0.45;opacity:0.45;}
+
+/* avise-me quando chegar */
+.notifyme{background:url("/arquivos/bg-box-alerta-indisponivel.png") 0 bottom no-repeat;position:relative;float:right;padding:0 15px 20px;width:620px;}
+.notifymetitle{background:url("/arquivos/ico-aviso-carrinho.png") 118px 0 no-repeat;border-bottom:1px solid #ddd;color:#ba0000;font-size:14px;font-weight:700;margin:3px 0 10px;padding:10px 0 24px 170px;text-transform:uppercase;}
+.notifyme legend{color:#172f6c;font-weight:700;margin-bottom:6px;position:relative;left:-6px;}
+#notifymeClientName,
+#notifymeClientEmail{background:url("/arquivos/bg-newsletter.gif");border:1px solid #b5b5b5;color:#4e4e4e;font-size:11px;margin:0 6px;padding:2px 3px;width:228px;}
+#notifymeButtonOK{background:url("/arquivos/btn-avise-me.png");border:0;cursor:pointer;height:20px;text-indent:-999em;width:64px;line-height:0;font-size:7px;}
+
+/* erro no avise-me */
+#productBuy .aviso-erro{background:#f9f0f0 url("/arquivos/ico-aviso-erro.gif") 20px 3px no-repeat;border:2px solid #e10000;color:#ba0000 !important;float:right;margin:10px 5px 20px;padding:22px 10px 15px 80px;position:relative;width:550px;}
+#productBuy .aviso-erro ul{margin-top:10px;}
+#productBuy .aviso-erro .lt{background-position:-400px -250px;}
+#productBuy .aviso-erro .lb{background-position:-400px -256px;}
+#productBuy .aviso-erro .rt{background-position:-406px -250px;}
+#productBuy .aviso-erro .rb{background-position:-406px -256px;}
+
+/* sucesso no avise-me */
+#productBuy .success{color:#223e92;font-size:12px;font-weight:700;display:block;width:100%;text-align:center;padding:40px 0 30px;}
+#productBuy .success em{font-style:normal;}
+
+
+/* ---------------------------------------- */
+/* detalhes                                 */
+/* ---------------------------------------- */
+#productDetails{float:none;clear:both;margin:25px;}
+#productDetailsIndex{background:url("/arquivos/bg-barra-links-detalhes.png") no-repeat;height:22px;padding:5px 0 0 14px;}
+#productDetailsIndex li{float:left;}
+#productDetailsIndex a{background-position:-400px -180px;font-weight:700;margin-right:30px;padding-left:11px;}
+
+.pageTop{border-bottom:1px solid #ddd;padding:14px;text-align:right;}
+.linkPageTop{background-position:-400px -150px;padding-left:15px;}
+
+/* ---------------------------------------- */
+/* page search                              */
+/* ---------------------------------------- */
+#pageSearch fieldset{position:absolute;right:22px;margin-top:-40px;}
+#pageSearch legend{display:none;}
+#pageSearch label,
+#pesquisa-palavra,
+#btnBuscaPagina{float:left;}
+#pageSearch label{background-position:-400px -90px;color:#172f6c;font-weight:700;padding:4px 6px 0 18px;}
+#pesquisa-palavra,
+#productTags .product-tag-name{background:url("/arquivos/bg-busca-input-home.png") 0 0 no-repeat;width:310px;border:1px solid #0052d6;color:#223e92;padding:3px 5px;margin-right:6px;}
+#btnBuscaPagina,
+#productTags .btn-add-product-tag{background-position:-150px -90px;border:0;text-indent:-999em;width:75px;height:20px;cursor:pointer;line-height:1px;}
+
+/* ---------------------------------------- */
+/* descricao                                */
+/* ---------------------------------------- */
+#productSpecification table{width:98%}
+#productSpecification th,
+#productSpecification td{padding:5px;}
+#productSpecification th{padding-left:20px;width:360px;}
+#productSpecification .odd{background:#f1f1f1;}
+
+#productDimensions dt{position:absolute;width:370px;left:50px;}
+#productDimensions dd{margin-left:390px;}
+
+
+/* ---------------------------------------- */
+/* tags                                     */
+/* ---------------------------------------- */
+#middle.sku .tags-associadas a{color:#5088e6;font-size:18px;padding:0 2px;clear:both;}
+#middle.sku .tags-associadas a:hover{color:#fff;background:#5088e6;text-decoration:none;}
+.user-included-tags{margin:10px 0;overflow:auto;height:1%;}
+.user-included-tags a{float:left;clear:none !important;margin:10px 35px;}
+.tagsPopulares{margin-right:20px;}
+
+#productTags label{font-weight:700;margin:0 10px 0 40px;}
+#productTags .product-tag-name{width:200px;}
+#productTags .btn-add-product-tag{background-position:-150px -180px;}
+#productTags .tag-product-message-user{margin:0 0 10px 40px;}
+
+/* ---------------------------------------- */
+/* avaliacao do cliente                     */
+/* ---------------------------------------- */
+#productUserReview{color:#4e4e4e;}
+#productUserReview .rating-opiniao,
+#productUserReview .rating-produto,
+#productUserReview .rating-demonstrativo,
+#TB_ajaxContent .rating-opiniao{width:115px;height:20px;}
+#productUserReview .avaliacao0,
+#productUserReview .avaliacao00,
+#TB_ajaxContent  .avaliacao0,
+#TB_ajaxContent  .avaliacao00{background-position:0 -300px;}
+#productUserReview .avaliacao05,
+#TB_ajaxContent  .avaliacao05{background-position:0 -270px;}
+#productUserReview .avaliacao10,
+#TB_ajaxContent  .avaliacao10{background-position:0 -240px;}
+#productUserReview .avaliacao15,
+#TB_ajaxContent  .avaliacao15{background-position:0 -210px;}
+#productUserReview .avaliacao20,
+#TB_ajaxContent  .avaliacao20{background-position:0 -180px;}
+#productUserReview .avaliacao25,
+#TB_ajaxContent  .avaliacao25{background-position:0 -150px;}
+#productUserReview .avaliacao30,
+#TB_ajaxContent  .avaliacao30{background-position:0 -120px;}
+#productUserReview .avaliacao35,
+#TB_ajaxContent  .avaliacao35{background-position:0 -90px;}
+#productUserReview .avaliacao40,
+#TB_ajaxContent  .avaliacao40{background-position:0 -60px;}
+#productUserReview .avaliacao45,
+#TB_ajaxContent  .avaliacao45{background-position:0 -30px;}
+#productUserReview .avaliacao50,
+#TB_ajaxContent  .avaliacao50{background-position:0 0;}
+
+#productUserReview .avaliacao{position:relative;overflow:auto;}
+
+#productUserReview .media,
+#productUserReview .rating{margin-left:20px;clear:both;}
+
+#productUserReview .media{overflow:auto;margin-top:20px;}
+#productUserReview .media .rating-produto{margin:0 6px;}
+#productUserReview .media em{font-style:normal;}
+#productUserReview .media span{margin-top:4px;}
+
+#productUserReview .media span,
+#productUserReview .media strong,
+#productUserReview .voteRatingStar,
+#productUserReview .voteRatingBar{float:left;}
+
+#productUserReview .rating li{overflow:auto;margin-top:16px;}
+
+#productUserReview .voteRatingBar,
+#productUserReview .voteRatingBar span{display:block;height:18px;}
+#productUserReview .voteRatingBar{width:300px;margin:0 8px 0 15px;background:#eee;}
+#productUserReview .voteRatingBar span{background:url("/arquivos/barra-votos.gif");}
+
+#productUserReview .avalie-produto{position:absolute;right:0;top:0;width:140px;}
+#opcoes-avalie{float:none;clear:both;}
+#opcoes-avalie p{display:none;}
+.ratingStar{float:left;height:20px;width:20px;padding-right:4px;text-indent:-999em;cursor:pointer;}
+.emptyRatingStar{background-position:-400px 0;}
+.filledRatingStar{background-position:-430px 0;}
+.rating-avalie-wrapper{overflow:auto;clear:both;margin:14px 0 16px;}
+
+#productUserReview .avalie-produto br{margin-bottom:10px;}
+
+
+#ulPubliqueResenha{overflow:auto;border-bottom:1px solid #ddd;padding:30px 0 14px;}
+#lnkPubliqueResenha{float:right;width:129px;height:20px;text-indent:-999em;background-position:-150px -60px;position:relative;}
+
+
+.cont-opinioes{clear:both;padding:25px;padding-right:0;}
+.cont-opinioes .descricao-consumidor{clear:both;padding:10px 0;overflow:auto;}
+.cont-opinioes .dados-consumidor{float:left;}
+.cont-opinioes .dados-consumidor strong{margin-right:10px;}
+.cont-opinioes .opt-texto{margin:10px 0;}
+
+.cont-opinioes .opiniao-ajudou p{float:left;}
+.cont-opinioes .opiniao-ajudou a{display:block;float:left;margin:-3px 0 0 8px;width:43px;height:20px;text-indent:-999em;}
+#productUserReview .opiniao-ajudou a{position:relative;}
+#lnkAjudou{background-position:-150px -120px;}
+#lnkAjudou:hover{background-position:-200px -120px;}
+#lnkNaoAjudou{background-position:-150px -150px;}
+#lnkNaoAjudou:hover{background-position:-200px -150px;}
+
+#userReviewShowAllComments{font-weight:700;float:right;clear:both;margin:16px 0;background-position:-400px -120px;padding-left:15px;}
+
+.cont-opinioes .rating-opiniao{float:left;margin:-4px 10px 0;}
+
+/* ---------------------------------------- */
+/* todos os comentarios                     */
+/* ---------------------------------------- */
+#TB_ajaxContent{padding:0 !important;}
+#TB_ajaxContent .janela{position:relative;background:url("/arquivos/bg-box-quickview-bottom.png") 0 bottom no-repeat;padding-bottom:20px;}
+#TB_ajaxContent h3{background:url("/arquivos/bg-box-quickview-titulo.png") no-repeat;color:#fff;padding:4px 0 8px 10px;margin:0;text-transform:uppercase;}
+#TB_ajaxContent .conteudo{background:url("/arquivos/bg-box-quickview-middle.png") repeat-y;padding:6px 20px 0 18px;width:545px;}
+#TB_ajaxContent .btn-fechar{background:url("/arquivos/ico-fechar-pop.gif") right center no-repeat;position:absolute;right:30px;top:5px;padding-right:15px;font-size:11px;color:#fff !important;}
+
+.filter-nav{background:#f1f1f1 url("/arquivos/borda-resultado-busca-left.png") no-repeat;color:#4e4e4e;height:21px;overflow:hidden;padding:5px 0 2px 8px;width:542px;font-size:11px;}
+.filter-nav fieldset{background:url("/arquivos/borda-resultado-busca-right.png") right 0 no-repeat;float:right;padding-right:5px;}
+.filter-nav .sort{float:left;margin-top:2px;}
+.filter-nav select{background:#f1f1f1;width:150px;border:1px solid #b5b5b5;color:#4e4e4e;}
+.filter-nav li{float:left;border-right:1px solid #4e4e4e;padding:0 4px;}
+.filter-nav .first,
+.filter-nav .next,
+.filter-nav .last{border:0;}
+.filter-nav .back{background:url("/arquivos/ico-seta-azul-dupla-voltar.gif") 0 6px no-repeat;padding:0 4px 0 10px;margin-left:4px;}
+.filter-nav .next{background:url("/arquivos/ico-seta-azul-dupla-proxima.gif") right 5px no-repeat;padding:0 10px 0 4px;}
+
+#TB_ajaxContent .cont-opinioes{font-size:11px;padding:4px 0;height:280px;overflow:auto;line-height:1.2em;}
+#TB_ajaxContent .cont-opinioes p{padding:0;}
+#TB_ajaxContent .cont-opinioes .descricao-consumidor{padding:6px 0;border-bottom:1px solid #b9b9b9;}
+#TB_ajaxContent .cont-opinioes .opiniao-ajudou{height:20px;padding-top:6px;}
+
+/* ---------------------------------------- */
+/* publicar opinicao                        */
+/* ---------------------------------------- */
+#vtex_ctrl_UserReview .conteudo{font-size:11px;}
+#vtex_ctrl_UserReview fieldset{margin-bottom:8px;}
+#vtex_ctrl_UserReview .titulo label,
+#vtex_ctrl_UserReview .comentario label{float:left;width:65px;}
+
+#vtex_ctrl_UserReview .email,
+#vtex_ctrl_UserReview .ranking,
+#vtex_ctrl_UserReview p{padding-left:71px !important;}
+#vtex_ctrl_UserReview p{clear:both;}
+
+#vtex_ctrl_UserReview .ranking{overflow:auto;margin:6px 0 2px;}
+#vtex_ctrl_UserReview .email input{margin:2px 8px 0 0;float:left;}
+#vtex_ctrl_UserReview .avaliar{font-weight:700;float:left;margin:3px 5px 0 0;}
+#vtex_ctrl_UserReview .bt-enviar{float:right;background-position:-150px -240px;height:20px;width:95px;text-indent:-999em;margin:10px 50px 0 0;}
+
+#vtex_ctrl_UserReview .atencao-resenha{border-bottom:1px solid #d9d9d9;border-top:1px solid #d9d9d9;margin-top:22px;padding-right:50px;}
+#vtex_ctrl_UserReview .atencao-resenha strong{display:block;color:#a40100;margin-bottom:15px;}
+
+#vtex_ctrl_UserReview .sucesso{padding:140px 0;text-align:center;}
+#vtex_ctrl_UserReview .sucesso h4{font-size:22px;}
+
+#productRatingCommentTitle,
+#productRatingComment{background:url("/arquivos/bg-newsletter.gif");border:1px solid #b5b5b5;color:#4e4e4e;font-size:11px;margin:0 6px;padding:2px 3px;width:400px;}
+
+/* ---------------------------------------- */
+/* informacoes basicas                      */
+/* ---------------------------------------- */
+#productMoreInfo{float:left;overflow:auto;width:374px;margin-right:26px;}
+#productMoreInfo div{border-bottom:1px solid #ddd;}
+#productMoreInfo div div{border:none;}
+#productMoreInfo .info{padding:10px 17px;}
+#productMoreInfo .other-payment-method-content{padding:15px 17px;}
+
+#productMoreInfo div.flag{display:block;padding:5px 0;}
+#productMoreInfo div.flag p{position:static;margin:0 auto;bottom:auto;left:auto;}
+
+.maisInfos,
+.other-payment-method-content a,
+.ver-todos-comentarios a,
+#productExtendedWarranty .veja-mais-detalhes{padding-left:13px;background-position:-400px -120px;}
+
+#productMoreInfo .entrega-24hs-sp{padding:16px 0;background:url("/arquivos/entrega-garantida-sp.png") center center no-repeat;}
+
+#productSkuLinks{float:right;clear:right;margin-top:5px;width:270px;}
+#productSkuLinks p{float:left;}
+#productSkuLinks a{float:left;margin:13px 0 0 10px;height:17px;text-indent:-999em;}
+#productSkuLinks .rss a{width:117px;background-position:-150px -30px;}
+#productSkuLinks .referAFriend a{width:121px;background-position:-150px 0;}
+
+#productHighlight p{padding:0;margin:6px auto;position:relative;bottom:auto;top:auto;}
+
+/* ---------------------------------------- */
+/* calculo do frete                         */
+/* ---------------------------------------- */
+#productShipping a{background-position:-400px -60px;display:block;height:18px;padding-left:35px;}
+
+/*#shipping{position:relative;float:none;clear:both;width:470px;color:#4e4e4e;}
+#shipping h3{background:url("/arquivos/pop-half-titulo.png") no-repeat;color:#fff;padding-left:10px;margin:0;text-transform:uppercase;}
+#shipping #TB_closeWindowButton{color:#fff;background:url("/arquivos/ico-fechar-pop.gif") right center no-repeat;position:absolute;right:12px;top:5px;padding-right:15px;}
+#shipping .content{background:url("/arquivos/pop-half-conteudo.png") repeat-y;}
+#shipping .content fieldset{padding:10px 10px 20px;}
+#shipping .footer{background:url("/arquivos/pop-half-bottom.png") no-repeat;height:10px;}
+#shipping #btnFreteSimulacao{width:70px;height:17px;cursor:pointer;background:url("/arquivos/btn-calcular.png") no-repeat;border:0;text-indent:-999em;}*/
+
+/* ---------------------------------------- */
+/* adicionar produto a lista                */
+/* ---------------------------------------- */
+#productAddToList{float:right;clear:right;padding:3px 35px 0 0;}
+#productAddToList h4{text-transform:uppercase;margin-bottom:10px;font-size:11px;}
+#productAddToList a{padding:0 13px 0 15px;}
+#productAddToList .outras-listas{background-position:-400px -30px;}
+
+/* ---------------------------------------- */
+/* indice                                   */
+/* ---------------------------------------- */
+#productPageIndex{width:312px;float:left;clear:left;margin-bottom:20px;}
+#productPageIndex ul{width:200px;padding-top:10px;margin-left:35px;}
+#productPageIndex a{background-position:-400px -180px;display:block;margin-bottom:5px;padding-left:10px;}
+
+/* ---------------------------------------- */
+/* compre junto                             */
+/* ---------------------------------------- */
+#productBuyTogether{margin-bottom:15px;overflow:auto;clear:both;}
+#productBuyTogether h3{font-size:11px;}
+#productBuyTogether li{width:47%;margin-right:3%;float:left;}
+#productBuyTogether .preco{color:#0052d6;padding:15px 0;clear:both;}
+#productBuyTogether #lnkComprar{float:left;background-position:-150px -210px;position:relative;height:20px;width:141px;text-indent:-999em;margin:35px 0 0 10px;}
+#productBuyTogether #lnkVejaMais{background-position:-400px -120px;padding-left:13px;}
+#productBuyTogether em{float:left;background-position:-400px -210px;position:relative;height:24px;width:24px;text-indent:-999em;margin:30px 10px 0;}
+#productBuyTogether .combinacao-produtos a{float:left;}
+
+/* ---------------------------------------- */
+/* garantia estendida                       */
+/* ---------------------------------------- */
+.box-proteja-seu-produto{background:url("/arquivos/bg-titulo-proteja-cartao.png") no-repeat;float:right;position:relative;width:265px;margin:22px 3px 0 0;}
+#productExtendedWarranty .selo-garantia{background:url("/arquivos/ico-garantia-estendida.png");display:block;height:65px;width:67px;position:absolute;left:-9px;top:-14px;text-indent:-999em;z-index:99;}
+#productExtendedWarranty h3{color:#fff;font-size:11px;font-weight:700;margin:0;padding:8px 0 8px 68px;text-transform:uppercase;}
+#productExtendedWarranty .cont-proteja-produto{background:url("/arquivos/bg-box-proteja-produto.gif") 0 bottom no-repeat;padding-top:20px;}
+#productExtendedWarranty .cont-proteja-produto p{border-bottom:1px solid #cfcfcf;padding:16px 12px;position:relative;}
+#productExtendedWarranty .cont-proteja-produto strong{color:#0052d6;}
+#productExtendedWarranty .btn-comprar-garantia{background:url("/arquivos/btn-comprar-garantia-estendida.png");display:block;height:40px;width:99px;position:absolute;right:5px;top:30px;text-indent:-999em;z-index:99;}
+#productExtendedWarranty .veja-mais-detalhes{display:block;left:65px;top:36px;position:absolute;}
+
+/* ---------------------------------------- */
+/* produtos similares, sugestoes walmart    */
+/* ---------------------------------------- */
+#productRelatedContent{float:left;clear:none;width:670px;position:relative;}
+#productRelatedContent h2{position:relative;}
+#productRelatedContent h3{margin:0 0 10px;}
+#productRelatedContent p.departamento{display:block;}
+
+#productRelatedContent .wmSlider .container{width:615px !important;}
+#productRelatedContent .wmSlider li{padding:0;margin-right:10px;width:195px;}
+#productRelatedContent .wmSlider .prev,
+#productRelatedContent .wmSlider .next{height:162px;top:0;}
+#productRelatedContent .wmSlider .prev{background-position:-120px 0;}
+#productRelatedContent .wmSlider .next{right:0;background-position:-150px 0;}
+#productRelatedContent .wmSlider .prev:hover{background-position:-180px 0;}
+#productRelatedContent .wmSlider .next:hover{background-position:-210px 0;}
+#productRelatedContent .wmSlider a{top:0;}
+#productRelatedContent .wmSlider a img{margin-left:10px;}
+#productRelatedContent .wmSlider .preco a{padding-top:0;}
+#productRelatedContent .wmSlider .quick-view{display:block;position:relative;margin-right:20px;}
+
+#productSugestion a{float:left;position:relative;top:auto;}
+#productSugestion img{margin:0 14px;}
+#productSugestion .texto-parcela{color:#0052d6;font-size:12px;font-weight:700;margin-bottom:6px;padding-left:17px;width:261px;}
+#productSugestion .texto-parcela strong{font-size:18px;}
+#productSugestion li{padding:0;width:420px;}
+#productSugestion h3{width:290px;}
+#productSugestion h3,
+#productSugestion .rating-produto,
+#productSugestion .preco{float:left;}
+#productSugestion .rating-produto{margin:0 140px 0 0;}
+#productSugestion .bt-comprar a{display:block;width:241px;height:20px;background-position:-150px -270px;text-indent:-999em;margin-top:30px;}
+#productSugestion .quick-view{display:block;margin-left:50px;}
+
+/* ---------------------------------------- */
+/* acessorios                               */
+/* ---------------------------------------- */
+#productAcessories fieldset{float:right;width:110px;margin-top:5px;}
+#productAcessories fieldset input{margin-right:5px;float:left;}
+
+.box-preco-atualizado{width:460px;margin:10px auto 0;height:43px;background:url("/arquivos/bg-box-preco-atualizado.gif") right 0 no-repeat;}
+.box-preco-atualizado dl{background:url("/arquivos/borda-box-preco-atualizado-dir.png") no-repeat;float:left;padding:14px 0 13px 10px;}
+.box-preco-atualizado dt{display:inline;margin-right:5px;}
+.box-preco-atualizado dd{display:inline;color:#0052d6;font-size:14px;font-weight:700;}
+.box-preco-atualizado .btn-batch-buy{width:237px;height:20px;text-indent:-999em;float:right;margin:11px 8px;background-position:-150px -300px;}
+.box-preco-atualizado .btn-batch-buy:hover{background-position:-150px -330px;}

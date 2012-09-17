@@ -1,0 +1,405 @@
+/* List Forms */
+.giftlistsearchul li,
+.giftlistul li{margin-top:5px;overflow:hidden;}
+
+.giftlistsearchul label,
+.giftlistul label,
+.giftlistsearchul span,
+.giftlistul span{float:left;margin-top:2px;width:140px;}
+
+.giftlistsearchul textarea,
+.giftlistul textarea{
+	height:100px;
+	width:300px;
+	font-size: 12px;
+}
+
+
+/* List Elements */
+.giftlist h2 {
+	font-weight: 700;
+	padding: 16px 0 4px;
+	font-size: 18px;
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x bottom center;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+/* List Management */
+.giftlist a{text-decoration:underline;}
+
+.giftlist-table{margin-top:20px;}
+.giftlist-table th,
+.giftlist-table td{padding:3px 10px;}
+
+.giftlist-table thead{background:#f5f5f5;}
+
+/* New List */
+.address{padding-bottom:50px;}
+.address-list-select {
+	margin: 15px 0;
+	float: left;
+	clear: both;
+}
+.address-list-select li {
+	float: left;
+	margin: 0 20px 15px 0;
+	padding: 10px;
+	border: solid 1px;
+	border-radius: 5px;
+}
+
+.address-list-select li input {
+	float: left;
+	margin: 0 5px 5px 0;
+}
+
+.address-list-select li address {
+	float: left;
+}
+
+.giftlistphotoview {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.giftlistphotoview img {
+	width: 350px;
+	height: auto;
+	border: solid 1px;
+	padding: 5px;
+}
+
+#giftlistremovephoto {
+	background: #3B326C;
+	border: none;
+	border-radius: 15px;
+	margin-left: 95px;
+	color: white;
+}
+
+/* Top menu */
+.abas{border-bottom:1px solid #195073;overflow:hidden;margin:10px 0 18px;padding-bottom:3px;}
+.abas li{float:left;font-size:15px;padding:3px 9px;}
+.abas a{display:block;}
+.abas .meu-perfil,
+.abas .meus-pedidos{background:url("/arquivos/tabs-bg.gif") right 5px no-repeat;}
+
+/* Side Menu */
+#sideBar .linkList a{font-size:11px;}
+
+
+
+.lstas .menu-departamento, .listas .menu-departamento {
+	display: none;
+}
+
+.lstas #content, .listas #content{
+	width: 938px;
+	float: right;
+	border: solid 1px #ECECEC;
+	background: white;
+	color: #5A5283;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-right: 2px;
+}
+
+#content .giftlist {
+	position: relative;
+	padding-bottom: 60px;
+}
+
+.listas #content h3 {
+    font-weight: 700;
+    padding: 16px 0 4px;
+    font-size: 18px;
+    background: url("/arquivos/bg_sep_dots_pink.png") repeat-x bottom center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.listas #content .data h3 {
+    font-weight: 700;
+    padding: 16px 0 4px;
+    font-size: 18px;
+    background: none;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+
+.listas #content .btnCriarLista,
+.listas #content .btnVerLista{
+    display:block;
+    background: #3B326C;
+    padding: 3px;
+    width: 100px;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    float:left;
+    text-align:center;
+    margin-right:10px;
+    margin-bottom:20px;
+}
+
+.listas #content a {
+
+}
+.lstas #content > h2, .listas #content > h2 {
+	position: absolute;
+	top: -54px;
+	color: white;
+	font-family: Myriad Web Pro, Myriad Pro, Arial, sans-serif;
+	font-size: 18px;
+}
+
+.giftlist-table {
+	width: 936px;
+}
+
+.giftlist-table thead th {
+	padding: 10px 5px;
+	text-align: center;
+}
+
+.giftlist-table thead th {
+	padding: 10px 5px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #463D72;
+}
+
+.giftlist-table tbody td {
+	text-align: center;
+	padding: 10px 5px;
+	border-bottom: dotted 1px whiteSmoke;
+}
+
+.giftlist-body-action a, .giftlist-body-action-sendfriend a, .giftlist-body-action-gerenciar a {
+	background: #F16787;
+	color: white;
+	font-size: 13px;
+	border-radius: 10px;
+	padding: 2px 11px;
+	text-decoration: none;
+}
+
+.giftlist-body-action-visualizar a{	
+	background: #5a5283;
+	color: white;
+	font-size: 13px;
+	border-radius: 10px;
+	padding: 2px 11px;
+	text-decoration: none;
+}
+
+.giftlist-action-create a {
+	width: 202px;
+	height: 41px;
+    background:url("/arquivos/btn_criarumaLista.jpg") no-repeat top center;
+	display: block;
+	text-indent: -9999px;
+}
+
+#giftlistsave {
+	width: 105px;
+	height: 41px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	text-indent: -9999px;
+	background: url("/arquivos/btn_salvar.png") no-repeat top center;
+}
+
+.giftlist-action {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#TB_overlay {
+	background: url("/arquivos/bg_overlay.png") repeat top center;
+}
+
+#TB_window {
+	background: white;
+	width: 300px !important;
+	margin-left: -159px !important;
+	border-radius: 10px;
+}
+
+#TB_ajaxContent {
+	width: 270px !important;
+}
+
+input#btnAdicionarAmigos {
+	display: none;
+}
+
+#div-title > p {
+	color: #463D72;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#TB_window label {
+	width: 90px;
+	float: left;
+	text-align: right;
+	margin-right: 5px;
+	padding: 6px 0 0 0;
+}
+
+#TB_window input {
+	padding: 4px;
+	margin: 3px;
+	width: 157px;
+}
+
+#TB_window #txtMensagem {
+	width: 260px;
+	height: 60px;
+}
+
+#TB_window #btnCancelar {
+	width: auto;
+	border: none;
+	background: #F16787;
+	color: white;
+	font-size: 13px;
+	border-radius: 10px;
+}
+
+#TB_window #btnEnviar {
+	width: auto;
+	border: none;
+	background: #5A5283;
+	color: white;
+	font-size: 13px;
+	border-radius: 10px;
+}
+
+.giftlistdetails {
+	margin-bottom: 20px;
+}
+
+.giftlistdetails li {
+	margin: 2px 0;
+}
+
+.giftlistdetails span.titulo {
+	font-weight: bold;
+}
+
+.giftlistsku-action {
+	margin-bottom: 20px;
+}
+
+.giftlistsku-action li {
+	display: inline;
+	margin-right: 15px;
+}
+
+.giftlistsku-action li a {
+	background: #5A5283;
+	color: white;
+	font-size: 13px;
+	border-radius: 10px;
+	padding: 2px 11px;
+	text-decoration: none;
+}
+
+.giftlistsku-action li.giftlistsku-action-exit a {
+	background: #F16787;
+}
+
+.giftlistul input {
+	padding: 4px;
+	font-size: 12px;
+	width: 171px;
+}
+
+.giftlistul #giftlisttype {
+	padding: 4px;
+	width: 180px;
+	font-size: 12px;
+}
+
+#giftlistisactive {
+	width: 13px;
+}
+
+#giftlistupload {
+	width:auto;
+	border:none;
+	background: #5A5283;
+	color: white;
+	font-size: 13px;
+	border-radius: 10px;
+	padding: 2px 11px;
+	margin-left: 15px;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+#giftlistsearchfind {
+	background: #3B326C;
+	padding: 3px;
+	width: 100px;
+	border-radius: 15px;
+	color: white;
+	font-size: 12px;
+}
+
+.giftlist legend {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0;
+	float: left;
+	clear: both;
+}
+
+.giftlistsku-table {
+	margin: 20px 0;
+	width: 936px;
+	text-align: center;
+}
+
+.giftlistsku-table thead {
+	background: whiteSmoke;
+}
+
+.giftlistsku-table thead th {
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.giftlistsku-table tbody tr {
+	border-bottom: dotted 1px whiteSmoke;
+}
+
+.giftlistsku-table tbody tr td {
+	padding: 5px;
+}
+
+.giftlist-remove-sku {
+	float: right;
+}
+
+.giftlist-remove-sku #giftlistremovesku {
+	padding: 3px;
+	width: 100px;
+	font-size: 12px;
+	border: none;
+	background: #3B326C;
+	color: white;
+	border-radius: 15px;
+}

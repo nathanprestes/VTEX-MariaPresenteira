@@ -1,0 +1,1236 @@
+/* versao 1.0 */
+/* reset */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+body {
+min-width:1006px;
+font:62.5% Arial, Verdana, Helvetica, sans-serif;
+line-height:1;
+color:#74741F;
+background:#FBFBEF;
+}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';content:none;}
+:focus {outline:0;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse;border-spacing:0;}
+a {text-decoration:none;}
+a:hover {color:#666;}
+.mainWrapper {
+padding-top:18px;
+margin:0 auto;
+width:1002px;
+background:#FFF;
+overflow:hidden;
+}
+/* fim reset */
+
+/* elementos HTML ocultos */
+hr,
+.cartInfoWrapper .title,
+fieldset.busca legend,
+.amount-products,
+.amount-kits,
+.menu-departamento .lista-completa,
+.resultado-busca-tempo,
+.menu-user li.faleconosco {display:none;}
+/* fim elementos HTML ocultos */
+
+input, select {padding:0 1px 0 5px;height:19px;font-size:1.2em;color:#546930;background:#FBFBEF;border:1px solid #CCCD4A;}
+
+input.btn-buscar,
+input.fisubmit:hover {cursor:pointer;}
+
+.ui-autocomplete {
+width:329px !important;
+background:#FFF;
+border:1px solid #FEF7FB;
+border-top:none;
+border-bottom:none;
+position:relative;
+z-index:666 !important;
+}
+.ui-autocomplete li {
+border-bottom:1px solid #FEF7FB;
+}
+.ui-menu-item a {line-height:27px;}
+.ui-menu-item img {float:left;}
+
+.load {
+width:31px;
+height:31px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=loading.gif) no-repeat;
+text-indent:-999em;
+position:absolute;
+top:40%;
+left:50%;
+z-index:40;
+}
+
+.bread-crumb {
+padding-left:26px;
+height:20px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=icon-breadcrumb.gif) no-repeat #FBFBEF;
+}
+body.categoria .bread-crumb {
+margin:0 1em 1em;
+}
+.bread-crumb * {color:#818123;}
+.bread-crumb ul li {
+padding-right:10px;
+margin-right:3px;
+float:left;
+line-height:20px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=arrow-right-purple.gif) no-repeat right 8px;
+}
+.bread-crumb ul li.last {
+background:none;
+}
+.breadcrumb ul li a {}
+.bread-crumb ul li a:hover {
+text-decoration:underline;
+}
+
+
+/* estrutura principal que envolve as colunas laterais e o conteudo central */
+.area-3 {
+margin-bottom:25px;
+width:100%;
+float:left;
+overflow:hidden;
+}
+/* fim estrutura principal que envolve as colunas laterais e o conteudo central */
+
+/* estrutura que envolve o menu navegacao lateral */
+.area-3-1 {
+width:200px;
+float:left;
+}
+/* fim estrutura que envolve o menu navegacao lateral */
+
+/* sidebar coluna lateral */
+/* fim sidebar coluna lateral */
+
+
+/* conteudo central */
+.area-3-2 {
+margin:0 0 0 210px;
+width:782px;
+_overflow:hidden;
+}
+/* fim conteudo central */
+
+/* header */
+div.header,
+div.header-steps {width:100%;}
+.header .wrapper {padding-top:9px;margin:0 auto;width:1002px;height:32px;position:relative;background:#FFF;}
+
+h1 {margin:0 0 2px 22px;width:233px;height:30px;float:left;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=logo.gif) no-repeat;text-indent:-999em;}
+h1 a {width:233px;height:30px;display:block;}
+
+.bannerHeader {padding-top:5px;margin-left:60px;width:350px;float:left;font-size:1.1em;color:#77134D;line-height:1.1em;}
+.bannerHeader a {color:#77134D;text-decoration:underline;}
+
+.menu-user {position:absolute;top:20px;right:5px;}
+.menu-user li {margin-right:8px;float:left;}
+.menu-user a {padding-right:8px;border-right:1px solid #878337;}
+.menu-user a:hover {text-decoration:underline;}
+.menu-user a,
+.menu-user li.televendas {margin:0;display:block;font-family:Verdana;font-size:1em;color:#878337;line-height:10px;}
+/* fim header */
+
+/* topbar */
+.topbar {margin:0 auto;width:1002px;height:80px;}
+.topbar .wrapper {width:100%;height:45px;float:left;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bg-topbar.jpg) repeat-x #F1EEB5;
+border-bottom-right-radius:10px; 	
+border-bottom-left-radius:10px; 	
+-moz-border-radius-bottomright:10px;
+-moz-border-radius-bottomleft:10px;
+-webkit-border-bottom-right-radius:10px;
+-webkit-border-bottom-left-radius:10px;
+position:relative;
+top:-33px;
+}
+
+.box-banner{margin:0 auto;width:1002px;}
+
+/* saudacao */
+.welcomeWrapper {padding:9px 0 0 15px;width:280px;float:left;font-family:Verdana;font-size:1em;color:#7C080F;line-height:1.2em;}
+.welcomeWrapper em {display:block;font-style:normal;}
+.welcomeWrapper a {padding-left:4px;color:#7C080F;text-decoration:underline;}
+
+/* busca */
+.searchWrapper {margin-top:6px;float:left;}
+.bottomSearchWrapper,
+fieldset.busca label,
+fieldset.busca select {display:none;}
+fieldset.busca {padding:0 4px;width:369px;height:31px;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bg-busca.gif) no-repeat;}
+fieldset.busca .fulltext-search-box {margin-top:4px;width:330px;float:left;font-family:Verdana;font-size:1.4em;color:#878337;border:none;background:#FFF;}
+fieldset.busca .btn-buscar {margin-top:3px;width:32px;height:25px;float:left;line-height:40px;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bt-buscar.gif) no-repeat;border:none;text-indent:-999em;}
+
+/* carrinho header */
+.amount-items-in-cart {padding-left:30px;margin:6px 0 0 50px;width:240px;height:29px;float:left;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=icon-carrinho.gif) no-repeat;}
+.cart-info li {font-size:1.1em;color:#99182C;line-height:16px;position:relative;}
+.cart-info a {color:#99182C;}
+.cart-info strong {padding:0 20px;padding-left:20px;display:block;float:left;position:relative;}
+.cart-info em {padding-right:4px;font-weight:bold;font-style:normal;_margin: -7px 0px 0px -188px;}
+.cart-info .text,
+.cart-info .char {color:#52672E;text-decoration:underline;}
+.cart-info .char {text-decoration:none;}
+
+/* menu */
+.menu {width:100%;height:32px;float:left;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bg-menu.jpg) #BFBB6D;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-webkit-border-top-left-radius:10px;
+-webkit-border-top-right-radius:10px;
+}
+.menu li {float:left;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=menu-sep.gif) no-repeat center right;}
+.menu li.menu-venda-para-empresas {background:none;}
+.menu a {padding:0 17px;display:block;font-family:Verdana;font-size:1.3em;font-weight:bold;color:#FFF;line-height:32px;}
+.menu a:hover {color:#99182C;}
+/* end topbar */
+
+/* menu departamento */
+.menu-departamento {
+font-size:1.1em;
+color:#333;
+}
+body.categoria .menu-departamento {}
+.menu-departamento a {
+display:block;
+color:#333;
+text-decoration:underline;
+}
+.menu-departamento .even a {}
+.menu-departamento h3 {
+padding:0 5px;
+line-height:28px;
+border-left:6px solid #99182C;
+background:#EDEAE6;
+}
+.menu-departamento h3.even {}
+.menu-departamento h3 a {
+padding:0 5px;
+}
+.menu-departamento ul {
+margin-bottom:4px;
+}
+.menu-departamento li {
+padding:3px 3px 3px 22px;
+line-height:12px;
+}
+.menu-departamento h4 {
+padding:3px 3px 3px 22px;
+line-height:16px;
+}
+body.categoria .menu-departamento h4,
+.menu-departamento h5 {
+padding:4px 5px 4px 10px;
+font-size:1.1em;
+line-height:1em;
+color:#333;
+background:#DBD5D0;
+}
+body.categoria .menu-departamento h4 a {}
+.menu-departamento h5.even {}
+body.departamento .menu-departamento ul,
+body.categoria .menu-departamento ul {
+margin-top:1px;
+}
+body.categoria .menu-departamento h4 + ul {
+margin-top:0;
+border:none;
+}
+.menu-departamento .ver-filtros {
+padding:3px 3px 3px 22px;
+display:block;
+}
+.menu-departamento .bt-refinar {
+margin:0 0 4px 130px;
+width:65px;
+height:24px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bt-refinar.gif) no-repeat;
+text-indent:-999em;
+}
+
+.menu-navegue {
+overflow:hidden;
+background:#FFF;
+}
+.menu-navegue a {
+margin-left:5px;
+width:90px;
+float:left;
+display:block;
+font-size:1.1em;
+font-weight:bold;
+text-align:center;
+background:#DBD5D0;
+-webkit-border-top-right-radius:10px;
+-webkit-border-top-left-radius:10px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px; 
+}
+.tab-navegue,
+.tab-navegue-ativo {
+padding:9px 0 ;
+}
+.tab-refinar,
+.tab-refinar-ativo {
+padding:3px 0;
+}
+.tab-navegue-ativo,
+.tab-refinar-ativo {
+background:#EDEAE6 !important;
+}
+.refino-marca label,
+.refino label {
+display:block;
+line-height:25px;
+border-bottom:1px solid #FEF7FB;
+}
+.refino-marca input,
+.refino input {
+float:left;
+}
+/* end menu departamento */
+
+
+
+.buscas-diaWrapper {
+margin-bottom:20px;
+clear:both;
+text-align:center;
+}
+.buscas-dia {
+text-align:left;
+}
+.buscas-dia h3 {
+padding:0 0 5px;
+font-size:1.6em;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=tit-prateleira-border.jpg) no-repeat left bottom;
+}
+body.home .buscas-dia {
+}
+body.home .buscas-dia h3 {
+font-size:1.6em;
+}
+.buscas-dia p {
+padding:10px 0 0 10px;
+}
+.buscas-dia a {
+margin-right:8px;
+font-size:1.3em;
+color:#99182C;
+line-height:2em;
+}
+.buscas-dia a.busca15 {font-size:1.5em;}
+.buscas-dia a.busca16 {font-size:1.6em;}
+.buscas-dia a.busca18 {font-size:1.8em;}
+
+.historico-nav {
+padding:1em 1em 1.5em 1em;
+clear:both;
+background:#EEEEC1;
+overflow:hidden;
+position:relative;
+}
+.historico-nav h3 {
+font-size:1.2em;
+color:#848424;
+}
+.historico-nav .clean {
+position:absolute;
+top:1em;
+right:1em;
+}
+.historico-nav .clean a {text-decoration:underline;}
+.historico-nav .wrapper div {
+padding:10px 0 0 30px;
+width:380px;
+float:left;
+font-size:1.1em;
+}
+.historico-nav .wrapper div.last-searches {
+c lear:none !important;
+p adding-left:0 !important;
+w idth:350px !important;
+}
+.historico-nav .no-history {
+padding:15px 40px;
+width:100% !important;
+line-height:14px;
+}
+.historico-nav  h4 {color:#99182C;}
+.historico-nav  ul {
+padding-left:12px;
+margin-top:10px;
+}
+.historico-nav  ul li {
+list-style:disc inside none;
+color:#99182C;
+}
+.historico-nav a {color:#848424;}
+.historico-nav a:hover {text-decoration:underline;}
+
+.footer {
+margin-bottom:2em;
+background:#FBFBEF;
+text-align:center;
+}
+.footer .wrapper {
+padding:4px 0 17px 0;
+margin:4px 0;
+border:1px solid #E7E7A7;
+}
+.footer p {
+margin-bottom:20px;
+}
+.selos {
+margin:0 auto;
+width:860px;
+overflow:hidden;
+}
+.formaPagamento {
+margin-top:5px;
+width:216px;
+height:63px;
+float:left;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=formas-pagamento.gif) no-repeat;
+text-indent:-999em;
+}
+.certificados {
+padding-left:22px;
+margin:5px 14px 0 9px;
+width:502px;
+height:62px;
+float:left;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bg-certificados.gif) no-repeat;
+}
+.certificados strong {
+line-height:60px;
+}
+.certificados strong,
+.certificados li {
+float:left;
+}
+.certificados ul {
+margin-top:20px;
+float:left;
+}
+.certisign {
+margin-left:30px;
+width:83px;
+height:32px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=certisign.gif) no-repeat;
+text-indent:-999em;
+}
+.blindado {display:none;
+margin-left:46px;
+width:117px;
+height:32px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=blindado.gif) no-repeat;
+text-indent:-999em;
+}
+.vtex {
+margin-left:25px;
+margin-top:6px;
+width:104px;
+height:21px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=vtex.gif) no-repeat;
+text-indent:-999em;
+}
+.vtex a {width:104px;height:21px;display:block;}
+.ebit {
+width:86px;
+height:74px;
+float:left;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=ebit.gif) no-repeat;
+text-indent:-999em;
+}
+.ebit a {
+width:86px;
+height:74px;
+display:block;
+}
+
+.wrapperLnkInst {
+height:30px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bg-lnk-inst.jpg) no-repeat;
+}
+.linksInstitucionais li {
+padding-right:8px;
+margin-right:8px;
+display:inline;
+line-height:30px;
+border-right:1px solid #848424;
+}
+.linksInstitucionais li.last {
+border:none;
+}
+.linksInstitucionais a {
+font-size:1.1em;
+color:#848424;
+}
+.linksInstitucionais a:hover {
+text-decoration:underline;
+}
+
+
+body.resultado-busca .prateleira,
+body.categoria .prateleira {
+padding-top:23px;
+}
+.prateleira h2 {
+padding:0 0 5px 0;
+margin-bottom:15px;
+font-size:1.6em;
+color:#5C7334;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=tit-prateleira-border.jpg) no-repeat left bottom;
+}
+.prateleira ul {
+margin-bottom:10px;
+width:100%;
+float:left;
+}
+.prateleira li {
+margin:0 10px 10px 0;
+width:188px;
+float:left;
+}
+.prateleira li.last {
+margin-right:0 !important;
+}
+.prateleira .wrapper {
+height:350px;
+border:1px solid #EEEEC1;
+}
+body.resultado-busca .prateleira .wrapper {height:310px;}
+.prateleira .wrapper:hover {
+border:1px solid #99182C;
+}
+.prateleira .dept {
+padding-right:1em;
+font-size:1.1em;
+font-weight:bold;
+line-height:22px;
+text-align:right;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bg-dept.gif) no-repeat left bottom;
+}
+.prateleira h3 a {
+margin:6px 10px;
+display:block;
+font-size:1.3em;
+font-weight:normal;
+color:#99182C;
+line-height:14px;
+}
+.prateleira .photo {
+text-align:center;
+}
+/*
+$product.DescriptionShort
+$product.Brand
+*/
+.prateleira .desc a,
+.prateleira .texto {
+margin:0 1em 1em 1em;
+display:block;
+font-size:1.1em;
+color:#576C31;
+}
+.prateleira .preco {
+margin:1em;
+line-height:1.6em;
+}
+.prateleira .preco a {
+font-size:1.2em;
+color:#666;
+}
+.prateleira .preco em {
+font-style:normal;
+}
+
+.wrapperAmountInCart {padding:0 0 5px 26px;height:24px;}
+.wrapperAmountInCart .amount-in-cart {padding-left:0;width:26px;text-align:center;}
+.wrapper-buy-button-asynchronous {margin:-21px 0 0 43px;}
+.resultado-busca .wrapper-buy-button-asynchronous {margin:-21px 0 0 25px;}
+.buy-button-asynchronous {margin:0 0 0 -36px;}
+.btn-add-buy-button-asynchronous {margin-left:4px;width:86px;height:23px;display:block;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bt-comprar-prateleira.gif) no-repeat;text-indent:-999em;}
+body.resultado-busca .wrapperAmountInCart {padding:0 0 5px 0;}
+body.resultado-busca .wrapperAmountInCart input {padding:0 1px !important;margin-left:4px;width:18px;text-align:center;}
+body.resultado-busca .buy-button-asynchronous {margin:2px 0 0 -15px;width:100%;text-align:center;}
+
+
+.esgotado {
+padding:1em;
+font-weight:bold;
+text-align:center;
+}
+.frete-gratis---sp-capital {
+margin-top:7px;
+width:100%;
+height:30px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=flag-frete-gratis-sp.png) no-repeat center top;
+text-indent:-999em;
+}
+.rating-produto {
+margin:5px 0 7px 10px;
+width:65px;
+height:11px;
+display:block;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=rating-stars.gif) no-repeat;
+text-indent:-999em;
+}
+
+body.home .prateleira img {
+width:144px;
+height:144px;
+}
+body.resultado-busca .prateleira img {
+width:110px;
+height:110px;
+}
+body.resultado-busca .prateleira li {
+margin:0 5px 20px 5px;
+width:120px;
+float:left;
+}
+body.resultado-busca .prateleira h3 a {
+margin:5px;
+display:block;
+font-size:1.1em;
+color:#99182C;
+line-height:12px;
+}
+body.resultado-busca .prateleira fieldset {display:none;
+text-align:center;
+}
+body.resultado-busca .prateleira fieldset input {
+margin-left:30px;
+float:left;
+}
+body.resultado-busca .prateleira fieldset label {
+float:left;
+font-size:1.1em;
+line-height:24px;
+}
+
+
+.busca-vazio {
+margin:2em;
+float:left;
+}
+.busca-vazio a {
+color:#99182C;
+text-decoration:underline;
+}
+.busca-vazio p {
+margin-bottom:10px;
+font-size:1.2em;
+color:#99182C;
+line-height:1.4em;
+}
+body.resultado-busca .main {
+padding:5px 0;
+}
+.main .sub {
+color:#99182C;
+width:100%;
+height:26px;
+}
+.resultado-busca-filtro fieldset {
+margin-right:3em;
+float:left;
+font-size:1.2em;
+line-height:25px;
+}
+.resultado-busca-filtro select {
+font-size:1em;
+border:1px solid #F2F2F2;
+}
+.resultado-busca-filtro p {display:none;
+font-size:1.3em;
+width:320px;
+float:right;
+line-height:24px;
+}
+.resultado-busca-filtro .btn-comparar {
+width:75px;
+height:24px;
+display:block;
+float:right;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bt-comparar.gif) no-repeat;
+text-indent:-999em;
+}
+
+.pager {
+padding:8px;
+width:762px;
+text-align:center;
+background:#FBFBEF;
+border:2px solid #CCCD4A;
+-webkit-border-radius:1em;
+-moz-border-radius:1em;
+overflow:hidden;
+}
+.pages li {
+margin-right:12px;
+font-size:1.1em;
+display:inline;
+color:#818123;
+}
+.pages a:hover {
+border-bottom:1px solid #99182C;
+}
+.previous {
+padding-left:17px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=arrow-double-left.gif) no-repeat left 5px;
+}
+.next {
+padding-right:17px;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=arrow-double-right.gif) no-repeat right 4px;
+}
+.page-number {
+font-size:1.3em !important;
+font-weight:bold;
+}
+.pgCurrent {
+padding:2px 4px;
+color:#FFF !important;
+background:#99182C;
+}
+
+
+.area-1 {border:1px solid #000;}
+.area-2 {border:1px solid #666;}
+.a rea-3 {border:1px solid #333;}
+.area-4 {
+b order:1px solid #06F;
+clear:both;
+}
+.area-5 {border:1px solid #C0F;}
+.a rea-6 {border:1px solid #3C0;}
+
+
+
+
+
+
+
+.produto .mainWrapper {
+padding:20px 10px;
+width:982px;
+}
+.productNameWrapper {
+margin-bottom:15px;
+}
+.productName {font-size:3.3em;}
+.categoryName a {padding-left:4px;font-size:1.4em;color:#A7C076;line-height:20px;}
+.productImage {
+margin-bottom:2em;
+float:left;
+}
+#include {
+width:433px;
+text-align:center;
+border:1px solid #CCCD4A;
+-webkit-border-radius:6px;
+-moz-border-radius:6px;
+}
+#image {
+margin:10px auto 0 auto;
+width:260px;
+text-align:center;
+}
+.thumbs {display:none;}
+.productInfo{
+margin:0 2em 0 10px;
+width:495px;
+float:left;
+}
+.priceWrapper,
+.productMoreInfo {
+padding:10px 20px;
+border:1px solid #CCCD4A;
+-webkit-border-radius:6px;
+-moz-border-radius:6px;
+}
+.priceWrapper {
+margin-bottom:2em;
+min-height:80px;
+position:relative;
+}
+.buy-button {
+width:201px;
+height:58px;
+display:block;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bt-comprar.jpg) no-repeat;
+text-indent:-999em;
+position:absolute;
+top:20px;
+right:20px;
+}
+.topic {margin:0 10px 10px 0;float:left;}
+.topic .specification {font-size:1.1em;font-weight:bold;}
+
+.productPayment {clear:both;}
+.priceWrapper .preco-a-vista,
+.other-payment-method-content {
+font-size:1.1em;
+line-height:1.2em;
+}
+.other-payment-method-content a {
+color:#74741F;
+text-decoration:underline;
+}
+.priceWrapper em {
+padding-bottom:6px;
+display:block;
+font-style:normal;
+}
+.priceWrapper .valor-dividido,
+.priceWrapper .valor-de {font-size:1.2em;}
+.priceWrapper .valor-por {font-size:2em;}
+.priceWrapper .economia-de,
+.other-payment-method-content li {font-size:1.2em;font-weight:bold;line-height:1.6em;color:#75134E;}
+
+
+.notifyme h3 {font-size:1.3em;color:#99182C;}
+.notifyme p {padding:10px 0;font-size:1.1em;line-height:1.1em;}
+.notifyme input {margin-right:5px;width:180px;float:left;}
+.notifyme-button-ok {
+padding:2px 4px 8px 4px;
+width:40px !important;
+height:22px;
+line-height:40px;
+font-size:1.1em;
+font-weight:bold;
+display:block;
+color:#FFF;
+text-align:center;
+text-transform:uppercase;
+background:#38192E; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#823B6C', endColorstr='#38192E'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#823B6C), to(#38192E)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #823B6C,  #38192E); /* for firefox 3.6+ */
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+}
+/*temp*/
+.notifyme br {display:none;}
+
+
+#deliverytime {font-size:1.1em;line-height:14px;}
+#deliverytime .txt-availability {font-weight:bold;}
+#deliverytime p strong {margin-bottom:5px;display:block;font-size:13px;color:#99182C;}
+body.produto .flag {background-position:0 0;}
+
+.productDescription,
+.productShortDescription,
+.productSpecs {
+margin-bottom:2em;
+clear:both;
+}
+.productDescription{font-size:1.2em;margin-top:2em;float:left;width:100%;}
+
+.productSpecs h4 {
+padding-bottom:5px;
+margin:2em 0 1em 0;
+font-size:1.4em;
+color:#861559;
+border-bottom:1px solid #861559;
+}
+.productSpecs table {
+width:100%;
+}
+.productSpecs tr.even {
+background:#FBFBEF;
+}
+.productSpecs th {
+width:160px;
+text-align:left;
+}
+.productSpecs th,
+.productSpecs td {
+padding:4px;
+font-size:1.1em;
+line-height:14px;
+border-bottom:1px solid #CCCD4A;
+}
+
+
+
+
+
+
+
+/* rating avaliacao do cliente */
+#resenha {
+clear:both;
+}
+div.opiniao-usuario {
+padding-left:2em;
+}
+div.opiniao-usuario h4 {
+padding-left:2em;
+margin-left:-2em;
+}
+div.opiniao-usuario .avaliacao {
+padding:1em 0;
+width:69%;
+float:left;
+}
+div.opiniao-usuario .avalie-produto {
+padding:1em 0;
+width:30%;
+float:right;
+}
+div.opiniao-usuario ul.opt {
+clear:both;
+}
+div.opiniao-usuario ul.resenhas {
+margin:1em 0 2em;
+clear:both;
+overflow:hidden;
+}
+ul.resenhas, 
+ul.resenhas a {}
+ul.resenhas li {
+clear:both;
+}
+ul.resenhas ul.bts {
+overflow:hidden;
+}
+ul.resenhas ul.bts li {
+margin:0.5em 1em 0 0;
+float:left;
+clear:none;
+overflow:hidden;
+}
+ul.resenhas > li {
+margin:1em 0 2em;
+}
+ul.resenhas p.dados {}
+ul.resenhas p.dados strong {
+font-size:1.2em;
+}
+ul.resenhas p.dados span {}
+ul.resenhas p.dados span span {}
+ul.resenhas blockquote.op-texto {
+margin:0.5em 0 1em 1em;
+font-size:1.2em;
+background-color:#FEFEFE;
+}
+ul.resenhas li.considera-util {}
+ul.resenhas li.opiniao-ajudou {
+margin-top:0.5em;
+}
+ul.resenhas li.opiniao-ajudou > span {}
+div.opiniao-usuario {}
+.rating-demonstrativo,
+ul.resenhas .rating,
+body.sku .rating-wrapper .rating,
+.prateleira .rating {
+width:115px;
+height:20px;
+display:block;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=rating-stars.gif) no-repeat left top transparent;
+}
+ul.resenhas .rating {
+margin-top:0.6em;
+height:10px!important;
+text-indent:-999em;
+}
+.prateleira .rating {
+height:11px;
+margin:0 0 0 3px;
+text-indent:-999em;
+width:65px;
+}
+body.sku .rating-wrapper .rating {height:12px;text-indent:-999em;margin:-12px 0 0 112px;}
+
+/* avaliacao estrelas */
+.avaliacao0 {background-position:0 0;}
+.avaliacao5 {background-position:0 -11px;}
+.avaliacao10 {background-position:0 -22px;}
+.avaliacao15 {background-position:0 -33px;}
+.avaliacao20 {background-position:0 -44px;}
+.avaliacao25 {background-position:0 -55px;}
+.avaliacao30 {background-position:0 -66px;}
+.avaliacao35 {background-position:0 -77px;}
+.avaliacao40 {background-position:0 -88px;}
+.avaliacao45 {background-position:0 -99px;}
+.avaliacao50 {background-position:0 -110px;}
+
+div.user-review .avaliacao0 {background-position:0 0;}
+div.user-review .avaliacao5 {background-position:0 -162px;}
+div.user-review .avaliacao10 {background-position:0 -162px;}
+div.user-review .avaliacao15 {background-position:0 -202px;}
+div.user-review .avaliacao20 {background-position:0 -202px;}
+div.user-review .avaliacao25 {background-position:0 -242px;}
+div.user-review .avaliacao30 {background-position:0 -242px;}
+div.user-review .avaliacao35 {background-position:0 -202px;}
+div.user-review .avaliacao40 {background-position:0 -282px;}
+div.user-review .avaliacao45 {background-position:0 -282px;}
+div.user-review .avaliacao50 {background-position:0 -322px;}
+
+.a0 {background-position:0 0px!important;}
+.a5 {background-position:0 -90px!important;}
+.a10 {background-position:0 -110px!important;}
+.a15 {background-position:0 -90px!important;}
+.a20 {background-position:0 -110px!important;}
+.a25 {background-position:0 -90px!important;}
+.a30 {background-position:0 -110px!important;}
+.a35 {background-position:0 -90px!important;}
+.a40 {background-position:0 -110px!important;}
+.a45 {background-position:0 -90px!important;}
+.a50 {background-position:0 -110px!important;}
+/* fim avaliacao estrelas */
+
+p.media {
+overflow:hidden;
+}
+p.media span {
+float:left;
+display:block;
+font-size:1.2em;
+line-height:2.2em;
+font-weight:bold;
+}
+p.media em {
+margin-top:2px;
+float:left;
+}
+p.media em strong {
+float:left;
+display:block;
+}
+p.media em span {
+float:left;
+font-size:1em;
+font-weight:normal;
+font-style:normal;
+margin-left:1em;
+}
+p.media strong {
+float:left;
+}
+div.avaliacao .rating {
+clear:both;
+}
+#product div.avalie-produto h5 {
+margin-bottom:0.5em;
+display:block;
+}
+p.rating-avalie {
+margin-top:5px;
+overflow:hidden;
+}
+p.rating-avalie span.ratingStar {
+margin-right:5px;
+width:23px;
+height:20px;
+float:left;
+display:block;
+text-indent:-1999px;
+overflow:hidden;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=rating-stars.gif) no-repeat 0 -121px transparent;
+}
+p.rating-avalie span.emptyRatingStar {
+background-position:0 -121px;
+}
+p.rating-avalie span.filledRatingStar,
+p.rating-avalie span.savedRatingStar {
+background-position:0 -161px !important;
+}
+
+#opcoes-avalie {
+margin:1em 0 0;
+}
+#opcoes-avalie p strong {
+margin-bottom:0.5em;
+display:block;
+}
+#opcoes-avalie input {
+margin-bottom:10px;
+height:18px;
+}
+#opcoes-avalie label {
+display:block;
+margin-left:25px;
+margin-top:-25px;
+}
+
+div.avaliacao ul.rating {
+margin:1em 0 1em;
+float:left;
+overflow:hidden;
+}
+div.avaliacao .avalie-produto {padding-left:300px;float:left;}
+div.avaliacao ul.rating li * {
+float:left;
+display:block;
+}
+div.avaliacao ul.rating li {
+margin:0 0 5px 0;
+clear:both;
+overflow:hidden;
+}
+div.avaliacao em.voteRatingStar {}
+div.avaliacao .rating span {line-height:20px;}
+div.avaliacao span.voteRatingBar {
+margin:0 2em 0 1.5em;
+width:250px;
+height:20px;
+background:#FBFBEF;
+border:1px solid #CCCD4A;
+}
+div.avaliacao span.voteRatingBar span {
+height:20px;
+background:#99182C;
+}
+div.avaliacao ul.rating strong.rating {}
+#ulPubliqueResenha {
+clear:both;
+}
+div.opiniao-usuario ul.links-resenha-usuario li,
+#ulPubliqueResenha li {
+display:block;
+float:left;
+letter-spacing:0;
+margin-right:3em;
+}
+.links-resenha-usuario a,
+ul.opt li a,
+#ulPubliqueResenha li a {
+padding:0 0 0 1em;
+font-size:1.1em;
+font-weight:bold;
+color:#74741F;
+text-decoration:underline;
+}
+/* fim rating avaliacao do cliente */
+
+/* compre junto */
+.buy-together-content {
+margin:10px 0;
+clear:both;
+width:100% !important;
+}
+#resenha h4,
+.buy-together-content h4 {
+border-bottom:1px solid #861559;
+color:#861559;
+font-size:1.4em;
+margin:2em 0 1em;
+padding-bottom:5px;
+}
+.buy-together-content table {
+width:100% !important;
+text-align:center;
+}
+.buy-together-content tr {
+padding-bottom:20px;
+margin:10px;
+width:99% !important;
+float:left;
+border-bottom:1px solid #861559;
+}
+.buy-together-content td {
+padding:0 5px;
+width:50px;
+vertical-align:middle;
+}
+.buy-together-content td.itemA,
+.buy-together-content td.itemB,
+.buy-together-content td.buy {width:280px;}
+.buy-together-content td.plus,
+.buy-together-content td.equal {font-size:3em;}
+.buy-together-content h3 a {
+margin:6px 10px;
+display:block;
+font-size:1.3em;
+font-weight:normal;
+line-height:16px;
+color:#99182C;
+}
+.buy-together-content .comprar-junto a {
+margin:10px auto;
+width:201px;
+height:58px;
+display:block;
+text-indent:-999em;
+background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=bt-comprar.jpg) no-repeat green;
+}
+.buy-together-content .more a {
+display:block;
+font-size:1.1em;
+font-weight:bold;
+color:#74741F;
+text-decoration:underline;
+}
+.buy-together-content td.buy {font-size:1.2em;line-height:16px;}
+.buy-together-content td.buy strong {font-size:1.2em;}
+/* fim compre junto */
+
+
+/* banner platinum */
+#bannerPlatinum {width:100%;height:71px;text-align:center;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=banner-platinum-bg.png) repeat-x;}
+#bannerPlatinum p {font-size:1.1em;font-weight:bold;color:#FFF;line-height:22px;}
+#bannerPlatinum span {margin:6px auto 0 auto;width:84px;height:35px;display:block;background:url(http://webstore.vazia.vtexlab.com.br:81/Control/ArquivoExibir.aspx?NomeArquivo=banner-platinum.gif) no-repeat;text-indent:-999em;}
+
+
+
+a#link_empresa{
+	color:#FFFFFF;
+display:inline;
+font-family:Verdana;
+font-size:1.3em;
+font-weight:bold;
+left:695px;
+line-height:32px;
+padding:0 17px;
+position:relative;
+top:-33px;
+z-index:4;
+}
+a#link_empresa:hover{color:#99182C;}
+
+a#link_confrarias{
+	color:#FFFFFF;
+display:inline;
+font-family:Verdana;
+font-size:1.3em;
+font-weight:bold;
+left:692px;
+line-height:32px;
+padding:0 17px;
+position:relative;
+top:-32px;
+z-index:4;
+background:url("http://www.estacaodovinho.com.br/Control/ArquivoExibir.aspx?NomeArquivo=menu-sep.gif") no-repeat scroll right center transparent;
+}
+a#link_confrarias:hover{color:#99182C;}
+li#confrarias{
+text-decoration:none;
+list-style:none;
+	
+float:left;
+}

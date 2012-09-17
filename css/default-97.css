@@ -1,0 +1,1384 @@
+/* versao 1.0 */
+/* reset */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+body {
+min-width:1006px;
+font:62.5% Arial, Verdana, Helvetica, sans-serif;
+line-height:1;
+color:#74741F;
+background:#FBFBEF;
+text-align:center;
+}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';content:none;}
+:focus {outline:0;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse;border-spacing:0;}
+a {text-decoration:none;}
+a:hover {color:#666;}
+/* fim reset */
+/* elementos HTML ocultos */
+
+body.minha-conta div.nav,
+body.fale-conosco .content h3,
+body.fale-conosco .voltar,
+body.endereco-compra h2,
+body.login .sign-in .aviso-erro,
+#txtCadastroClienteDadosInfo,
+li#cesta-compras a br,
+fieldset.search legend, hr,
+body.minha-conta div.cadastro p.nao-altera em, .permission-sel,
+.editar-conta .menu-user li#cesta-compras,
+.editar-conta .welcome,
+.meus-pedidos-detalhes .menu-user li#cesta-compras,
+.meus-pedidos-detalhes .welcome {display:none;}
+ul.servicos{}
+ul.servicos li.meus-dados{display:none;}
+/* fim elementos HTML ocultos */
+
+form {
+margin:0 auto;
+width:1002px;
+text-align:left;
+}
+.content-meuspedidos,
+.content {
+padding:2em 1em;
+width:982px;
+float:left;
+overflow:hidden;
+background:#FFF;
+}
+.content h2 {
+font-size:2em;
+}
+.mainWrapper {}
+
+
+
+div.grp {margin:0 0 10px 0;clear:both;overflow:hidden;}
+div.grp label {width:190px;float:left;display:block;font-size:1.2em;line-height:1.8em;}
+div.cadastro .fRadio input {margin-top:-2px;vertical-align:middle;}
+div.grp input.cep-prefixo {width:6em !important;margin-right:0.5em;}
+div.grp input.cep-sufixo {width:32px !important;}
+div.grp input.DDD {width:4em;margin-right:0.5em;}
+div.grp input.telefone {width:12em;}
+div.fSenha .exp,
+.formato {font-size:1.1em;}
+input, select, textarea {padding:0 2px 2px 2px;height:18px;font-size:1.2em;color:#546930;background:#FBFBEF;border:1px solid #CCCD4A;}
+textarea {height:auto;font-family:Arial, Helvetica, sans-serif;}
+.searchWrapper input,
+.searchWrapper select {padding:0 1px 0 5px;background:#FFF;}
+input.fisubmit:hover {cursor:pointer;}
+.content select,
+.pedidos select {padding:1px 2px 1px 5px;height:21px;font-size:1.1em;border:1px solid #CCCD4A;}
+.content select option, .pedidos select option {font-size:1.1em;}
+body.cadastro-cliente fieldset.frmPessoaDadosAcesso input.error,
+input.error {color:#FFF;background:#99182C;}
+body.cadastro-cliente fieldset.frmPessoaDadosAcesso
+span.obr {color:#F00;padding-left:5px;}
+
+
+.loading,
+.load {
+width:31px;
+height:31px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=loading.gif) no-repeat;
+text-indent:-999em;
+position:absolute;
+top:50%;
+left:50%;
+z-index:40;
+}
+
+
+
+
+
+/* estrutura que envolve o menu navegacao lateral */
+.area-3-1 {
+width:200px;
+float:left;
+}
+/* fim estrutura que envolve o menu navegacao lateral */
+/* conteudo central */
+.area-3-2 {
+margin:0 0 0 210px;
+width:782px;
+}
+/* fim conteudo central */
+.breadcrumb ul,
+.bread-crumb {
+padding-left:26px;
+height:20px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=icon-breadcrumb.gif) no-repeat #FBFBEF;
+}
+body.servico .breadcrumb {
+padding:10px;
+width:982px;
+float:left;
+background:#FFF;
+}
+.breadcrumb *,
+.bread-crumb * {color:#818123;}
+.breadcrumb ul li,
+.bread-crumb ul li {
+padding-right:10px;
+margin-right:3px;
+float:left;
+line-height:20px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=arrow-right-purple.gif) no-repeat right 8px;
+}
+.breadcrumb ul li.last,
+.bread-crumb ul li.last {
+background:none;
+}
+.breadcrumb ul li a {}
+.breadcrumb ul li a:hover,
+.bread-crumb ul li a:hover {
+text-decoration:underline;
+}
+
+
+/* header */
+div.header,
+div.header-steps {width:100%;height:64px;padding-top:9px;margin:0 auto;position:relative;background:#FFF;}
+
+h1 {margin:0 0 2px 22px;width:233px;height:30px;float:left;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=logo.gif) no-repeat;text-indent:-999em;}
+h1 a {width:233px;height:30px;display:block;}
+
+.menu-user {position:absolute;top:20px;right:5px;}
+.menu-user li {margin-right:8px;float:left;}
+.menu-user li.meus-dados,
+.menu-user li.faleconosco {display:none;}
+.menu-user a {padding-right:8px;border-right:1px solid #878337;}
+.menu-user a:hover {text-decoration:underline;}
+.menu-user a,
+.menu-user li.televendas {margin:0;display:block;font-family:Verdana;font-size:1em;color:#878337;line-height:10px;}
+.menu-user li#meu-pedido a {border:none;}
+/* fim header */
+
+/* saudacao */
+.welcome,
+.loginmsg {font-family:Verdana;font-size:1em;color:#7C080F;line-height:1.2em;position:absolute;left:21px;top:80px;z-index:400;}
+.loginmsg {top:92px;}
+.loginmsg em,
+#pnlNaoSeguro em {font-style:normal;}
+.loginmsg a,
+#pnlNaoSeguro a {padding-left:4px;color:#7C080F;text-decoration:underline;}
+body.login .welcome,
+body.login .loginmsg {display:none;}
+
+
+/* busca */
+.searchWrapper {width:100%;height:45px;float:left;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bg-topbar.jpg) repeat-x #F1EEB5;position:relative;
+border-bottom-right-radius:10px;
+border-bottom-left-radius:10px; 	
+-moz-border-radius-bottomright:10px;
+-moz-border-radius-bottomleft:10px;
+-webkit-border-bottom-right-radius:10px;
+-webkit-border-bottom-left-radius:10px;
+}
+.bottomSearchWrapper,
+fieldset.search label,
+fieldset.search select {display:none;}
+fieldset.search {padding:0 4px;width:369px;height:31px;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bg-busca.gif) no-repeat;position:absolute;top:6px;left:295px;}
+fieldset.search input.fitext {margin-top:4px;width:330px;float:left;font-family:Verdana;font-size:1.4em;color:#878337;border:none;background:#FFF;}
+fieldset.search .ok .bt {margin-top:3px;width:32px;height:25px;float:left;line-height:40px;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bt-buscar.gif) no-repeat;border:none;text-indent:-999em;cursor:pointer;}
+
+/* carrinho header */
+.menu-user li#cesta-compras {padding:0;width:290px;height:29px;float:none;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=icon-carrinho.gif) no-repeat;position:absolute;right:10px;top:62px;z-index:400;}
+.menu-user li#cesta-compras a {padding:0 0 0 30px;font-size:1.1em;color:#99182C;line-height:29px;border:none;}
+body.login .menu-user li#cesta-compras {display:none;}
+
+/* menu */
+.menu {width:100%;height:32px;float:left;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bg-menu.jpg) #BFBB6D;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-webkit-border-top-left-radius:10px;
+-webkit-border-top-right-radius:10px;
+}
+.menu li {float:left;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=menu-sep.gif) no-repeat center right;}
+.menu li.menu-venda-para-empresas {background:none;}
+.menu a {padding:0 17px;display:block;font-family:Verdana;font-size:1.3em;font-weight:bold;color:#FFF;line-height:32px;}
+.menu a:hover {color:#99182C;}
+/* end topbar */
+
+
+
+.steps {
+width:100%;
+height:39px;
+float:left;
+background:#F1F1CA;
+border-bottom:3px solid #5C7334;
+}
+.steps li {
+padding:13px 5px 5px;
+display:block;
+font-size:1.2em;
+font-weight:bold;
+color:#576C31;
+}
+.steps li.ativo {
+color:#99182C;
+border-bottom:4px solid #99182C;
+}
+.steps li {float:left;}
+.steps {
+margin-top:11px;
+}
+.steps li {
+margin-left:85px;
+_margin-left:45px;
+text-align:center;
+width:140px;
+}
+
+
+/* buscas dia */
+.buscas-diaWrapper {
+margin-bottom:24px;
+clear:both;
+text-align:center;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=buscas-dia-br.gif) no-repeat 865px 0;
+}
+.buscas-dia {
+padding-left:42px;
+margin:0 auto;
+width:686px;
+min-height:166px;
+text-align:left;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=buscas-dia-bl.gif) no-repeat;
+}
+.buscas-dia h3 {
+padding-left:40px;
+font-size:3.3em;
+line-height:33px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=icon-buscas-dia.gif) no-repeat;
+}
+body.home .buscas-diaWrapper {
+background-position:622px 0;
+clear:both;
+}
+body.home .buscas-dia {
+width:610px;
+}
+body.home .buscas-dia h3 {
+padding-left:30px;
+font-size:1.5em;
+line-height:23px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=icon-buscas-dia-small.gif) no-repeat;
+}
+.buscas-dia p {
+padding:26px;
+}
+.buscas-dia a {
+margin-right:8px;
+font-size:1.3em;
+color:#74741F;
+}
+.busca18 {font-size:1.8em;}
+
+/* historico navegacao */
+.history,
+.historico-nav {
+padding:1em 1em 1.5em 1em;
+clear:both;
+background:#EEEEC1;
+overflow:hidden;
+position:relative;
+}
+.history h3,
+.historico-nav h3 {
+font-size:1.2em;
+color:#848424;
+}
+.history .clean,
+.historico-nav .clean {
+position:absolute;
+top:1em;
+right:1em;
+}
+.history .clean a,
+.historico-nav .clean a {text-decoration:underline;}
+.history .wrapper div,
+.historico-nav .wrapper div {
+padding:10px 0 0 30px;
+width:380px;
+float:left;
+font-size:1.1em;
+}
+.history .no-history,
+.historico-nav .no-history {
+padding:15px 40px;
+width:100% !important;
+line-height:14px;
+}
+.history h4,
+.historico-nav h4 {color:#99182C;}
+.history ul,
+.historico-nav ul {
+padding-left:12px;
+margin-top:10px;
+}
+.history ul li,
+.historico-nav ul li {
+list-style:disc inside none;
+color:#99182C;
+}
+.history a,
+.historico-nav a {color:#848424;}
+.history a:hover,
+.historico-nav a:hover {text-decoration:underline;}
+
+/* footer */
+.footer {
+margin:2px 0 2em 0;
+clear:both;
+background:#FBFBEF;
+text-align:center;
+}
+.footer .wrapper {
+padding:4px 0 17px 0;
+margin:4px 0;
+border:1px solid #E7E7A7;
+}
+.footer p {
+margin-bottom:20px;
+}
+.selos {
+margin:0 auto;
+width:860px;
+overflow:hidden;
+}
+.formaPagamento {
+margin-top:5px;
+width:216px;
+height:63px;
+float:left;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=formas-pagamento.gif) no-repeat;
+text-indent:-999em;
+}
+.certificados {
+padding-left:22px;
+margin:5px 14px 0 9px;
+width:502px;
+height:62px;
+float:left;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bg-certificados.gif) no-repeat;
+}
+.certificados strong {
+line-height:60px;
+}
+.certificados strong,
+.certificados li {
+float:left;
+}
+.certificados ul {
+margin-top:20px;
+float:left;
+}
+.certisign {
+margin-left:30px;
+width:83px;
+height:32px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=certisign.gif) no-repeat;
+text-indent:-999em;
+}
+.blindado {display:none;
+margin-left:46px;
+width:117px;
+height:32px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=blindado.gif) no-repeat;
+text-indent:-999em;
+}
+.vtex {
+margin-left:25px;
+margin-top:6px;
+width:104px;
+height:21px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=vtex.gif) no-repeat;
+text-indent:-999em;
+}
+.vtex a {width:104px;height:21px;display:block;}
+.ebit {
+width:86px;
+height:74px;
+float:left;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=ebit.gif) no-repeat;
+text-indent:-999em;
+}
+.ebit a {
+width:86px;
+height:74px;
+display:block;
+}
+
+.wrapperLnkInst {
+height:30px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bg-lnk-inst.jpg) no-repeat;
+}
+.linksInstitucionais li {
+padding-right:8px;
+margin-right:8px;
+display:inline;
+line-height:30px;
+border-right:1px solid #848424;
+}
+.linksInstitucionais li.last {
+border:none;
+}
+.linksInstitucionais a {
+font-size:1.1em;
+color:#848424;
+}
+.linksInstitucionais a:hover {
+text-decoration:underline;
+}
+/* fim estrutura principal */
+
+/* carrinho */
+body.carrinho h2 {width:982px;height:31px;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=carrinho-top.gif) no-repeat;text-indent:-999em;}
+.carrinho .sidebar .prateleira{padding:1em;clear:both;}
+body.carrinho div.painelCarrinho ul.top {display:none;}
+body.carrinho ul.bts {margin-bottom:2em;float:left;width:100%;border-top:24px solid #F1F1CA;}
+body.carrinho .carrinho-vazio ul.bts {margin:0;border:none;}
+body.carrinho ul.bts a {width:174px;height:26px;display:block;text-indent:-999em;}
+body.carrinho .carrinho-vazio ul.bts a {text-indent:0;}
+body.carrinho .continuar-comprando {float:left;}
+body.carrinho .continuar-comprando a {background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bt-continuar-comprando.png) no-repeat;}
+body.carrinho .finalizar-compra {float:right;}
+body.carrinho .finalizar-compra a {background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bt-finalizar-compra.png) no-repeat;}
+
+body.carrinho table.carrinhoTable {width:100%;clear:both;border-collapse:collapse !important;border:1px solid #F1F1CA;border-top:2px solid #F1F1CA;}
+table.carrinhoTable thead th,
+table.carrinhoTable thead td {line-height:26px;font-size:1.2em;font-weight:normal;text-align:center;background:#F1F1CA;border-right:1px solid #F1F1CA;}
+table.carrinhoTable thead th.produto {}
+table.carrinhoTable tbody td {vertical-align:middle;padding:12px 8px;border-bottom:1px solid #F1F1CA;border-right:1px solid #F1F1CA;}
+table.carrinhoTable tbody td.produto ul {margin:5px;float:left;}
+table.carrinhoTable tbody td.servico {font-size:1.1em;text-align:center;}
+table.carrinhoTable tbody td.quantidade {width:85px;}
+table.carrinhoTable a {color:#74741F;text-decoration:underline;}
+table.carrinhoTable a.sku-imagem {margin-right:8px;display:block;float:left;}
+table.carrinhoTable tbody td.produto h4 {margin-top:4px;font-size:1.3em;line-height:1.3em;font-weight:normal;}
+table.carrinhoTable tbody td.produto h4 a {text-decoration:none;}
+table.carrinhoTable tbody td.preco-unitario,
+table.carrinhoTable tbody td.preco-total {font-size:1.5em;line-height:1.5em;text-align:center;}
+table.carrinhoTable tbody td.excluir {text-align:center;}
+table.carrinhoTable tbody td.excluir a {margin:0 auto;width:20px;height:20px;display:block;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bt-excluir.gif) no-repeat;text-indent:-999em;}
+table.carrinhoTable tbody td.preco-total {}
+table.carrinhoTable tbody td.preco-unitario s {text-decoration:line-through;}
+table.carrinhoTable tbody input.boxQuantidade{float:left;background:#fff;text-align:right;}
+ul.controle-quantidade{float:left;height:2em;width:2em;}
+ul.controle-quantidade li{float:left;height:8px;width:25px;}
+ul.controle-quantidade li.remove-item{margin-top:2px;}
+ul.controle-quantidade a{padding-left:0.5em;display:block;}
+ul.controle-quantidade li.remove-item a{margin-top:2px;}
+table.carrinhoTable tfoot td {vertical-align:middle;}
+table.carrinhoTable tfoot tr.subtotal td {line-height:30px;}
+table.carrinhoTable tfoot tr.subtotal td.txtSubTotal,
+table.carrinhoTable tfoot td.vale-presente,
+table.carrinhoTable tr.cepline td.txt-frete,
+table.carrinhoTable tfoot tr.total td.valor-total {padding-right:10px;font-size:1.3em;text-align:right;}
+table.carrinhoTable tr.cepline td.txt-frete,
+table.carrinhoTable tr.cepline td.frete-gratis,
+table.carrinhoTable tfoot tr.total td.valor-total {font-weight:bold;}
+table.carrinhoTable tfoot td.preco-total,
+table.carrinhoTable tr.cepline td.frete-gratis {padding-left:6px;font-size:1.5em;}
+table.carrinhoTable tfoot td.vale-presente,
+table.carrinhoTable tfoot tr.vale-presente td.preco-total {font-weight:bold;}
+table.carrinhoTable tfoot tr.vale-presente td {background:#FBFBEF;}
+table.carrinhoTable fieldset.vale-presente legend {display:none;}
+table.carrinhoTable tfoot tr.vale-presente div.grp label {width:220px;font-size:1.1em;line-height:1.1em;}
+table.carrinhoTable tr.vale-presente input.fitext {background:#FFF;}
+table.carrinhoTable tfoot input.bt {margin-left:5px;font-size:1.1em;border:none;border-bottom:1px solid #74741F;background:transparent;}
+table.carrinhoTable tfoot td.texto-vale-presente,
+table.carrinhoTable td.texto-cepline {padding:10px 0 5px 10px;}
+table.carrinhoTable tr.cepline legend {display:none;}
+table.carrinhoTable tr.cepline label {padding-right:5px;width:164px;float:left;font-size:1.1em;line-height:1.1em;}
+table.carrinhoTable tr.cepline label .duvidaCep {color:#648001;text-decoration:underline;}
+table.carrinhoTable tr.cepline span.msgValCEP {display:block;float:left;color:#99182C;}
+table.carrinhoTable tr.cepline span.msgValCEP span {margin-right:5px;float:left;}
+table.carrinhoTable tr.cepline span.msgValCEP div {clear:both;float:left;}
+table.carrinhoTable tr.cepline input {float:left;}
+table.carrinhoTable tfoot tr.total td {font-weight:bold;}
+table.carrinhoTable tfoot tr.total td.valor {padding-left:6px;font-size:2.4em;color:#19880E;}
+table.carrinhoTable tr.valor-parcelado td {font-size:1.9em;padding:10px;text-align:right;}
+/* carrinho vazio */
+.content .carrinho-vazio {padding:1em;margin-bottom:2em;font-size:1.2em;line-height:18px;border:1px solid #F1F1CA;overflow:hidden;}
+.content .carrinho-vazio .continuar-comprando .bt {margin-top:1em;}
+/* end carrinho */
+
+
+
+
+
+/* error alert */
+.aviso-erro{padding:1em;margin:1em 0;font-size:1.1em;border:1px solid #CCCD4A;text-align:center;}
+body.carrinho .aviso-erro {margin:0;font-size:1.1em;line-height:1.4em;color:#99182C;}
+.aviso-erro ul{margin-top:5px;list-style:disc;}
+.aviso-erro ul li{line-height:1.4em;color:#f00;}
+
+/* login */
+body.login h2 {}
+body.login .aviso-erro {margin-bottom:0;}
+body.login .register-info, body.login .sign-in {margin:2em 2em 2em 0;width:475px;float:left;border:1px solid #CCCD4A;}
+body.login .sign-in {padding-bottom:1em;margin-right:0;}
+body.login .content h4 {padding:10px;font-size:1.1em;font-weight:bold;background:#FBFBEF;}
+body.login .register-info p,
+body.login .sign-in p {
+padding:10px 10px 0 10px;
+font-size:1.1em;
+line-height:14px;
+}
+body.login .register-info p strong {
+margin-top:12px;
+display:block;
+}
+body.login .register-info ul {
+padding:0 10px 10px;
+}
+body.login .register-info li {
+font-size:1.1em;
+line-height:16px;
+}
+.voltar .bt,
+body.login .register-info .bt,
+fieldset.pagamento-endereco .cadastrar-novo .bt {
+padding:0 8px;
+width:auto;
+height:26px;
+line-height:26px;
+font-size:1.1em;
+font-weight:bold;
+display:block;
+color:#74741F;
+text-align:center;
+background:#DADA74; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DADA74', endColorstr='#EFEFC4'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#DADA74), to(#EFEFC4)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #DADA74,  #EFEFC4); /* for firefox 3.6+ */
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+}
+fieldset.voltar {margin:1em 0 2em 0;}
+.voltar .bt {width:80px;}
+body.login .register-info .bt {margin:10px 10px 20px 10px;width:240px;}
+
+body.login .sign-in table {width:100%;}
+body.login .sign-in ul {
+line-height:14px;
+padding-left:105px;
+}
+body.login .sign-in li {margin-right:10px;float:left;}
+body.login .sign-in fieldset {margin:10px 0 0 10px;}
+body.login .sign-in .grp {margin-bottom:10px;}
+body.login .sign-in label {padding-right:4px;width:100px;font-size:1.1em;}
+body.login input.fitext,
+body.login input.fipassword {
+width:60%;
+}
+body.login .sign-in a {
+color:#74741F;
+text-decoration:underline;
+}
+body.login .continuar {
+padding-left:105px;
+width:100%;
+float:left;
+}
+
+/* botao verde */
+body.minha-conta fieldset.filtrar .ok .bt,
+body.editar-conta .salvar input,
+.preferencias-grupo .editar a,
+.enviar .bt,
+.btw .bt,
+.success p.continuar-comprando a,
+body.editar-conta .salvar input,
+body.checkout .confirmar-pedido .bt,
+ul.address-list .select-address .bt,
+.content .carrinho-vazio .continuar-comprando .bt,
+.continuar .bt,
+body.login .continuar input,
+.continuar-usuario input {
+padding:0 8px;
+width:auto;
+height:26px;
+line-height:26px;
+font-size:1.1em;
+font-weight:bold;
+display:block;
+color:#FFF;
+text-align:center;
+background:#005300; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009900', endColorstr='#005300'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#009900), to(#005300)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #009900,  #005300); /* for firefox 3.6+ */
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+border:none;
+}
+/* botao roxo */
+
+input.bt {padding-bottom:4px !important;}
+.enviar .bt {width:60px;}
+.bts li,
+fieldset.bts span {margin-right:5px;float:left;}
+body.carrinho .bts li {margin-right:0;}
+
+
+/* cadastro */
+body.cadastro-cliente .content {
+padding:2em 5em;
+width:902px;
+}
+body.cadastro-cliente h2,
+body.cadastro-cliente-sucesso h2 {margin-bottom:10px;}
+body.cadastro-cliente .content #mainContent {padding:0;}
+body.cadastro-cliente .cadastro-campos {
+width:880px;
+border:1px solid #CCCD4A;
+}
+body.cadastro-cliente .identificacao {padding-bottom:1em;}
+body.cadastro-cliente .fNome input,
+body.cadastro-cliente .fNomeFantasia input {width:400px;}
+body.cadastro-cliente .fCnpj input,
+body.cadastro-cliente .fInscEstadual input {width:110px;}
+body.cadastro-cliente .fInscEstadual input {margin-right:10px;float:left;}
+body.cadastro-cliente .fCheck {margin:10px 0 0 0;clear:none;}
+body.cadastro-cliente .fCheck .isento input {margin-right:5px;width:14px;}
+body.cadastro-cliente .fCheck .isento label {line-height:1.2em;}
+body.cadastro-cliente .fSite input,
+.frmPessoaDadosAcesso input {width:285px;}
+a.nao-cep,
+a.cpf,
+a.esqueci-senha,
+div.fEmailConf a.thickbox {font-size:1.1em;color:#99182C;text-decoration:underline;}
+body.cadastro-cliente .fRadio label {width:100px;float:left;text-align:left;}
+
+body.cadastro-cliente fieldset legend {display:none;}
+
+body.cadastro-cliente fieldset.frmTipoPessoa label {width:190px;}
+body.cadastro-cliente fieldset.frmTipoPessoa label span {width:190px;text-transform:capitalize !important;}
+body.cadastro-cliente .fRadio label.main {width:100%;}
+body.cadastro-cliente .fRadio span{display:inline;line-height:1.6em;vertical-align:middle;text-transform:lowercase;}
+body.cadastro-cliente fieldset.frmTipoPessoa {background:#FBFBEF;}
+body.cadastro-cliente .identificacao fieldset {padding:10px 16px;}
+body.cadastro-cliente fieldset.frmPessoaJuridica,
+body.cadastro-cliente fieldset.frmPessoaFisica,
+body.cadastro-cliente fieldset.frmPessoaDadosAcesso {margin-bottom:10px;}
+body.cadastro-cliente fieldset.frmPessoaDadosAcesso {
+background:#FBFBEF;
+border-top:1px solid #CCCD4A;
+border-bottom:1px solid #CCCD4A;
+}
+body.cadastro-cliente fieldset.frmPessoaDadosAcesso input {background:#fff;}
+body.cadastro-cliente .fAvisos p {font-size:1.2em;}
+body.cadastro-cliente .fAvisos a {color:#99182C;text-decoration:underline;}
+body.cadastro-cliente .fAvisos input {float:left;}
+body.cadastro-cliente .fAvisos span {line-height:22px;}
+body.cadastro-cliente .fAvisos label {width:100%;}
+.continuar-usuario {margin-left:2em;}
+.cadastro-sucesso {padding-bottom:6em;}
+.cadastro-sucesso .wrapper {margin:4em auto 3em auto;text-align:center;}
+.cadastro-sucesso .wrapper p {font-size:1.2em;}
+.cadastro-sucesso p.greeting {margin-bottom:10px;font-size:2em;}
+.cadastro-sucesso .setup,
+.cadastro-sucesso .start {
+width:300px;
+float:left;
+}
+.cadastro-sucesso .setup {
+margin-left:240px;
+}
+.cadastro-sucesso h4 {
+font-size:1.2em;
+}
+.cadastro-sucesso span a {
+font-size:1.2em;
+color:#99182C;
+line-height:20px;
+text-decoration:underline;
+}
+
+/* endereco */
+body.endereco-compra .content .endereco h2 {display:block !important;}
+.endereco .lista-endereco {margin:15px 10px;}
+.endereco .lista-endereco legend {font-size:1.1em;font-weight:bold;}
+ul.address-list li {margin:1em 15px 1em 0;width:220px;min-height:255px;float:left;border:1px solid #CCCD4A;}
+ul.address-list .select-address .bt {margin-bottom:10px;width:130px;}
+ul.address-list li div.wrapper {padding:10px;}
+ul.address-list strong {margin-bottom:8px;display:block;font-size:1.2em;}
+ul.address-list address {font-style:normal;}
+ul.address-list li address p {padding-left:5px;font-size:1.1em;line-height:1.4em;}
+ul.address-list li li{width:auto;float:none;min-height:0;margin:0;border:none;}
+ul.address-list ul.bts {margin-bottom:10px;float:left;}
+ul.address-list ul.bts li {float:left;margin-right:10px;}
+ul.address-list ul.bts li a {
+display:block;
+font-size:1.1em;
+color:#99182C;
+line-height:20px;
+text-decoration:underline;
+}
+ul.address-list ul.bts li.excluir {}
+ul.address-list ul.bts li.editar {}
+div.cadastro-endereco {
+margin:2em;
+}
+.cadastro-endereco h3 {
+padding:8px 10px;
+font-size:1.3em;
+background:#FBFBEF;
+}
+.cadastro-endereco legend span {
+display:block;
+font-size:1.1em;
+line-height:30px;
+}
+.cadastro-endereco .identificacao {
+padding-left:1em;
+}
+
+/* frete */
+.fretes {
+margin:2em 1em;
+font-size:1.1em;
+}
+.fretes h3 {
+font-size:1.1em;
+}
+.fretes fieldset {
+margin-top:1em;
+}
+.fretes .sem-frete {
+line-height:14px;
+}
+.cancelar .bt {
+padding:0 8px;
+margin-bottom:1em;
+width:100px;
+display:block;
+float:left;
+height:26px;
+line-height:26px;
+font-size:1.1em;
+font-weight:bold;
+color:#FFF;
+text-align:center;
+background:#005300; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#450C2D', endColorstr='#99182C'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#450C2D), to(#99182C)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #450C2D,  #99182C); /* for firefox 3.6+ */
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+}
+
+/* embalagem */
+body.embalagem h3,
+body.embalagem h4 {padding:5px 0 0 5px;font-size:1.2em;line-height:1.2em;}
+body.embalagem h5 {font-size:1.2em;font-weight:bold;line-height:1.2em;color:#99182C;}
+body.embalagem .contentWrapper .wrapper {padding:5px 10px;margin:1em 0;font-size:1.1em;border:1px solid #CCCD4A;}
+body.embalagem .text {padding-top:8px;}
+body.embalagem fieldset.msg {}
+body.embalagem fieldset.msg legend {padding:10px 0;}
+body.embalagem fieldset.msg label {width:40px;}
+body.embalagem fieldset.msg input {width:500px;}
+body.embalagem fieldset.msg textarea {width:541px;}
+
+
+
+body.resultado-busca .prateleira {
+padding-top:23px;
+}
+.prateleira h2 {
+padding:0 0 5px 0;
+margin-bottom:15px;
+font-size:2.6em;
+color:#5C7334;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=tit-prateleira-border.jpg) no-repeat left bottom;
+}
+.prateleira ul {
+width:100%;
+float:left;
+}
+.prateleira li {
+margin:0 10px 20px 0;
+width:188px;
+float:left;
+}
+.prateleira li.last {
+margin-right:0 !important;
+}
+.prateleira .wrapper {
+border:1px solid #EEEEC1;
+}
+.prateleira .wrapper:hover {
+border:1px solid #99182C;
+}
+
+.prateleira .dept {
+padding-right:1em;
+font-size:1.1em;
+font-weight:bold;
+line-height:22px;
+text-align:right;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bg-dept.gif) no-repeat left bottom;
+}
+.prateleira h3 a {
+margin:6px 10px;
+display:block;
+font-size:1.3em;
+color:#99182C;
+line-height:14px;
+}
+.prateleira .photo {
+text-align:center;
+}
+.prateleira .texto {
+margin:0 1em;
+color:#A7C076;
+}
+.prateleira .preco {
+margin:1em;
+}
+.prateleira .preco a {
+font-size:1.2em;
+color:#666;
+}
+.prateleira .preco em {
+font-style:normal;
+}
+.buy-button-asynchronous {}
+.btn-add-buy-button-asynchronous {
+width:86px;
+height:23px;
+display:block;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=bt-comprar-prateleira.gif) no-repeat;
+text-indent:-999em;
+}
+.esgotado {
+padding:1em;
+font-weight:bold;
+text-align:center;
+}
+.frete-gratis---sp-capital {
+margin-top:7px;
+width:100%;
+height:29px;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=flag-frete-gratis-sp.png) no-repeat center top;
+text-indent:-999em;
+}
+.rating-produto {
+margin:5px 0 7px 10px;
+width:59px;
+height:11px;
+display:block;
+background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=rating.gif) no-repeat;
+text-indent:-999em;
+}
+
+body.home .prateleira img {
+width:144px;
+height:144px;
+}
+body.resultado-busca .prateleira img {
+width:110px;
+height:110px;
+}
+body.resultado-busca .prateleira li {
+margin:0 5px 20px 5px;
+width:120px;
+float:left;
+}
+body.resultado-busca .prateleira h3 a {
+margin:5px;
+display:block;
+font-size:1.1em;
+color:#99182C;
+line-height:12px;
+}
+body.resultado-busca .prateleira fieldset {
+text-align:center;
+}
+body.resultado-busca .prateleira fieldset input {
+margin-left:30px;
+float:left;
+}
+body.resultado-busca .prateleira fieldset label {
+float:left;
+font-size:1.1em;
+line-height:24px;
+}
+
+
+
+body.servico .content h2 {font-size:3.3em;}
+.more-products {margin-bottom:2em;}
+.more-products * {font-size:1.4em;color:#A7C076;line-height:20px;}
+.box-image {
+float:left;
+width:433px;
+height:282px;
+text-align:center;
+border:1px solid #CCCD4A;
+-webkit-border-radius:6px;
+-moz-border-radius:6px;
+}
+.image {
+margin:10px auto 0 auto;
+width:260px;
+height:260px;
+text-align:center;
+border:1px solid #BEBE89;
+-webkit-border-radius:6px;
+-moz-border-radius:6px;
+}
+.box-info {
+margin:0 2em 0 10px;
+width:495px;
+float:left;
+}
+.box-garantia-extendida {
+padding:10px 20px;
+border:1px solid #CCCD4A;
+-webkit-border-radius:6px;
+-moz-border-radius:6px;
+}
+.box-garantia-extendida h3,
+.box-garantia-extendida h4 {
+margin-bottom:10px;
+font-size:1.2em;
+}
+.box-garantia-extendida .more {
+margin:10px;
+display:block;
+font-size:1.1em;
+color:#99182C;
+text-decoration:underline;
+}
+.box-garantia-extendida div.grp label {
+width:auto;
+line-height:2em;
+}
+.box-garantia-extendida input {
+float:left;
+}
+body.servico fieldset.continuar {
+width:100%;
+display:block;
+float:left;
+}
+body.servico fieldset.continuar .bt {
+margin-right:1em;
+float:right;
+}
+body.servico .content {
+height:500px;
+}
+
+
+/* forma pagamento */
+body.forma-pagamento h2 {}
+body.forma-pagamento .content {padding-bottom:0;}
+body.forma-pagamento .dados-pagamento {margin:2em 0;}
+.formaPagamentoWrapper,
+.boleto-wrapper {margin-top:1em;font-size:1.1em;border:1px solid #CCCD4A;}
+.formaPagamentoWrapper fieldset.continuar,
+.boleto-wrapper fieldset.continuar {padding:1em;}
+.pagamento-cartao-wrapper {padding:1em;}
+
+
+body.checkout .dados-pagamento h3,
+.pagamento h3 {padding:8px 10px;font-size:1.2em;background:#FBFBEF;}
+.pagamento p {font-size:1.1em;line-height:1.4em;}
+body.checkout .dados-pagamento {border:1px solid #CCCD4A;}
+body.checkout .dados-pagamento,
+body.checkout .dados-compra {overflow:hidden;}
+
+
+div.dados-pagamento table.valor-compra th,
+div.dados-pagamento table.valor-compra td {font-size:1.1em;line-height:30px;border-top:1px solid #CCCD4A;}
+body.confirmacao-compra div.dados-pagamento table.valor-compra th, body.confirmacao-compra div.dados-pagamento table.valor-compra td {line-height:43.5px;}
+div.dados-pagamento table.valor-compra th {padding-left:10px;width:300px;font-weight:bold;}
+div.dados-pagamento table.valor-compra .valor-total th {}
+div.dados-pagamento table.valor-compra .valor-total td {font-size:1.6em;font-weight:bold;color:#19880E;}
+
+.pagamento div p {display:block;}
+.pagamento .debito {padding:20px 12px;margin-bottom:23px;background:#fff;border-top:1px solid #CCCD4A;border-bottom:1px solid #CCCD4A;}
+.pagamento legend span {padding-bottom:10px;display:block;font-weight:bold;;}
+.pagamento .continuar .bt {float:right;}
+.lista-formas-pagamento li {width:100px;float:left;text-align:center;}
+.lista-formas-pagamento li label {display:block;}
+.lista-formas-pagamento li label input {margin:0 auto;display:block;}
+.lista-formas-pagamento li label img {}
+.lista-formas-pagamento li label strong {display:block;padding:2px;}
+.lista-formas-pagamento li p {padding-top:10px;font-size:1.1em;font-weight:bold;line-height:1.4em;}
+.mensagem-cartao {font-size:1.1em;padding:1em 1em 0;}
+
+
+body.checkout .credit-card-info a {padding:0 4px;color:#99182C;text-decoration:underline;}
+body.checkout .credit-card-info fieldset fieldset {padding:0.5em 0;}
+body.checkout .info-cartao {margin:2em 0;font-size:1.1em;}
+body.checkout .info-cartao legend{font-weight:bold;}
+.selec-2-cartoes input{display:none;}
+.box .selec-2-cartoes label{float:left !important;display:block;width:87px;margin-right:8px;text-align:center;cursor:pointer;}
+fieldset.radio-cartao legend,
+fieldset.radio-cartao span br {display:none;}
+b ody.forma-pagamento .pagamento .box {padding-bottom:2em;margin:2em 1em;}
+b ody.forma-pagamento .pagamento .box .continuar {float:right;}
+/* ============================ */
+
+/* confirmacao compra */
+body.confirmacao-compra .content h2 {}
+body.checkout .confirmar-pedido {padding:1em 0;width:100%;float:left;}
+body.checkout .confirmar-pedido .bt {float:right;}
+body.checkout .dados-pagamento table.valor-compra {float:left;}
+body.confirmacao-compra .dados-pagamento table.valor-compra {width:460px;border-right:1px solid #CCCD4A;}
+
+.pagamentoEnderecoWrapper {padding:10px;width:300px;height:135px;float:left;}
+.pagamento-endereco {padding:0 10px 10px 20px;font-size:1.1em;line-height:1.4em;}
+.pagamento-endereco legend span {display:block;padding-top:5px;}
+.pagamento-endereco strong {}
+.pagamento-endereco dl {padding-left:5px;}
+.pagamento-endereco dt {margin-bottom:5px;clear:left;}
+.pagamento-endereco dd {}
+fieldset.pagamento-endereco .cadastrar-novo .bt {margin-top:8px;width:110px;}
+
+body.checkout .dados-compra h3 {margin:20px 0 10px;font-size:1.4em;font-weight:bold;}
+body.checkout .dados-compra thead th {font-size:1.1em;font-weight:bold;line-height:30px;border-top:1px solid #CCCD4A;border-bottom:1px solid #CCCD4A;background:#FBFBEF;text-align:center;}
+body.checkout .dados-compra tbody th,
+body.checkout .dados-compra tbody td,
+body.minha-conta #orderInfoProductList td {font-size:1.1em;font-weight:bold;line-height:26px;border-bottom:1px solid #CCCD4A;}
+body.checkout .dados-compra th.first {padding-left:10px;text-align:left;}
+body.checkout .dados-compra tbody td {text-align:center;}
+body.checkout .dados-compra tbody td .end {padding:0 0 1em 1em;font-weight:normal;line-height:1.4em;text-align:left;}
+/* end confirmacao compra */
+
+body.checkout .dados-pagamento table,
+body.checkout .dados-compra table,
+body.minha-conta #orderInfoProductList {width:100%;}
+body.checkout .dados-compra table.dados-entrega {margin-bottom:20px;}
+body.checkout .dados-compra table,
+body.minha-conta #orderInfoProductList {border:1px solid #CCCD4A;}
+table.dados-produto td.confirmacao-embalagem table {border:none;}
+
+
+
+/*==================================================================================*/
+
+/* meus pedidos */
+body.minha-conta .area-3-2-1 h2,
+body.meus-pedidos h2 {margin-bottom:1em;font-size:1.6em;}
+body.minha-conta ul.abas {margin:2em 0;overflow:hidden;border-bottom:1px solid #878337;}
+body.minha-conta ul.abas li {margin-right:1em;float:left;}
+body.minha-conta ul.abas li a {padding:1em 2em;color:#FFF;display:block;font-family:Verdana;font-size:1em;font-weight:bold;
+background:url(http://www.estacaodovinho.com.br/Control/ArquivoExibir.aspx?NomeArquivo=bg-menu.jpg) repeat scroll 0 0 #BFBB6D;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-webkit-border-top-left-radius:10px;
+-webkit-border-top-right-radius:10px;
+}
+body.minha-conta ul.abas li.ativo a,
+body.minha-conta ul.abas li.meu-perfil-ativo a {
+background:#38192E; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#823B6C', endColorstr='#38192E'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#823B6C), to(#38192E)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #823B6C,  #38192E); /* for firefox 3.6+ */
+}
+
+
+body.minha-conta .tabela-pedidos {padding:0 2em 0;}
+body.minha-conta .tabela-pedidos h3 {padding-bottom:6px;font-size:1.1em;}
+body.minha-conta .tabela-pedidos span#ctl00_Conteudo_lblEmpty {padding:2em 2em 0;display:block;font-size:1.4em;color:#F00;}
+body.minha-conta #orderInfoProductList th {font-size:1.2em;line-height:38px;background:#FBFBEF;border-top:1px solid #CCCD4A;border-bottom:1px solid #CCCD4A;border-right:1px solid #CCCD4A;text-align:center;}
+body.minha-conta #orderInfoProductList td {padding:4px 5px;line-height:22px;font-weight:normal;text-align:center;vertical-align:middle;border-right:1px solid #CCCD4A;}
+body.minha-conta #orderInfoProductList tr.even td {background:#FBFBEF;}
+body.minha-conta #orderInfoProductList td.links {text-align:left;}
+body.minha-conta #orderInfoProductList td.links a {padding-left:23px;display:block;color:#74741F;background:url(http://develop-mariapresenteira.vtexcommerce.com.br:80/Control/ArquivoExibir.aspx?NomeArquivo=icons.gif) no-repeat;text-decoration:underline;}
+body.minha-conta #orderInfoProductList td.links a.detalhes {background-position:0 4px;}
+body.minha-conta #orderInfoProductList td.links a.imprimir {background-position:0 -48px;}
+
+body.minha-conta fieldset.filtrar {margin:2em;}
+body.minha-conta fieldset.filtrar legend span {margin-bottom:1em;display:block;font-size:1.2em;font-weight:bold;}
+body.minha-conta fieldset.filtrar .grp {margin-right:10px;float:left;}
+body.minha-conta fieldset.filtrar .grp label {width:120px;font-size:1.1em;}
+body.minha-conta fieldset.filtrar .ok {float:left;}
+body.minha-conta fieldset.filtrar .ok .bt {border:none;}
+
+/* detalhe meus pedidos */
+body.meus-pedidos-detalhes h2,
+body.rastrear-pedido h2 {}
+body.meus-pedidos-detalhes h3,
+div.box-dados-pagamento h3 {padding-left:33px;font-size:1.3em;line-height:26px;background:#FBFBEF;}
+body.minha-conta div.informacoes-entrega {margin:1em;font-size:1.4em;line-height:1.4em;}
+div.box-dados-pagamento {margin-bottom:1em;width:100%;float:left;border:1px solid #CCCD4A;}
+.endereco-entrega {padding:1em;margin:1em;width:324px;min-height:166px;float:right;font-size:1.1em;overflow:hidden;border:1px solid #CCCD4A;}
+body.rastrear-pedido .endereco-entrega {float:left;}
+.box-dados-pedido {position:relative;}
+.box-dados-pedido dl {clear:both;}
+.box-dados-pedido dt,
+.endereco-entrega dt {padding-right:10px;float:left;clear:left;font-weight:bold;text-align:right;line-height:1.2em;}
+body.rastrear-pedido .endereco-entrega dt {clear:left;}
+.box-dados-pedido dd,
+.endereco-entrega dd {line-height:1.2em;}
+.endereco-entrega dl {width:320px;}
+.endereco-entrega dt {width:120px;}
+.endereco-entrega dd {padding-left:129px;}
+
+div.endereco-entrega h4 {margin-bottom:12px;}
+div.dados-entrega {padding:1.5em 1em;margin:1em 2em 1em 1em;width:280px;float:left;font-size:1.1em;background:#fff;overflow:hidden;border:1px solid #CCCD4A;}
+div.dados-entrega dt {width:150px;clear:left;}
+
+div.dados-entrega .rastrear-entrega {position:absolute;right:25px;top:13px;}
+div.dados-entrega .rastrear-entrega .bt {color:#6D6D6D;text-decoration:underline;}
+
+.descricao-entrega {padding-bottom:1em;margin-top:1em;width:205px;float:left;font-size:1.1em;background:#FFF;border:1px solid #CCCD4A;}
+.descricao-entrega h4 {padding-left:12px;margin-bottom:5px;line-height:30px;}
+.descricao-entrega p {padding:6px 0 6px 12px;}
+
+.descricao-compra {margin:1em 0;width:100%;border:1px solid #CCCD4A;}
+.descricao-compra thead th {font-size:1.3em;line-height:26px;border-bottom:1px solid #CCCD4A;text-align:center;background:#FBFBEF;}
+.descricao-compra tbody th,
+.descricao-compra tfoot th,
+.descricao-compra td {font-size:1.1em;font-weight:bold;line-height:30px;border-bottom:1px solid #CCCD4A;}
+.descricao-compra tbody th,
+.descricao-compra tfoot th {padding-left:2em;}
+
+.box-dados-pagamento .wrapper {margin-top:1em;}
+.box-dados-pagamento table {margin-right:2em;width:550px;float:left;}
+.box-dados-pagamento table th,
+.box-dados-pagamento table td {line-height:43px !important;}
+
+body.meus-pedidos-detalhes .voltar {float:left;}
+
+/* finalizacao compra */
+body.finaliza-compra .content h2 {}
+.success {padding:2em;text-align:center;}
+.success .congrats {margin-bottom:16px;font-size:2em;font-weight:normal;}
+.success .continuar-comprando {margin-top:2em;}
+.success p.continuar-comprando a {width:200px;}
+.success .order-number {padding:1em;margin:0 auto;width:300px;border:1px solid #CCCD4A;}
+.success .order-number span {display:block;font-size:1.8em;}
+.success .order-number strong {font-size:3em;font-weight:bold;color:#99182C;}
+.success .print {padding-top:1em;font-size:1.4em;font-weight:bold;}
+.success .warning {padding:1em 0;margin:0 auto;font-size:1.2em;font-weight:bold;color:#99182C;}
+.success .txtFinalizacao {font-size:1.1em;font-weight:bold;}
+.success .warning strong {font-weight:bold;}
+.success .info {}
+.success .info a {font-size:1.1em;color:#99182C;}
+.success .info p.txtFormaPag {}
+.success .info p.txtFinalizacao {}
+.success .info p.cartaoNumTransacao {}
+.success .info p.cartaoCodRetorno {}
+.success .info p.lnkBoleto {}
+/* end finalizacao de compra */
+
+body.editar-conta div.meus-dados,
+body.minha-conta .breadcrumb,
+body.minha-conta .area-3-2-3 h3,
+body.minha-conta .meus-dados .photo,
+body.minha-conta .meus-dados .addPhoto,
+body.minha-conta .minhas-opinioes,
+.lista-minha-conta {display:none;}
+
+body.editar-cadastro-estendido .cadastro {padding:27px 20px;}
+body.editar-cadastro-estendido h2,
+body.minha-conta .area-3-2-1 h2,
+body.editar-conta h2 {}
+
+body.editar-cadastro-estendido h2 {margin-bottom:30px;}
+body.editar-conta h2 {margin-bottom:1em;}
+.minha-conta .area-root .minhas-preferencias h3,
+.meus-dados h4,
+.minha-conta .informacoes-conta h3,
+body.editar-cadastro-estendido h3,
+.meus-dados-alterar legend {font-size:1.4em;}
+.minha-conta .area-root .minhas-preferencias h3 {margin-bottom:15px;}
+.preferencias-grupo {padding:0 0 15px 20px;font-size:1.2em;}
+.preferencias-grupo ul {margin:1em 0;}
+.preferencias-grupo li {line-height:1.8em;}
+.minha-conta .dados {padding-left:20px;}
+.minha-conta .dados dl,
+.minha-conta .informacoes-conta dl {margin:1em 0;font-size:1.2em;}
+.minha-conta .informacoes-conta dl {margin-bottom:0;}
+.minha-conta .informacoes-conta dl {overflow:hidden;}
+.minha-conta .dados dt,
+.minha-conta .informacoes-conta dt {padding-right:6px;height:22px;float:left;font-weight:bold;line-height:2.4em;}
+.minha-conta .dados dd,
+.minha-conta .informacoes-conta dd {height:22px;line-height:2.4em;}
+.minha-conta .informacoes-conta dl a {color:#FF8f00;text-decoration:underline;}
+
+.minha-conta .area-3-2-3 ul.bts {padding-left:2em;clear:both;}
+.minha-conta .area-3-2-3 ul.bts li {margin-right:1em;float:left;}
+.minha-conta .area-3-2-3 ul.bts li a {
+color:#99182C;
+display:block;
+font-size:1.1em;
+line-height:20px;
+text-decoration:underline;
+}
+
+/* editar cadastro */
+body.minha-conta div.cadastro legend {margin:1em 0;font-weight:bold;}
+body.minha-conta div.cadastro fieldset {padding-left:2em;}
+div.grp input.dia, div.grp input.mes{width:20px!important;}
+div.grp input.ano{width:40px!important;}
+body.minha-conta div.cadastro .grp {width:60em;padding-bottom:5px;}
+body.minha-conta div.cadastro .grp strong {font-size:1.4em;}
+body.minha-conta div.cadastro .grp input {width:20em;}
+body.minha-conta div.cadastro p.nao-altera {width:43em;display:block;float:left;font-size:1.4em;padding-bottom:5px;line-height:1.6em;}
+body.minha-conta div.cadastro p.nao-altera span {width:122px;display:block;float:left;}
+body.minha-conta div.cadastro p.nao-altera strong {width:26.4em;display:block;float:left;}
+body.minha-conta div.cadastro label,
+body.minha-conta div.cadastro fieldset h5 {width:10em;display:block;float:left;clear:left;}
+body.minha-conta div.cadastro span.fSexo label {clear:none !important;}
+body.minha-conta div.cadastro .fEmail {float:left;}
+label.noticias {width:13em !important;}
+span.noticias input, 
+body.minha-conta div.cadastro .fRadio.fSexo input {width:2em !important;margin-top:5px;display:block;float:left;}
+body.editar-conta .bts {margin:2em 0;}
+body.editar-conta .bts li {float:left;}
+body.editar-conta .salvar input {width:73px;}
+
+body.editar-cadastro-estendido legend {font-size:1.2em;}
+body.editar-cadastro-estendido div.cadastro .grp {width:70em;padding-bottom:10px;}
+body.editar-cadastro-estendido div.cadastro fieldset h5 {width:13em;font-size:1.1em;font-weight:normal;line-height:20px;}
+body.editar-cadastro-estendido div.cadastro h5 {width:auto !important;}
+
+
+body.minha-conta .area-3-2-4,
+body.minha-conta .area-3-2-5,
+body.minha-conta .area-3-2-6,
+body.minha-conta .area-3-2-7,
+body.minha-conta .area-3-2-8,
+body.minha-conta .area-3-2-9,
+body.minha-conta .area-3-2-10,
+body.minha-conta .area-3-2-11,
+body.minha-conta .area-3-2-12,
+body.minha-conta .area-3-2-13,
+body.minha-conta .area-3-1,
+body.editar-conta div.meus-dados,
+body.minha-conta .breadcrumb,
+body.minha-conta .area-3-2-3 h3,
+body.minha-conta .meus-dados .photo,
+body.minha-conta .meus-dados .addPhoto,
+body.minha-conta .minhas-opinioes,
+.lista-minha-conta {display:none;}
+
+body.minha-conta .area-root {background:#FFF;float:left;}
+body.minha-conta .area-2 {padding:2em;width:920px;float:left;}
+body.minha-conta .area-3 {padding:0 2em 5em 2em;float:left;}
+body.minha-conta .area-3-2 {margin:0;width:920px;}
+
+
+body.editar-cadastro-estendido .cadastro {padding:27px 20px;}
+body.editar-cadastro-estendido h2 {margin-bottom:30px;}
+body.editar-conta h2 {margin-bottom:1em;}
+.minha-conta .area-root .minhas-preferencias h3,
+body.editar-cadastro-estendido h2,
+
+body.editar-conta h2,
+.meus-dados h4,
+.minha-conta .informacoes-conta h3,
+body.editar-cadastro-estendido h3,
+.meus-dados-alterar legend {font-size:1.4em;}
+.minha-conta .area-root .minhas-preferencias h3 {margin-bottom:15px;}
+.preferencias-grupo {padding:0 0 15px 20px;font-size:1.2em;}
+.preferencias-grupo ul {margin:1em 0;}
+.preferencias-grupo li {line-height:1.8em;}
+.minha-conta .dados {padding-left:20px;}
+.minha-conta .dados dl,
+.minha-conta .informacoes-conta dl {margin:1em 0;font-size:1.2em;}
+.minha-conta .informacoes-conta dl {margin-bottom:0;}
+.minha-conta .informacoes-conta dl {overflow:hidden;}
+.minha-conta .dados dt,
+.minha-conta .informacoes-conta dt {padding-right:6px;height:22px;float:left;font-weight:bold;line-height:2.4em;}
+.minha-conta .dados dd,
+.minha-conta .informacoes-conta dd {height:22px;line-height:2.4em;}
+.minha-conta .informacoes-conta dl a {color:#FF8f00;text-decoration:underline;}
+
+/* editar cadastro
+body.minha-conta div.cadastro legend {margin:1em 0;font-weight:bold;}
+body.minha-conta div.cadastro fieldset {padding-left:2em;}
+div.grp input.dia, div.grp input.mes{width:20px!important;}
+div.grp input.ano{width:40px!important;}
+body.minha-conta div.cadastro .grp {width:60em;padding-bottom:5px;}
+body.minha-conta div.cadastro .grp strong {font-size:1.4em;}
+body.minha-conta div.cadastro p.nao-altera {width:43em;display:block;float:left;font-size:1.4em;padding-bottom:5px;line-height:1.6em;}
+body.minha-conta div.cadastro p.nao-altera span {width:122px;display:block;float:left;}
+body.minha-conta div.cadastro p.nao-altera strong {width:26.4em;display:block;float:left;}
+body.minha-conta div.cadastro label,
+body.minha-conta div.cadastro fieldset h5 {width:10em;display:block;float:left;clear:left;}
+body.minha-conta div.cadastro span.fSexo label {clear:none !important;}
+body.minha-conta div.cadastro .fEmail {float:left;}
+label.noticias {width:13em !important;}
+span.noticias input, 
+body.minha-conta div.cadastro .fRadio.fSexo input {width:2em !important;margin-top:5px;display:block;float:left;}
+body.editar-conta .bts {margin:2em 0;}
+body.editar-conta .bts li {float:left;}
+
+body.editar-conta .salvar input {width:73px;}
+
+body.editar-cadastro-estendido legend {font-size:1.2em;}
+body.editar-cadastro-estendido div.cadastro .grp {width:70em;padding-bottom:10px;}
+body.editar-cadastro-estendido div.cadastro fieldset h5 {width:13em;font-size:1.1em;font-weight:normal;line-height:20px;}
+body.editar-cadastro-estendido div.cadastro .Informacoes-Comerciais-Mercatto h5 {width:auto !important;}
+ */
+
+/* recuperar alterar email senha */
+.esqueci-mudou {padding-left:1em;}
+.manutencao-conta .content p {padding:1em 0;font-size:1.2em;}
+.manutencao-conta h3,
+.manutencao-conta legend {padding-bottom:1em;font-size:1.2em;}
+.outras-opcoes {padding-top:10px;}
+.outras-opcoes h3 {padding:0;margin-bottom:6px;font-size:1.2em;}
+.outras-opcoes h3 p {font-size:inherit !important;line-height:inherit !important;padding:0;}
+.outras-opcoes ul {list-style:disc inside;color:#99182C;}
+.outras-opcoes a {font-size:1.2em;line-height:1.6em;}
+.outras-opcoes strong {font-weight:normal;}
+.outras-opcoes a {font-size:1.1em;color:#99182C;text-decoration:underline;}
+
+body.fale-conosco legend span {font-size:1.2em;display:block;margin:1em 0;}
+body.fale-conosco .fNome input,
+body.fale-conosco .fSobrenome input,
+body.fale-conosco .fEmail input,
+body.fale-conosco textarea {width:400px;}
+body.fale-conosco .email-sucesso p {margin:2em;font-size:1.2em;font-weight:bold;}
+
+
+ul.servicos a#link_empresal{
+	color:#FFFFFF;
+display:block;
+font-family:Verdana;
+font-size:1.3em;
+font-weight:bold;
+left:801px;
+line-height:32px;
+padding:0 17px;
+position:absolute;
+top:41px;
+width:170px;
+z-index:4;
+}
+ul.servicos a#link_empresal:hover{color:#99182C;}

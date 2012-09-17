@@ -1,0 +1,492 @@
+/* Resets */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,legend{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset-img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+hr{display:none;}
+img{border:none;}
+em{font-style:normal;}
+/*strong{font-weight:normal;}*/
+fieldset{border:none;}
+
+/* General Tags */
+body{background:url("/arquivos/body-bg.gif") repeat-x;font-size:11px;line-height:1.5em;}
+
+body,
+input,
+select,
+textarea{color:#333;font-family:Verdana, Geneva, sans-serif;}
+
+input,
+select,
+textarea{border:1px solid #999;font-size:10px;padding:1px 2px;}
+
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* Pink font color */
+.loginmsg a,
+#footer h2,
+.order-number strong,
+.minha-conta .nav h3,
+.minha-conta .abas .ativo a,
+.informacoes-conta h3{color:#cc0066;}
+
+/* Sprites */
+h1 a,
+#footerNews h3,
+#network a,
+#footer h2{background-image:url("/arquivos/sprite-general.gif");background-repeat:no-repeat;}
+
+/* Image Replacement */
+.imgRp{display:block;text-indent:-999em;}
+
+/* Forms submit buttons */
+.bt{background:#000;border:none;color:#fff;cursor:pointer;}
+.content .bt{font-size:11px;line-height:1.6em;min-width:92px;width:auto;}
+.bts span,
+.bts li{float:left;margin-right:10px;}
+
+/* Hidden items */
+.history,
+.bottomSearchWrapper{display:none;}
+
+/* Layout */
+#aspnetForm{margin:0 auto;position:relative;width:986px;}
+.steps{display:none;}
+
+/* Top Bar */
+#divMenuUsuario{display:none;}
+.header div div{font-size:10px;overflow:auto;position:absolute;top:2px;width:100%;}
+.header div div div{overflow:auto;padding-top:2px;}
+.header div div .ajax-content-loader,
+.header div div .ajax-content-loader div{color:#999;float:left;padding-top:0;width:auto;}
+.header div div p{color:#999;float:left;}
+.header div div p,
+.header div div .ajax-content-loader div{margin-left:12px;}
+.header div div p a,
+.header div div .ajax-content-loader a{margin-left:4px;text-decoration:underline;}
+.header strong{font-weight:normal;}
+
+.servicos{font-size:10px;position:absolute;right:5px;top:2px;}
+.servicos li{float:left;}
+.servicos li a{background:url("/arquivos/tabs-bg.gif") right 2px no-repeat;color:#666;padding:0 7px}
+.servicos li.last a{background:none;}
+
+/* Title and Cart */
+h1{background:url("/arquivos/h1.gif") 230px 48px no-repeat;border-bottom:1px solid #999;overflow:hidden;}
+h1 a{background-position:8px 5px;color:#000;float:left;font:italic 22px "Times New Roman", Times, serif;height:51px;margin:22px 0 2px;padding:22px 0 0 232px;text-indent:-999em;width:352px;}
+h1 a:hover{text-decoration:none;}
+
+/* Menu */
+.header .menuwrap{border-bottom:1px solid #999;clear:both;font-size:11px;overflow:auto;position:static;}
+#menu01{background:#000;clear:both;overflow:hidden;margin:3px 0 4px;_height:1%;}
+#menu01 li{float:left;}
+#menu01 a{color:#fff;float:left;font-weight:700;line-height:1.45em;padding:6px 14px 5px 10px;_padding-top:5px;}
+#menu01 a:hover{text-decoration:none;}
+
+/* Search */
+.searchWrapper{padding:7px 0 13px 8px;}
+.search legend,
+.search select{display:none;}
+.search label{color:#7a7a7a;float:left;font-size:10px;font-weight:700;}
+.search .fitext{margin:0 8px 0 6px;width:216px;}
+
+/* Titulo da pagina */
+.content h2,
+.minha-conta .area-3-2-3 h3{color:#353535;font-size:27px;line-height:1.5em;margin:15px 0;text-transform:uppercase;}
+
+/* Footer */
+#footer{clear:both;font-size:10px;margin:34px 0 25px 8px;overflow:auto;padding:34px 6px 0 0;_height:1%;}
+.home #footer{padding-top:0;}
+#footer h2{background-position:0 -300px;border-bottom:1px solid #cc0066;font-size:15px;padding:8px 0 8px 23px;}
+#footer h2 span{display:none;}
+#footer h3{font-size:12px;font-weight:700;margin-bottom:17px;}
+#footer .itemGroup{float:left;margin:5px 0 0 24px;}
+#footer .columnList a{line-height:1.8em;}
+
+#footerServices{width:153px;}
+#footerInstitutional{width:179px;}
+#footerVipClub{width:145px;}
+
+#footerServicesAssociate a{background:#333;color:#fff;float:left;font-weight:700;margin-top:18px;padding:2px 3px;;}
+
+#footerNews{width:180px;}
+#footerNews h3{background-position:0 -100px;height:29px;margin-bottom:0;width:144px;}
+#footerNews h4{font-weight:700;margin-bottom:6px;margin-top:8px;}
+#footerNews p{line-height:1.1em;}
+#footerNews p a{text-decoration:underline;}
+
+.department #footerNewsletter{display:none;}
+.department #footerNews{width:390px;}
+
+#network li{float:left;}
+#network a{display:block;height:31px;margin-right:5px;width:30px;}
+#ntBlog{background-position:0 -150px;}
+#ntTwitter{background-position:-30px -150px;}
+#ntYoutube{background-position:-60px -150px;}
+#ntFacebook{background-position:-90px -150px;}
+
+#footer #footerNewsletter{float:right;margin-left:0;margin-right:5px;width:159px;}
+#footerNewsletter input{margin-top:3px;width:155px;}
+#footerNewsletter p:after{content:':';}
+#footerNewsletter p span{display:none;}
+#footerNewsletter p span.subTitle{display:inline;text-transform:capitalize;}
+#footerNewsletter .btn-ok{float:right;margin-right:2px;width:auto;}
+
+#footerSearch,
+#footerCredits{background:#eae9e8;}
+#footerSearch{padding:15px 23px 13px 11px;}
+#footerCredits{font-size:10px;margin:7px 0;padding-top:10px;text-align:center;}
+#footerCredits p{padding:24px 0;}
+
+#footerCredits ul{overflow:auto;margin:0 auto;width:784px;_height:1%;}
+
+#footerCredits li,
+#footerCredits li a{display:inline;float:left;}
+#footerCredits li a{background-image:url("/arquivos/sprite-footer.jpg");height:42px;margin:0 5px;}
+
+#logoBuscape{width:110px;}
+#logoBondFaro{background-position:-120px center;width:96px;}
+#logoEbit{background-position:-220px center;width:42px;}
+#logoUndefined1{background-position:-270px center;width:42px;}
+#logoUndefined2{background-position:-320px center;width:38px;}
+#logoInternet{background-position:-360px center;width:68px;}
+#logoCamara{background-position:-435px center;width:118px;}
+#logoWebsolve{background-position:-560px center;width:84px;}
+#logoBlindado{background-position:-655px center;width:96px;}
+
+
+/* ---------------------- */
+/* General Pages Elements */
+/* ---------------------- */
+
+/* Content Layout */
+.login .content,
+.cadastro-cliente .content,
+.manutencao-conta .content,
+.checkout .content{float:right;width:786px;}
+
+/* Titles */
+.cadastro-cliente legend,
+.manutencao-conta legend,
+.lista-endereco legend,
+.manutencao-conta h3,
+.cadastro-endereco h3,
+.checkout .content h3,
+.tabela-pedidos h3{font-weight:700;padding:16px 0 4px;}
+
+/* Form Groups */
+.login .grp,
+.cadastro-cliente .grp,
+.cadastro-endereco .grp,
+.manutencao-conta .grp,
+.meus-pedidos .grp,
+.minha-conta .grp,
+.nao-altera{margin-top:5px;overflow:hidden;}
+
+/* Form Labels */
+.login label,
+.cadastro-cliente .content label,
+.cadastro-endereco label,
+.manutencao-conta .content label,
+.endereco-compra .content label,
+.minha-conta .content label,
+.nao-altera span{float:left;margin-top:2px;width:190px;}
+
+/* Form Items Margin */
+.register-info .bt,
+.login .continuar,
+.cadastro-cliente .continuar-usuario,
+.minha-conta .outras-opcoes ul,
+.minha-conta .btw,
+.meus-pedidos .ok,
+.bts{margin-bottom:20px;margin-top:16px;}
+
+/* Form Buttons */
+.bts .bt,
+.pagamento .bt,
+.voltar a,
+.confirmar-pedido input,
+.cadastrar-novo a{font-size:11px;min-width:0;}
+
+/* Form Links */
+.login .grp a,
+.cadastro fieldset a,
+.cadastro-endereco a,
+.alterar-email a,
+.success a,
+.addPhoto a,
+.alterar-senha fieldset a{text-decoration:underline;}
+
+/* Links with button appearance */
+.register-info .bt,
+.bts a,
+.voltar a,
+.cadastrar-novo a,
+.continuar-comprando a{display:block;float:left;padding:1px 10px;text-decoration:none !important;width:auto;}
+
+/* Back and link buttons */
+.voltar a,
+.voltar input,
+.address-list .bts a{background:none;color:inherit;padding:0;text-decoration:underline !important;width:auto !important;}
+
+/* ---------------------------------- */
+/* Login / Sign Up / Shipping Address */
+/* ---------------------------------- */
+.aviso-erro{background:#eae9e8;margin-bottom:20px;padding:12px;text-align:center;}
+
+.login .content h4{font-weight:700;margin-bottom:16px;}
+
+#ctl00_Conteudo_divLogin{border-right:1px solid #999;float:left;width:450px;}
+
+.login label{width:115px;}
+.login .grp{margin-top:10px;}
+.login .grp ul,
+.login .continuar{margin-left:116px;}
+.login .fitext{width:270px;}
+.login-email-links{clear:both;overflow:auto;margin-top:2px;}
+.login-email-links li,
+.login-email-links a{display:inline;float:left;}
+.login-email-links a{margin-right:10px;}
+
+.register-info{float:right;padding-left:50px;width:280px;}
+
+.register-info strong,
+.register-info .vantagens{display:none;}
+
+.minha-conta .outras-opcoes ul{margin-top:8px;}
+.minha-conta .outras-opcoes a{background:none;clear:both;color:#000;display:block;float:left;text-decoration:underline;}
+
+/* ------- */
+/* Sign Up */
+/* ------- */
+.cadastro-cliente .areaAvisos label{display:block;float:none;margin-top:6px;width:auto;}
+
+.cadastro-cliente .frmTipoPessoa label,
+.cadastro-cliente label.sexo-m,
+.cadastro-cliente label.sexo-f{width:auto;margin-right:26px;}
+
+input.cep-prefixo{width:70px;}
+.cep-sufixo,
+.fNumero input{width:30px;}
+
+.cadastro-cliente .email,
+.alterar-email input,
+.esqueci-senha .email input{width:185px;}
+
+/* ------------ */
+/* Change Email */
+/* ------------ */
+.alterar-email .fipassword{width:92px;}
+
+/* --------------- */
+/* Edit My Account */
+/* --------------- */
+.permission-sel,
+.nao-altera em{display:none;}
+
+.dia,
+.mes{width:20px;}
+.ano{width:40px;}
+
+.minha-conta span.fSexo label{float:none;margin:0 20px 0 6px;width:auto;}
+.minha-conta .ficheckbox{float:left;margin-top:4px;}
+.minha-conta legend{display:none;}
+
+/* ------------------------ */
+/* My Account and My Orders */
+/* ------------------------ */
+.minha-conta .nav{clear:left;float:left;margin-left:8px;margin-top:20px;width:166px;}
+.minha-conta .nav ul{margin-bottom:16px;margin-left:10px;}
+
+.minha-conta .abas{border-bottom:1px solid #cf1070;left:0;margin-left:-196px;overflow:hidden;padding-bottom:4px;position:absolute;top:10px;width:986px;}
+.minha-conta .abas li{float:left;}
+.minha-conta .abas a{display:block;font-size:15px;padding:3px 9px;}
+.minha-conta .abas .meu-perfil a{background:url("/arquivos/tabs-bg.gif") right 5px no-repeat;}
+
+.minha-conta .nav h3{background:#eae9e8;font-family:"Times New Roman", Times, serif;font-size:16px;font-style:italic;padding:5px 8px 9px;margin-bottom:9px;}
+
+.minha-conta .breadcrumb,
+.minha-conta .area-3-2-1,
+.minha-conta .area-3-2-10{display:none;}
+
+.minha-conta .area-3-2,
+.minha-conta .content,
+.meus-pedidos .content{float:right;position:relative;width:790px;}
+
+.minha-conta .nav,
+.minha-conta .area-3-2,
+.meus-pedidos .content{padding-top:35px;}
+
+.meus-dados h4,
+.filtrar legend{font-weight:700;}
+
+.minha-conta .dados{overflow:hidden;}
+.minha-conta .dados dt,
+.minha-conta .dados dd{float:left;}
+.minha-conta .dados dt{clear:left;width:130px;}
+
+/* --------- */
+/* My Orders */
+/* --------- */
+.meus-pedidos .filtrar{margin-top:30px;}
+
+#orderInfoProductList,
+#orderInfoProductList th,
+#orderInfoProductList td{border:1px solid #666;}
+
+#orderInfoProductList th,
+#orderInfoProductList td{padding:2px 5px;}
+
+#orderInfoProductList th{font-weight:700;text-align:center;}
+
+#orderInfoProductList .links{text-align:center;}
+#orderInfoProductList a{text-decoration:underline;}
+
+/* ---------------- */
+/* Shipping Address */
+/* ---------------- */
+#ctl00_Conteudo_divTitulo{display:none;}
+.endereco-compra .select-address a{float:left;min-width:0;padding:1px 10px;text-decoration:none;}
+.endereco address{clear:both;padding-top:8px;}
+.address-list li{float:left;margin:0 20px 15px 0;}
+
+/* ------------- */
+/* Shipping Page */
+/* ------------- */
+.tipoPagamento li{margin-top:15px;}
+.tipoPagamento br{margin-top:8px;}
+.tipoPagamento input{float:left;margin:2px 4px 0 0;}
+.fEndereco input{width:160px;}
+
+/* ------------ */
+/* Payment Page */
+/* ------------ */
+.valor-compra{margin-bottom:40px;}
+.valor-compra th{padding-right:20px;}
+.valor-compra td{text-align:right;}
+.valor-compra .valor-total th,
+.valor-compra .valor-total td{font-weight:700;}
+
+.lista-formas-pagamento{margin-bottom:15px;overflow:hidden;}
+.lista-formas-pagamento li{float:left;margin-right:30px;}
+.lista-formas-pagamento label{cursor:pointer;}
+.lista-formas-pagamento img{margin-left:4px;vertical-align:middle;}
+.lista-formas-pagamento strong{display:block;}
+
+.selec-cartoes legend{display:none;}
+.credit-card-info fieldset{margin:2px 0;}
+
+.formapagamento-descricao em{margin-right:10px;}
+
+.boleto-wrapper{margin-bottom:20px;}
+
+/* --+-------------------- */
+/* Order Confirmation Page */
+/* --+-------------------- */
+.dados-produto,
+.dados-produto td,
+.dados-produto th{border:1px solid #666;}
+
+.dados-produto th,
+.dados-produto td{padding:2px 5px;}
+
+.dados-produto{margin:20px 0;}
+.dados-produto th{font-weight:700;}
+.cadastrar-novo a{display:inline;float:none;}
+
+/* ------------ */
+/* Success Page */
+/* ------------ */
+.success p{margin:10px 0;}
+.order-number br{display:none;}
+.order-number strong{font-size:14px;}
+
+/* ---- */
+/* CART */
+/* ---- */
+.carrinho .content{margin-left:8px;}
+
+/* table of products - general elements */
+.carrinho .content .bt{width:auto;}
+.carrinhoTable{width:84%;}
+
+.carrinhoTable thead,
+.carrinhoTable tbody{border:1px solid #999;}
+
+.carrinhoTable thead{background:#ddd;border-bottom:none;color:#666;}
+.carrinhoTable tbody{border-top:none;}
+
+.carrinhoTable thead th,
+.carrinhoTable tbody input,
+.carrinho tbody td.preco-total{font-size:12px;font-weight:700;}
+
+.carrinhoTable th{text-align:center;}
+.carrinhoTable th,
+.carrinhoTable td{padding:5px;}
+
+.carrinhoTable tbody input{color:#3a3a38;}
+
+.carrinho .sidebar{display:none;}
+
+.carrinho legend{font-weight:700;}
+.carrinho .grp label{display:block;margin-bottom:6px;}
+
+/* table of products - specific elements */
+.carrinho td.preco-unitario,
+.carrinho td.preco-total{text-align:right;}
+
+.carrinho td.preco-unitario,
+.carrinho tbody td.preco-total{color:#cc0066;}
+
+.carrinho td.preco-unitario s{color:#666;font-weight:normal;}
+
+.carrinhoTable .produto a{float:left;margin-right:12px;}
+.carrinhoTable .produto img{display:block;}
+
+.carrinho .controle-quantidade{display:none;}
+
+.carrinhoTable .txtSubTotal{padding-left:414px;}
+
+.carrinhoTable .quantidade{text-align:center;}
+.carrinhoTable .preco-unitario,
+.carrinhoTable tbody .preco-total,
+.carrinho .frete-gratis,
+.carrinho .valor{text-align:right;width:110px;}
+.carrinhoTable .excluir a{font-size:10px;text-decoration:underline;}
+
+.carrinho tfoot .preco-total,
+.carrinho tfoot .frete-gratis,
+.carrinho tfoot .valor{padding-right:58px;}
+
+.carrinho .total,
+.carrinho .valor-parcelado{font-size:12px;font-weight:700;}
+
+.carrinho div.valor-parcelado{position:absolute;margin-left:408px;width:300px;}
+
+.carrinho .excluir{text-align:center;width:43px;}
+
+.carrinho label.cep-prefixo{display:block;}
+
+.dica-carrinho{padding-top:20px;}
+
+/* table of products - button links */
+.carrinho .bts{margin:20px 0;overflow:auto;}
+.carrinho .content .bts li a{display:block;padding:4px 8px;}
+.carrinho .continuar-comprando{float:left;}
+.carrinho .finalizar-compra{float:right;margin-right:158px;}
+
+
+
+
+
+
+
+
+

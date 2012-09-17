@@ -1,0 +1,2545 @@
+.fitext.error {
+	border: solid 1px red;
+}
+
+#ctl00_Conteudo_ctrlEndereco_lblErro {
+	display: none !important;
+}
+
+input[type="submit"]{
+	display:block;
+}
+input[type="button"]{
+	display:block;
+}
+input[type="radio"]{
+	border:none;
+}
+
+.mainContentWrapper {
+	float: left;
+	position: relative;
+}
+
+/* Pink font color */
+.loginmsg a,
+#footer h2,
+.order-number strong,
+.minha-conta .nav h3,
+.informacoes-conta h3{color:#195073;}
+
+/* Sprites */
+h1 a,
+#footerNews h3,
+#network a,
+#footer h2{background-image:url("/arquivos/sprite-general.gif");background-repeat:no-repeat;}
+
+/* Image Replacement */
+.imgRp{display:block;text-indent:-999em;}
+
+/* Forms submit buttons */
+.bt{background:#f0f0f0;cursor:pointer;}
+.bts span,
+.bts li{float:left;margin-right:10px;}
+
+/* Hidden items */
+.history,
+.bottomSearchWrapper{display:none;}
+
+/* Layout */
+#aspnetForm{margin:0 auto;position:relative;width:986px;}
+
+/* Top Bar
+#divMenuUsuario{display:none;}
+.header div div{font-size:10px;overflow:auto;position:absolute;top:2px;width:100%;}
+.header div div div{overflow:auto;padding-top:2px;}
+.header div div .ajax-content-loader,
+.header div div .ajax-content-loader div{color:#999;float:left;padding-top:0;width:auto;}
+.header div div p{color:#999;float:left;}
+.header div div p,
+.header div div .ajax-content-loader div{margin-left:12px;}
+.header div div p a,
+.header div div .ajax-content-loader a{margin-left:4px;text-decoration:underline;}
+.header strong{font-weight:normal;}
+ */
+ 
+ #topBar #LoginWrapper {
+	position: absolute;
+	top: 8px;
+	left: 78px;
+}
+
+#topBar #divMenuWelcome {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 112px;
+	text-align: left;
+}
+
+#topBar #divMenuWelcome #pnlNaoSeguro {
+	width: 255px;
+	padding: 0;
+	margin: 0;
+	top: 8px;
+}
+
+.servicos #topBar {
+	background-position: top left;
+	width: 412px;
+}
+ 
+#ctl00_TopBar_TopBar1_pnlTopBarAssincrono, #ctl00_TopBar_ComercioTopBar_pnlTopBarAssincrono {
+	display: none;
+}
+
+.mainContentWrapper .header > h1 {
+	display: none;
+}
+
+.searchWrapper {
+	display: none;
+}
+
+.servicos {
+	width: 986px;
+	height: 220px;
+}
+
+.servicos li.last a{background:none;}
+
+.servicos #header #contatosHeader #btnWishlist {
+	position: absolute;
+	right: 0;
+}
+
+/* Title and Cart */
+h1 a{background-position:8px 5px;color:#000;float:left;font:italic 22px "Times New Roman", Times, serif;height:51px;margin:22px 0 2px;padding:22px 0 0 232px;text-indent:-999em;width:352px;}
+h1 a:hover{text-decoration:none;}
+
+/* Menu */
+.header .menuwrap {
+	display: none;
+}
+#menu01{background:#195073;clear:both;overflow:hidden;margin:3px 0 4px;_height:1%;}
+#menu01 li{float:left;}
+#menu01 a{color:#fff;float:left;font-weight:700;line-height:1.45em;padding:6px 14px 5px 10px;_padding-top:5px;}
+#menu01 a:hover{text-decoration:none;}
+
+/* Search */
+.searchWrapper{padding:7px 0 13px 8px;}
+.search select{margin-left:8px;}
+.search legend{display:none;}
+.search label{color:#7a7a7a;float:left;font-size:10px;font-weight:700;}
+.search .fitext{margin:0 4px 0 2px;width:216px;}
+
+/* Titulo da pagina */
+.content h2,
+.minha-conta .area-3-2-3 h3{color:#353535;font-size:27px;line-height:1.5em;margin:15px 0;text-transform:uppercase;}
+
+.content > h2 {
+	position: absolute;
+	top: 160px;
+	left: 20px;
+	text-indent: -9999px;
+	font-size: 18px;
+	text-transform: none;
+	color: white;
+	font-family: Myriad Pro, Arial, sans-serif;
+}
+
+.manutencao-conta .content > h2 {
+	top: -67px;
+	left: 20px;
+	text-indent: 0;
+}
+
+.login .content > h2 {
+	width: 85px;
+	height: 26px;
+	background: url("/arquivos/title_identificacao.png") no-repeat top right;
+}
+
+.carrinho .content > h2 {
+	width: 85px;
+	height: 26px;
+	background: url("/arquivos/title_carrinho.png") no-repeat top left;
+}
+
+/* Footer 
+#footer{clear:both;font-size:10px;margin:34px 0 25px 8px;overflow:auto;padding:34px 6px 0 0;_height:1%;}
+.home #footer{padding-top:0;}
+#footer h2{background-position:0 -300px;border-bottom:1px solid #195073;font-size:15px;padding:8px 0 8px 23px;}
+#footer h2 span{display:none;}
+#footer h3{font-size:12px;font-weight:700;margin-bottom:17px;}
+#footer .itemGroup{float:left;margin:5px 0 0 24px;}
+#footer .columnList a{line-height:1.8em;}
+
+#footerServices{width:153px;}
+#footerInstitutional{width:179px;}
+#footerVipClub{width:145px;}
+
+#footerServicesAssociate a{background:#333;color:#fff;float:left;font-weight:700;margin-top:18px;padding:2px 3px;;}
+
+#footerNews{width:180px;}
+#footerNews h3{background-position:0 -100px;height:29px;margin-bottom:0;width:144px;}
+#footerNews h4{font-weight:700;margin-bottom:6px;margin-top:8px;}
+#footerNews p{line-height:1.1em;}
+#footerNews p a{text-decoration:underline;}
+
+.department #footerNewsletter{display:none;}
+.department #footerNews{width:390px;}
+
+#network li{float:left;}
+#network a{display:block;height:31px;margin-right:5px;width:30px;}
+#ntBlog{background-position:0 -150px;}
+#ntTwitter{background-position:-30px -150px;}
+#ntYoutube{background-position:-60px -150px;}
+#ntFacebook{background-position:-90px -150px;}
+
+#footer #footerNewsletter{float:right;margin-left:0;margin-right:5px;width:159px;}
+#footerNewsletter input{margin-top:3px;width:155px;}
+#footerNewsletter p:after{content:':';}
+#footerNewsletter p span{display:none;}
+#footerNewsletter p span.subTitle{display:inline;text-transform:capitalize;}
+#footerNewsletter .btn-ok{float:right;margin-right:2px;width:auto;}
+
+#footerSearch,
+#footerCredits{background:#eae9e8;}
+#footerSearch{padding:15px 23px 13px 11px;}
+#footerCredits{font-size:10px;margin:7px 0;padding-top:10px;text-align:center;}
+#footerCredits p{padding:24px 0;}
+
+#footerCredits ul{overflow:auto;margin:0 auto;width:784px;_height:1%;}
+
+#footerCredits li,
+#footerCredits li a{display:inline;float:left;}
+#footerCredits li a{background-image:url("/arquivos/sprite-footer.jpg");height:42px;margin:0 5px;}
+
+#logoBuscape{width:110px;}
+#logoBondFaro{background-position:-120px center;width:96px;}
+#logoEbit{background-position:-220px center;width:42px;}
+#logoUndefined1{background-position:-270px center;width:42px;}
+#logoUndefined2{background-position:-320px center;width:38px;}
+#logoInternet{background-position:-360px center;width:68px;}
+#logoCamara{background-position:-435px center;width:118px;}
+#logoWebsolve{background-position:-560px center;width:84px;}
+#logoBlindado{background-position:-655px center;width:96px;}
+*/
+
+.footer {
+	float: left;
+}
+
+#footer #footerSocial {
+	width: 300px;
+	margin-left: 120px;
+}
+
+#footer #footerAtendimento {
+	border: none;
+	padding-left: 60px;
+}
+
+/* ---------------------- */
+/* General Pages Elements */
+/* ---------------------- */
+
+/* Content Layout */
+
+.content {
+	width: 938px;
+	float: right;
+	border: solid 1px #ECECEC;
+	background: white;
+	color: #5A5283;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-right: 2px;
+}
+
+
+.content.cadastro {
+	padding: 0;
+	background: none;
+	border: none;
+}
+
+.content h4 {
+	font-size: 18px;
+	color: #C20059;
+	text-align: center;
+}
+
+/* Modals */
+#TB_iframeContent{background:#fff;}
+#TB_overlay{background:#000;opacity: .7;filter:alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity: 0.7;}
+
+/* Titles */
+.cadastro-cliente legend, 
+.manutencao-conta legend, 
+.lista-endereco legend, 
+.manutencao-conta h3, 
+.cadastro-endereco h3, 
+.checkout .content h3, 
+.tabela-pedidos h3 {
+font-weight: 700;
+font-size: 14px;
+}
+
+/* Form Groups */
+.login .grp, 
+.cadastro-cliente .grp, 
+.cadastro-endereco .grp, 
+.manutencao-conta .grp, 
+.meus-pedidos .grp, 
+.minha-conta .grp, 
+.nao-altera {
+margin-top: 5px;
+float: left;
+clear: both;
+}
+
+/* Form Labels */
+.login label,
+.cadastro-cliente .content label,
+.cadastro-endereco label,
+.manutencao-conta .content label,
+.endereco-compra .content label,
+.minha-conta .content label,
+.nao-altera span{float:left;margin-top:5px;width:190px;}
+
+/* Form Items Margin */
+.register-info .bt,
+.login .continuar,
+.cadastro-cliente .continuar-usuario,
+.minha-conta .outras-opcoes ul,
+.minha-conta .btw,
+.meus-pedidos .ok
+{margin-bottom:20px;margin-top:16px;overflow:hidden;}
+
+/* Form Buttons */
+
+
+/* Form Links */
+
+
+/* Links with button appearance */
+.register-info .bt,
+.bts a,
+.voltar a,
+.cadastrar-novo a,
+.continuar-comprando a{display:block;float:left;padding:1px 10px;text-decoration:none !important;width:auto;}
+
+.register-info .criar-conta a {
+	width: 145px;
+	height: 41px;
+    background:url("/arquivos/btn_cadastrar.png") no-repeat top center;
+	border: none;
+	text-indent: -9999px;
+	display: block;
+	font-size: 0px;
+	line-height: 0px;
+	padding:0;
+}
+
+.sign-in-core .btw.continuar {
+	margin-top: 59px;
+}
+
+.sign-in-core .btw.continuar input {
+	width: 105px;
+	height: 41px;
+	display:block;
+    background:url("/arquivos/btn_login.png") no-repeat top center;
+	border: none;
+	text-indent: -9999px;
+	font-size: 0px;
+	line-height: 0px;
+	padding:0;
+}
+
+/* Back and link buttons */
+.voltar a,
+.voltar input,
+.address-list .bts a{background:none;border:none;color:inherit;padding:0;text-decoration:underline !important;display:block;}
+
+/* ---------------------------------- */
+/* Login / Sign Up / Shipping Address */
+/* ---------------------------------- */
+.aviso-erro{background:#eae9e8;margin-bottom:20px;padding:12px;text-align:center;}
+
+.login .content h4{font-weight:700;margin-bottom:16px;}
+
+.login label {
+	width: 115px;
+	font-weight: bold;
+}
+.login .grp{margin-top:10px;}
+
+.login .fitext {
+	width: 190px;
+	padding: 4px;
+	margin-top: 4px;
+}
+
+.login-email-links{clear:both;overflow:auto;margin-top:2px;}
+.login-email-links li,
+.login-email-links a{display:inline;float:left;}
+.login-email-links a{margin-right:10px;}
+.login .grp ul, .login .continuar {
+	float: left;
+	clear: both;
+}
+
+.sign-in .wrapper > p {
+	display: none;
+}
+
+.sign-in-core fieldset {
+	width: 200px;
+	margin-left: 105px;
+}
+
+.sign-in-core input, .sign-in-core label {
+	float: left;
+	clear: both;
+}
+
+.register-info {
+	border-right: 1px dotted #DFDFDF;
+	float: left;
+	padding-left: 50px;
+	width: 415px;
+	margin-right: 20px;
+}
+
+#ctl00_Conteudo_divLogin {
+	float: left;
+	width: 450px;
+}
+
+.register-info strong{display:block;margin:20px 0 10px;}
+.register-info .vantagens{list-style:disc outside none;margin-left:13px;}
+.register-info .vantagens li{margin-bottom:4px;}
+
+.minha-conta .outras-opcoes ul{margin-top:8px;}
+.minha-conta .outras-opcoes a{background:none;clear:both;color:#000;display:block;float:left;text-decoration:underline;}
+
+/* ------- */
+/* Sign Up */
+/* ------- */
+.cadastro-cliente .areaAvisos label {
+	display: block;
+	clear: both;
+	margin-top: 6px;
+	width: auto;
+}
+
+.cadastro-cliente .frmTipoPessoa label,
+.cadastro-cliente label.sexo-m,
+.cadastro-cliente label.sexo-f{width:auto;margin-right:26px;}
+
+.frmPessoaFisica label.sexo-m, .frmPessoaFisica label.sexo-f {
+	margin-top: 2px;
+}
+
+input.cep-prefixo{width:70px;}
+.cep-sufixo,
+.fNumero input{width:30px;}
+
+.cadastro-cliente .email,
+.alterar-email input,
+.esqueci-senha .email input{width:185px;}
+
+/* ------------ */
+/* Change Email */
+/* ------------ */
+.alterar-email .fipassword{width:92px;}
+
+/* --------------- */
+/* Edit My Account */
+/* --------------- */
+.permission-sel,
+.nao-altera em{display:none;}
+
+.dia,
+.mes{width:20px;}
+.ano{width:40px;}
+
+.minha-conta span.fSexo label{float:none;margin:0 20px 0 6px;width:auto;}
+.minha-conta .ficheckbox{float:left;margin-top:4px;}
+.minha-conta legend{display:none;}
+
+/* ------------------------ */
+/* My Account and My Orders */
+/* ------------------------ */
+.minha-conta .nav {
+	clear: left;
+	float: left;
+	margin-left: 8px;
+	margin-top: 27px;
+	width: 166px;
+}
+.minha-conta .nav ul{margin-bottom:16px;margin-left:10px;}
+
+
+#ctl00_Conteudo_56 h3 {
+	position: absolute;
+	top: -85px;
+	left: -195px;
+	font-size: 18px;
+	color: white;
+	text-transform: none;
+	font-family: Myriad Pro, Arial, sans-serif;
+}
+
+
+#ctl00_Conteudo_pnlAreaRoot {
+	width: 938px;
+	float: right;
+	border: solid 1px #ECECEC;
+	background: white;
+	color: #5A5283;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-right: 2px;
+}
+
+.minha-conta .abas {
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x bottom left;
+	left: 0;
+	overflow: hidden;
+	padding-bottom: 15px;
+	position: absolute;
+	top: 10px;
+	width: 928px;
+}
+.minha-conta .abas li{float:left;}
+.minha-conta .abas a{display:block;font-size:15px;padding:3px 9px;}
+.minha-conta .abas .meu-perfil a{background:url("/arquivos/tabs-bg.gif") right 0 no-repeat;}
+
+.minha-conta .abas a {
+	color:#c20059;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.minha-conta .nav h3{background:#eae9e8;font-size:13px;font-weight:700;padding:5px 8px 9px;margin-bottom:9px;}
+
+.minha-conta .breadcrumb,
+.minha-conta .area-3-2-1{display:none;}
+
+.minha-conta .area-3-2, .minha-conta .content, .meus-pedidos .content {
+	float: left;
+	position: relative;
+	width: 938px;
+}
+
+#ctl00_Conteudo_56, #ctl00_Conteudo_58 {
+	width: 360px;
+}
+
+#ctl00_Conteudo_72 {
+	width: 530px;
+	position: absolute;
+	right: 10px;
+	top: 45px;
+}
+
+#ctl00_Conteudo_66 {
+	display: none;
+}
+
+.manutencao-conta .content{width: 938px;}
+
+.meus-pedidos #divMenuUsuario {
+	display: none;
+}
+
+.meus-pedidos .content {
+	width: 938px;
+	float: right;
+	border: solid 1px #ECECEC;
+	background: white;
+	color: #5A5283;
+	padding: 75px 20px 20px 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-right: 2px;
+	min-height: 300px;
+}
+
+.meus-pedidos .nav {
+	position: absolute;
+	z-index: 1;
+	top: 275px;
+	left: 25px;
+	padding: 0 !important;
+}
+
+.meus-pedidos .wrapper.pedidos {
+	padding-top: 30px;
+}
+
+.meus-pedidos .content > h2 {
+	top: -66px;
+	text-indent: 0;
+}
+
+.meus-pedidos .filtrar label {
+text-align: right;
+margin-right: 5px;
+margin-top: 3px;
+width: 130px;
+}
+
+.meus-pedidos .grp.filtrar-data input {
+	width: 60px;
+}
+
+.meus-pedidos .filtrar input, .meus-pedidos .filtrar select {
+	padding: 4px;
+}
+
+.meus-pedidos .filtrar input{
+	width: 178px;
+}
+
+.meus-pedidos .filtrar select {
+	width: 188px;
+}
+
+.meus-pedidos .filtrar input.bt.fisubmit {
+	width: 116px;
+	height: 41px;
+	padding: 0;
+	border: none;
+	background: url("/arquivos/btn_buscar.jpg") repeat-x bottom center;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.meus-pedidos .ok {
+	clear: both;
+	padding-top: 15px;
+}
+
+.meus-pedidos .abas {
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x bottom left;
+	left: 0;
+	margin-left: 25px;
+	overflow: hidden;
+	padding-bottom: 15px;
+	position: absolute;
+	top: 10px;
+	width: 928px;
+}
+
+#menu h2 {
+	color: white;
+	padding: 8px 0 0 20px;
+}
+
+.minha-conta.editar-conta .content > h2 {
+	top: -67px;
+	text-indent: 0;
+}
+
+.minha-conta.editar-conta .content input {
+	padding: 4px;
+	width: 180px;
+}
+
+.minha-conta.editar-conta .content input.dia,
+.minha-conta.editar-conta .content input.mes{
+	width: 25px;
+}
+
+.minha-conta.editar-conta .content input.ano {
+	width: 50px;
+}
+
+.minha-conta.editar-conta .content .firadio,
+.minha-conta.editar-conta .content .ficheckbox{width:13px;}
+
+
+.minha-conta.editar-conta .content {
+	width: 938px;
+}
+
+.minha-conta.editar-conta .salvar input.bt.fisubmit {
+	width: 105px;
+	height: 41px;
+	display:block;
+	padding: 0;
+	border: none;
+	background: url("/arquivos/btn_salvar.png") no-repeat bottom center;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.minha-conta.editar-conta h4 {
+	display: none;
+}
+
+.minha-conta.editar-conta label,
+.minha-conta.editar-conta #ctl00_Conteudo_pCpf span {
+	text-align: right;
+	margin-right: 5px;
+	width: 220px;
+}
+
+.minha-conta.editar-conta fieldset strong {
+	position: relative;
+	top: 5px;
+}
+
+#ctl00_Conteudo_spanFoto {
+	display: block;
+	padding: 3px;
+	border: solid 1px;
+}
+
+.minha-conta.editar-conta .meus-dados .photo {
+	top: 30px;
+	left: 20px;
+}
+
+.minha-conta.editar-conta .meus-dados .btw.addPhoto {
+	left: 43px;
+	top: 125px;
+}
+
+.minha-conta.editar-conta .meus-dados .btw.addPhoto a{
+	width:57px;
+	height:9px;
+	background: url("/arquivos/btn_alterarFoto.jpg") no-repeat bottom center;
+	display:block;
+}
+
+.minha-conta.editar-conta .nao-altera span {
+	text-align: right;
+	width: 220px;
+	margin-right: 5px;
+}
+
+.minha-conta.editar-conta .voltar input.bt.fisubmit {
+	width: 105px;
+	height: 41px;
+	padding: 0;
+	display:block;
+	border: none;
+	background: url("/arquivos/btn_voltar.png") no-repeat bottom center;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.area-3-2-3 .bts {
+	position: absolute;
+	top: 67px;
+	left: 196px;
+}
+
+.area-3-2-3 .bts li a {
+	background: #F16787;
+	color: white;
+	font-size: 13px;
+	border-radius: 10px;
+}
+
+.minha-conta.editar-conta ul.bts {
+	float: left;
+	clear: both;
+	margin-top: 20px;
+	padding-left: 75px;
+}
+
+.minha-conta .nav, .minha-conta .area-3-2, .meus-pedidos .content {
+	padding-top: 45px;
+}
+
+.minha-conta .nav {
+	display: none;
+}
+
+.meus-dados h4,
+.filtrar legend{font-weight:700;}
+
+.minha-conta .dados{overflow:hidden;}
+
+.minha-conta .dados dt, .minha-conta .dados dd {
+	float: left;
+	padding: 3px;
+}
+
+.minha-conta .dados dt {
+	clear: left;
+	width: 130px;
+	text-align: right;
+	margin-right: 8px;
+	color: #8786C0;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.minha-conta .area-3-2-3 h4,
+.minha-conta .area-3-2-5 h3,
+.minha-conta .area-3-2-3 h4, .minha-conta .area-3-2-5 h3, .minha-conta .area-3-2-10 h3 {
+	border-bottom: dotted 1px #DFDFDF;
+	font-size: 13px;
+	font-weight: 700;
+	margin: 20px 0 10px;
+	padding: 5px 0;
+}
+
+#ctl00_Conteudo_ctl06_spanFoto {
+	padding: 3px;
+	border: solid 1px #5A5283;
+	display: block;
+}
+
+.meus-dados .photo {
+	position: absolute;
+	top: 105px;
+	left: 260px;
+}
+
+.meus-dados .photo img {
+	width: 95px;
+	height: 95px;
+}
+
+.btw.addPhoto {
+	position: absolute;
+	top: 195px;
+	left: 277px;
+}
+
+
+.minha-conta h3 a{text-decoration:none;}
+
+.minha-conta .area-3-2-5 dt{font-weight:700;margin:15px 0 2px;}
+
+.minha-conta .box.informacoes-conta dt {
+	float: left;
+	width: 143px;
+	text-align: right;
+	margin: 5px;
+	color: #8786C0;
+	font-weight: bold;
+}
+
+.minha-conta .box.informacoes-conta dd {
+	padding: 5px;
+}
+
+.minha-conta .comentario-produto a{text-decoration:underline;}
+.minha-conta .comentario-produto li{margin:3px 0;}
+
+/* --------- */
+/* My Orders */
+/* --------- */
+.meus-pedidos .filtrar{margin-top:30px;}
+
+#orderInfoProductList, #orderInfoProductList th, #orderInfoProductList td {
+	padding: 10px 5px;
+}
+
+#orderInfoProductList {
+	width: 936px;
+	margin-top: 20px;
+}
+
+.tabela-pedidos {
+	border-bottom: dotted 1px whiteSmoke;
+	padding-bottom: 20px;
+}
+
+.content.content-meuspedidos .ok {
+	position: absolute;
+	bottom: 10px;
+	left: 355px;
+}
+
+
+#orderInfoProductList td.pedido {
+	text-align: center;
+}
+
+#orderInfoProductList thead th {
+	background: whiteSmoke;
+}
+
+#orderInfoProductList th{font-weight:700;text-align:center;}
+
+#orderInfoProductList .links{text-align:center;}
+#orderInfoProductList a{text-decoration:underline;}
+
+/* ---------------- */
+/* Shipping Address */
+/* ---------------- */
+#ctl00_Conteudo_divTitulo{display:none;}
+.endereco-compra .select-address a{float:left;min-width:0;padding:1px 10px;text-decoration:none;}
+.endereco address{clear:both;padding-top:8px;}
+.address-list > li{float:left;margin:0 20px 15px 0;}
+
+/* ------------- */
+/* Shipping Page */
+/* ------------- */
+.tipoPagamento li{margin-top:15px;}
+.tipoPagamento br{margin-top:8px;}
+.tipoPagamento input{float:left;margin:2px 4px 0 0;}
+.fEndereco input{width:160px;}
+
+/* ------------ */
+/* Payment Page */
+/* ------------ */
+.valor-compra{margin-bottom:40px;}
+.valor-compra th {
+	padding-right: 20px;
+	font-weight: bold;
+}
+.valor-compra td{text-align:right;}
+.valor-compra .valor-total th,
+.valor-compra .valor-total td{font-weight:700;}
+
+.checkout.forma-pagamento .valor-total{
+	background: #F5F5F5;
+	font-size: 20px;
+}
+
+.checkout.forma-pagamento .valor-total th, .checkout.forma-pagamento .valor-total td {
+	padding: 10px;
+	text-align: right;
+}
+
+.lista-formas-pagamento {
+	margin-bottom: 22px;
+	float: left;
+}
+
+.lista-formas-pagamento li {
+	float: left;
+	margin-right: 30px;
+	position: relative;
+}
+
+.lista-formas-pagamento.lista-debito input,
+.lista-formas-pagamento.lista-boletos input {
+	width: 13px;
+	position: absolute;
+	display:block;
+	bottom: -4px;
+	left: 29px;
+}
+
+.lista-formas-pagamento strong {
+	display: block;
+	float: left;
+	clear: both;
+	margin-left: 90px;
+	margin-top: -50px;
+}
+
+.lista-formas-pagamento p {
+	margin-left: 90px;
+	margin-top: -30px;
+	float: left;
+}
+
+.lista-formas-pagamento label{cursor:pointer;}
+
+.lista-formas-pagamento img {
+	margin-left: 4px;
+	vertical-align: middle;
+	float: left;
+}
+.lista-formas-pagamento.lista-debito img {
+    
+    display:block;
+    width:70px;
+    height:47px;
+    margin-bottom:10px;
+    margin-right:70px;
+}
+.lista-formas-pagamento.lista-debito img[height="44"] {
+    
+    display:block;
+    width:70px;
+    height:43px;
+    margin-bottom:10px;
+    margin-right:70px;
+}
+.lista-formas-pagamento strong{display:block;}
+
+.selec-cartoes legend{display:none;}
+.credit-card-info fieldset{margin:2px 0;}
+
+.formapagamento-descricao em{margin-right:10px;}
+
+.boleto-wrapper{margin-bottom:20px;}
+
+#ctl00_Conteudo_ctrlFormaPagamento_DadosFormaPagamamentoOutros input {
+	width: 231px;
+	height: 56px;
+	background:url("/arquivos/btn_finalizarCompraBoleto.png") no-repeat top center;
+}
+
+#ctl00_Conteudo_ctrlFormaPagamento_DadosFormaPagamamentoCartao input{
+	width: 231px;
+	height: 56px;
+	display:block;
+	background:url("/arquivos/btn_finalizarCompraCartao.png") no-repeat top center;
+}
+
+/* ----------------------- */
+/* Order Confirmation Page */
+/* ----------------------- */
+
+.dados-produto th,
+.dados-produto td{padding:2px 5px;}
+
+.dados-produto{margin:20px 0;}
+.dados-produto  th{font-weight:700;}
+.cadastrar-novo thead a{display:inline;float:none;}
+
+.valor-compra tr.valor-total {
+	background: #F5F5F5;
+}
+
+.valor-compra tr.valor-total th, .valor-compra tr.valor-total td {
+	padding: 10px 5px;
+	font-size: 18px;
+}
+
+.confirma-endereco-entrega.first .end {
+	width: 600px;
+}
+
+.confirma-endereco-entrega.first .end h4 {
+	width: 600px;
+	color: #463D72;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 15px 0;
+}
+
+.dados-produto {
+	width: 936px;
+}
+
+.dados-produto td.confirmacao-quantidade {
+	text-align: center;
+}
+
+.dados-produto thead tr th {
+	background: whiteSmoke;
+	padding: 10px 5px;
+}
+
+.dados-entrega {
+	width: 936px;
+}
+
+.dados-entrega thead tr {
+	background: #F5F5F5;
+}
+
+.dados-entrega thead tr th.confirma-endereco-entrega.first {
+	width: 600px;
+}
+
+.dados-entrega thead tr th {
+	padding: 10px 5px;
+	color: #463D72;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.valor-compra tbody th, .valor-compra tbody td {
+	padding: 2px 5px;
+}
+
+.dados-entrega tbody td {
+	padding: 0 5px;
+}
+
+.confirmar-pedido {
+	float: right;
+	position: relative;
+	z-index: 1;
+}
+
+.dados-produto {
+	width: 928px;
+}
+
+.dados-compra {
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x bottom center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+/* ------------ */
+/* Success Page */
+/* ------------ */
+.success p{margin:10px 0;}
+.order-number br{display:none;}
+.order-number strong{font-size:14px;}
+
+/* ---- */
+/* CART */
+/* ---- */
+
+/* table of products - general elements */
+.carrinho .content .bt{width:auto;}
+.carrinhoTable {
+    clear: both;
+    float: left;
+    width: 84%;
+    *margin-top:70px;
+}
+
+.vale-presente.vale-presente.fitext {
+	float: left;
+}
+
+.carrinho fieldset.vale-presente .fisubmit {
+	display: block;
+	width: 91px;
+	position: relative;
+	top: -3px;
+	left: 5px;
+}
+
+.carrinhoTable thead {
+	border-bottom: dotted 1px #DFDFDF;
+	color: #8786C0;
+	font-size: 13px;
+}
+
+.carrinhoTable tbody{border-top:none;}
+
+.carrinhoTable thead th,
+.carrinhoTable tbody input,
+.carrinho tbody td.preco-total{font-size:12px;font-weight:700;}
+
+.carrinhoTable thead th.produto {
+	text-align: left;
+	padding-left: 20px;
+}
+
+
+.carrinhoTable th{text-align:center;}
+.carrinhoTable th,
+.carrinhoTable td{padding:5px;}
+
+
+
+.carrinhoTable tbody input {
+	color: #3A3A38;
+	text-align: center;
+}
+
+.carrinho .sidebar{display:none;}
+
+.carrinho legend{font-weight:700;}
+.carrinho .grp label{display:none;margin-bottom:6px;}
+
+fieldset.vale-presente {
+	position: relative;
+}
+
+fieldset.vale-presente .grp {
+	position: absolute;
+	top: -3px;
+	left: 230px;
+	width: 400px;
+}
+
+td.texto-cepline fieldset {
+	position: relative;
+}
+
+td.texto-cepline .grp.fMulti.fCep a.duvidaCep {
+	position: absolute;
+	top: 16px;
+	left: 408px;
+	width: 100px;
+	font-size: 10px;
+}
+
+td.texto-cepline .grp.fMulti.fCep input {
+	position: absolute;
+	top: 14px;
+}
+
+td.texto-cepline .grp.fMulti.fCep input.cep-prefixo.fitext {
+	left: 195px;
+}
+
+td.texto-cepline .grp.fMulti.fCep input.cep-sufixo.fitext {
+	left: 275px;
+}
+
+td.texto-cepline .grp.fMulti.fCep span.ok-carrinho {
+	position: absolute;
+	top: 0;
+	left: 310px;
+}
+
+td.texto-cepline .grp.fMulti.fCep span.ok-carrinho input {
+	top: 10px;
+	width: 91px;
+	height: 26px;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background:url("/arquivos/btn_ok.png") no-repeat top center;
+	font-size: 0px;
+	line-height: 0px;
+	text-indent: -9999px;
+}
+
+.ok-carrinho input{
+	top: 10px;
+	width: 91px;
+	height: 26px;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background:url("/arquivos/btn_calcular.png") no-repeat top center;
+	font-size: 0px;
+	line-height: 0px;
+	text-indent: -9999px;
+}
+
+/* table of products - specific elements */
+.carrinho td.preco-unitario,
+.carrinho td.preco-total{text-align:center;}
+
+.carrinho td.preco-unitario,
+.carrinho tbody td.preco-total{color:#195073;}
+
+.carrinho td.preco-unitario s{color:#666;font-weight:normal;}
+
+.carrinho .carrinhoTable td.preco-total, 
+.carrinho .carrinhoTable td.frete-gratis,
+.carrinho .carrinhoTable td.valor{
+	color: #C20059;
+	font-size: 15px;
+	text-align:center;
+}
+
+tr.subtotal, tr.vale-presente, tr.cepline, tr.total {
+	border-top: dotted 1px #DFDFDF;
+}
+
+tr.subtotal td, tr.vale-presente td, tr.cepline td, .carrinhoTable tbody td, tr.total td {
+	padding: 15px 0;
+}
+
+.carrinhoTable .produto a {
+	margin-right: 12px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.carrinhoTable .produto a.sku-imagem {
+	float: left;
+}
+
+.carrinhoTable .produto img {
+	display: block;
+	border: solid 2px #F26D8D;
+	border-radius: 5px;
+	width: 70px;
+	height: 70px;
+}
+
+.content h4 {
+	font-size: 10px;
+	color: #C20059;
+	text-align: left;
+	float: left;
+	margin-top: 10px;
+	width: 290px;
+}
+
+.dica-carrinho h4{
+        font-size: 10px;
+	color: #C20059;
+	text-align: left;
+        float:none;
+	margin-top: 0px;
+	width: 290px;
+	margin-bottom:10px;
+	padding-bottom:5px;
+}
+
+td.produto ul {
+	float: left;
+}
+
+#ctl00_Conteudo_pnlDica h4 {
+	width: 150px;
+	margin: 0;
+	font-size: 12px;
+}
+
+.login .content h4 {
+	font-size: 18px;
+	color: #C20059;
+	float:none;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.carrinho .controle-quantidade{display:none;}
+
+.carrinhoTable .txtSubTotal, 
+.carrinhoTable tfoot td.vale-presente, 
+.carrinhoTable tfoot td.txt-frete, 
+.carrinhoTable tfoot td.valor-total{
+	text-align: right;
+	font-size: 13px;
+	font-weight: bold;
+	color: #8786C0;
+}
+
+.carrinhoTable .quantidade{text-align:center;}
+.carrinhoTable .preco-unitario,
+.carrinhoTable tbody .preco-total,
+.carrinho .frete-gratis,
+.carrinho .valor{text-align:center;width:110px;}
+.carrinhoTable .excluir a {
+	width: 11px;
+	height: 10px;
+	background: url("/arquivos/btn_retirar.jpg") no-repeat top right;
+	display: block;
+	text-indent: -9999px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+.carrinho tfoot .preco-total,
+.carrinho tfoot .frete-gratis,
+.carrinho tfoot .valor{padding-right:10px;}
+
+.carrinho .total,
+.carrinho .valor-parcelado{font-size:12px;font-weight:700;}
+
+tr.valor-parcelado {
+	display: none;
+}
+
+.carrinho div.valor-parcelado{position:absolute;margin-left:408px;width:300px;}
+
+.carrinho .excluir{text-align:center;}
+
+.carrinho label.cep-prefixo{display:block;}
+
+.dica-carrinho{padding-top:20px;}
+
+/* table of products - button links */
+#ctl00_Conteudo_updcarrinho{
+    *position:relative;
+}
+.carrinho .bts {
+	margin: 20px 0;
+	overflow: auto;
+	float: right;
+	margin-right: 145px;
+	/**position:absolute;
+	*top:0;**/
+}
+.carrinho .content .bts li a{display:block;padding:4px 8px;}
+.carrinho .continuar-comprando{float:left;
+        width: 215px;
+	height: 41px;
+	display:block;}
+.carrinho .finalizar-compra {
+	float: left;
+}
+
+.carrinho .content .bts .finalizar-compra a {
+	width: 215px;
+	height: 41px;
+	padding: 0;
+	margin: 0;
+	float: right;
+	border: none;
+	background: url("/arquivos/btn_finalizarCompra.png") no-repeat top right;
+	text-indent: -9999px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.carrinho .content .bts .continuar-comprando a {
+	width: 200px;
+	height: 37px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: url("/arquivos/btn_continuarComprando.png") no-repeat top right;
+	font-size: 0px;
+	float: right;
+	text-indent: -9999px;
+	line-height: 0px;
+	margin-top: 2px;
+}
+
+/*CADASTRO*/
+
+.content.cadastro > h2 {
+	position: absolute;
+	top: 160px;
+	left: 20px;
+	width: 85px;
+	height: 26px;
+	background: url("/arquivos/title_identificacao.png") no-repeat top right;
+	text-indent: -9999px;
+}
+
+.frmPessoaFisica legend, .frmPessoaDadosAcesso legend, 
+.frmPessoaDadosAcesso legend, .areaAvisos legend, .frmPessoaJuridica legend {
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x top center;
+	width: 935px;
+	padding-top: 20px;
+	margin-top: 25px;
+	float: left;
+	padding-left: 10px;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.frmTipoPessoa.fRadio legend {
+	float: left;
+	width: 930px;
+	margin-bottom: 15px;
+}
+
+.pessoa-fisica {
+	margin-left: 40px;
+}
+
+#txtCadastroClienteDadosInfo {
+	display:none;
+}
+
+.frmTipoPessoa.fRadio {
+	padding: 0 10px;
+}
+
+.dBtContinuar.continuar-usuario {
+	padding-left: 10px;
+}
+
+.grp.fAvisos {
+	padding: 10px;
+	width: 650px;
+}
+
+.content.cadastro input {
+	width: 185px;
+	padding: 4px;
+	margin: 2px 0;
+}
+
+.content.cadastro .firadio {
+	width: 13px;
+	position: relative;
+	top: 2px;
+}
+
+.content.cadastro input.cep-prefixo {
+	width: 80px;
+	text-align: center;
+}
+
+.content.cadastro input.cep-sufixo {
+	width: 50px;
+	text-align: center;
+}
+
+.content.cadastro input.telefone {
+	width: 155px;
+}
+
+.content.cadastro input.ficheckbox {
+	width: 13px;
+}
+
+.frmPessoaFisica label, .frmPessoaDadosAcesso label {
+	text-align: right;
+	margin: 6px 5px 0 0;
+}
+
+.dBtContinuar.continuar-usuario input {
+	width: 151px;
+	height: 41px;
+	background: url("/arquivos/botao-registre-se.gif") no-repeat top left;
+	border: none;
+	display:block;
+	text-indent: -9999px;
+	padding: 0;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+a.thickbox, span.exp, span.formato, a.nao-cep {
+	font-size: 10px;
+}
+
+/******CHECKOUT******/
+
+.header-steps .steps {
+	width: 980px;
+	height: 44px;
+	background: url("/arquivos/bg_menuHeader.png") no-repeat center center;
+	clear: both;
+	font-family: Myriad Pro, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-top: 14px;
+	position: relative;
+}
+
+.checkout .endereco h2 {
+	display: none;
+}
+
+.checkout .lista-endereco legend {
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+
+.address-list > li {
+	float: left;
+	margin: 0 20px 15px 0;
+	border: solid 1px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.endereco-compra .endereco .select-address a {
+	width: 157px;
+	height: 41px;
+	background: url("/arquivos/btn_selecionar.png") repeat-x top center;
+	border: none;
+	float: left;
+	padding: 0;
+	text-indent: -9999px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.endereco-compra .endereco .editar a {
+	width: 157px;
+	height: 41px;
+	background: url("/arquivos/btn_editar.png") repeat-x top center;
+	border: none;
+	display: block;
+	float: left;
+	padding: 0;
+	text-indent: -9999px;
+	font-size: 0px;
+	line-height: 0px;
+	margin-top: 10px;
+}
+
+.checkout div.cadastro-endereco {
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x top center;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.checkout div.cadastro-endereco h3 {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.endereco-compra fieldset.bts {
+	margin-top: 40px;
+}
+
+.steps ul li {
+	float: left;
+	margin: 0 10px;
+	padding-top: 4px;
+	color: white;
+	padding-left: 30px;
+	padding-bottom: 4px;
+	margin-top: 3px;
+}
+
+.steps ul li#ctl00_TopBar_TopBar1_liIdentificacao {
+	background: url("/arquivos/sprite_steps.png") no-repeat top left;
+	margin-right: 720px;
+}
+
+.steps ul li#ctl00_TopBar_ComercioTopBar_liIdentificacao{
+	background: url("/arquivos/sprite_steps.png") no-repeat top left;
+	text-indent: -9999px;
+	width: 0;
+	margin-right: 0;
+}
+
+.forma-pagamento .steps ul li#ctl00_TopBar_TopBar1_liIdentificacao {
+	margin-right: 0;
+	text-indent: -9999px;
+}
+
+.steps ul li#ctl00_TopBar_TopBar1_liEntregaEmbalagem{
+	background: url("/arquivos/sprite_steps.png") no-repeat 0 -41px;
+	text-indent: -9999px;
+	width: 0;
+	margin-right: 0;
+}
+
+.steps ul li#ctl00_TopBar_ComercioTopBar_liEntregaEmbalagem {
+	background: url("/arquivos/sprite_steps.png") no-repeat 0 -41px;
+	margin-right: 695px;
+}
+
+.steps ul li#ctl00_TopBar_TopBar1_liPagamento, 
+.steps ul li#ctl00_TopBar_ComercioTopBar_liPagamento {
+	background: url("/arquivos/sprite_steps.png") no-repeat 0 -82px;
+	text-indent: -9999px;
+	width: 0;
+	margin-right: 0;
+}
+
+.forma-pagamento .steps ul li#ctl00_TopBar_TopBar1_liPagamento {
+	text-indent: 0;
+	margin-right: 810px;
+}
+
+.steps ul li#ctl00_TopBar_TopBar1_liConfirmacao, 
+.steps ul li#ctl00_TopBar_ComercioTopBar_liConfirmacao {
+	background: url("/arquivos/sprite_steps.png") no-repeat 0 -123px;
+	text-indent: -9999px;
+	width: 0;
+	margin-right: 0;
+	display: none;
+}
+
+.checkout.embalagem .steps #ctl00_TopBar_TopBar1_liIdentificacao {
+	margin-right: 0;
+	text-indent: -9999px;
+}
+
+.checkout.embalagem .steps #ctl00_TopBar_TopBar1_liEntregaEmbalagem {
+	margin-right: 621px;
+	text-indent: 0;
+	width: 225px;
+}
+
+.checkout.embalagem .steps label {
+	width: 100px;
+	float: left;
+	padding-top: 3px;
+}
+
+.header-steps h1 a {
+	width: 349px;
+	height: 79px;
+	background: url("/arquivos/logo_maria_presenteira.png") no-repeat top center;
+	color: black;
+	float: left;
+	font: italic 22px "Times New Roman", Times, serif;
+	margin: 3px 0 2px;
+	padding: 0px 0 40px 5px;
+	margin-top: 15px;
+}
+
+.checkout label {
+	text-align: right;
+	margin-right: 5px;
+}
+
+.checkout.frete .fretes h3{
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.checkout.frete .fretes legend{
+    display:none;
+    
+}
+
+
+.checkout.frete .fretes label {
+    display:block;
+    width: 910px;
+    text-align:left;
+    padding:10px;
+    border-top: solid 1px #bdc2c9;
+
+}
+.checkout.frete .fretes label input{
+    display:block;
+    float:left;
+    width:40px;
+    margin-bottom:50px;    
+}
+
+.checkout.frete .fretes label strong{
+    font-size:14px;
+}
+
+.checkout input, .checkout select {
+	padding: 4px;
+}
+
+fieldset.opc-parcelamento select {
+	position: absolute;
+	left: 215px;
+	top: -2px;
+}
+
+.checkout input{width: 195px;}
+
+.checkout select {width: 205px;}
+
+.checkout input.cep-prefixo {
+	width: 60px;
+	text-align: center;
+}
+
+.checkout input.cep-sufixo {
+	width: 35px;
+	text-align: center;
+}
+
+.checkout .content .voltar {
+	float: left;
+}
+
+.checkout .content .voltar a {
+	width: 105px;
+	height: 41px;
+	display:block;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: url("/arquivos/btn_voltar.png") no-repeat top center;
+	text-indent: -9999px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.checkout .content .continuar {
+	float: right;
+}
+
+.checkout .content .continuar input {
+	width: 157px;
+	height: 41px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: url("/arquivos/btn_continuar.png") no-repeat top center;
+	text-indent: -9999px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.checkout.forma-pagamento h3 {
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x bottom center;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	font-size: 16px;
+}
+
+.checkout.forma-pagamento .tit {
+display: none;
+}
+
+.lista-formas-pagamento.lista-bandeiras li {
+	width: 76px;
+	padding: 5px;
+	height: 64px;
+	position: relative;
+}
+
+
+.lista-formas-pagamento.lista-bandeiras li img {
+	float: right;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+	margin-top: -5px;
+}
+
+.lista-formas-pagamento.lista-bandeiras li img[height="19"]{
+    height:19px !important;
+    margin-top:20px;
+}
+
+.lista-formas-pagamento.lista-bandeiras li input {
+	position: absolute;
+	width: 13px;
+	bottom: 0;
+	left: 37px;
+}
+
+.lista-formas-pagamento.lista-bandeiras li strong {
+	display: none;
+}
+
+#ctl00_Conteudo_ctrlFormaPagamento_DadosFormaPagamamentoCartao {
+	float: none;
+	margin: 20px 0;
+}
+
+.credit-card-info {
+	position: relative;
+}
+
+.info-cartao legend {
+	font-weight: bold;
+	font-size: 13px;
+	padding: 10px 0 20px;
+}
+
+.info-cartao label {
+	width: 205px;
+	float: left;
+	margin: 5px;
+}
+
+.info-cartao select {
+	width: 98px;
+}
+
+
+.info-cartao label a {
+	display: none;
+}
+
+fieldset.opc-parcelamento {
+	position: relative;
+	top: 5px;
+}
+
+inspectorfieldset.opc-parcelamento select {
+	position: relative;
+	top: -15px;
+	left: 215px;
+}
+
+.opc-parcelamento span {
+	position: relative;
+	top: 5px;
+	left: 25px;
+}
+
+.mensagem-cartao {
+	display: none;
+}
+
+#ctl00_Conteudo_ctrlFormaPagamento_DadosFormaPagamamentoOutros {
+	float: none;
+}
+
+.checkout.confirmacao-compra .header-steps .steps ul {
+	display: none;
+}
+
+.checkout.confirmacao-compra .content > h2 {
+	display: block;
+	text-indent: 0;
+	font-family: Myriad Pro, Arial, sans-serif;
+	top: 138px;
+	font-size: 18px;
+	text-transform: none;
+	color: white;
+	font-weight: normal;
+}
+
+.checkout.confirmacao-compra h3 {
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x bottom center;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	font-size: 16px;
+}
+
+.confirmar-pedido input {
+	width: 215px;
+	height: 41px;
+	padding: 0;
+	border: none;
+	background: url("/arquivos/btn_confirmarPedido.jpg") repeat-x bottom center;
+	font-size: 0px;
+	line-height: 0px;
+	text-indent: -99999px;
+}
+
+.confirmacao-compra .dados-pagamento {
+	margin: 20px 0 40px;
+	position: relative;
+}
+
+.pagamento-endereco {
+	position: absolute;
+	top: 60px;
+	right: 15px;
+	width: 447px;
+}
+
+#ctl00_Conteudo_DadosPagamento_divEnderecoCobranca span.cadastrar-novo {
+	float: right;
+	position: relative;
+	top: -20px;
+	left: 10px;
+}
+
+#ctl00_Conteudo_DadosPagamento_divEnderecoCobranca span.cadastrar-novo a {
+	color: white;
+	background: #E66083;
+	border-radius: 10px;
+	text-transform: lowercase;
+}
+
+.minha-conta #TB_iframeContent {
+	width: 403px;
+	height: 187px;
+}
+
+.minha-conta #TB_window {
+	width: 420px !important;
+	height: 205px !important;
+	margin-left: -215px !important;
+}
+
+#ctl00_Conteudo_divPartida > p, 
+#ctl00_Conteudo_divPartidap > p,
+#ctl00_Conteudo_divEnvio > p{
+	display: none;
+}
+
+.manutencao-conta label {
+	text-align: right;
+	margin-right: 5px;
+}
+
+.manutencao-conta input {
+	padding: 4px;
+}
+
+.manutencao-conta fieldset {
+	margin-bottom: 25px;
+}
+
+.manutencao-conta .btw input {
+	margin-left: 20px;
+}
+
+.manutencao-conta .btw input {
+	margin-left: 20px;
+	height: 41px;
+	border:none;
+	padding:0;
+	text-indent:-9999px;
+}
+
+#ctl00_Conteudo_btnMeuEmailMudou {
+	width:205px;
+	background: url("/arquivos/btn_atualizarEmail.png") repeat-x bottom center;
+}
+
+.btw.enviar-senha {
+	position: relative;
+	top: 15px;
+}
+
+#ctl00_Conteudo_btnEnviarSenha {
+	width:179px;
+	background: url("/arquivos/btn_enviarSenha.png") repeat-x bottom center;
+}
+
+.btw.buscar-email {
+	position: relative;
+	left: 10px;
+}
+
+#ctl00_Conteudo_btnBuscaEmail {
+	width:179px;
+	background: url("/arquivos/btn_buscarEmail.png") repeat-x bottom center;
+}
+
+.manutencao-conta .outras-opcoes a {
+	color: #E66084;
+	text-decoration: none;
+}
+
+.checkout.finaliza-compra .content > h2 {
+	text-indent: 0;
+}
+
+.order-number {
+	float: left;
+	width: 141px;
+	height: 73px;
+	position: relative;
+	top: -35px;
+	background: url("/arquivos/bg_orderNumber.jpg") no-repeat top center;
+}
+
+.order-number span {
+	color: white;
+	padding-top: 10px;
+	float: left;
+	text-align: center;
+}
+
+.order-number strong {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	width: 141px;
+	float: left;
+}
+
+p.congrats {
+	margin-left: 150px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #5A5283;
+}
+
+.success #PrazoEntrega, .success .warning, .success .txtFinalizacao {
+	margin: 0px;
+	float: left;
+	position: relative;
+	left: 12px;
+	line-height: 16px;
+}
+
+#PrazoEntrega p {
+	margin: 0;
+}
+
+.success.sucess {
+	position: relative;
+	float: left;
+	padding-bottom: 50px;
+}
+
+.checkout.finaliza-compra .success.sucess {
+	position: relative;
+	float: left;
+	padding-bottom: 50px;
+	width: 937px;
+}
+
+.success .continuar-comprando {
+	width: 936px;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x top center;
+	padding-top: 20px;
+	float:left;
+}
+
+.success .continuar-comprando a {
+	float: right;
+	width: 157px;
+	height: 41px;
+	padding: 0;
+	background: url("/arquivos/btn_continuar.png") no-repeat top center;
+}
+
+.order-number span {
+	color: white;
+	padding-top: 10px;
+	float: left;
+	text-align: center;
+	width: 141px;
+	padding-bottom: 3px;
+}
+
+.minha-conta.meus-pedidos-detalhes #divMenuUsuario {
+	display: none;
+}
+
+.box-dados-pagamento {
+	float: left;
+	width: 385px;
+	margin-top: 20px;
+}
+
+.box-dados-pagamento .valor-compra {
+	width: 385px;
+}
+
+.box-dados-pagamento .dados-pagamento h3 {
+	background: whiteSmoke;
+	padding: 10px 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #5A5283;
+	width: 375px;
+}
+
+.pagamento-endereco legend {
+	display: block;
+	padding: 10px 5px;
+	background: whiteSmoke;
+	font-weight: bold;
+	width: 375px;
+	margin-left: -5px;
+}
+
+.pedido-numero {
+	float: left;
+	clear: both;
+	width: 141px;
+	height: 73px;
+	background: url("/arquivos/bg_orderNumber.jpg") no-repeat top center;
+}
+
+.pedido-numero strong {
+	color: white;
+	width: 141px;
+	float: left;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.pedido-numero span {
+	width: 141px;
+	text-align: center;
+	float: left;
+	font-size: 30px;
+	color: white;
+}
+
+.pedido-data {
+	float: left;
+	clear: both;
+	font-size: 9px;
+}
+
+.minha-conta.meus-pedidos-detalhes .content > h2 {
+	top: -65px;
+	text-indent: 0;
+	font-family: Myriad Web Pro, Myriad Pro, Arial, sans-serif;
+}
+
+.box-dados-pagamento .pagamento-endereco {
+	position: static;
+	padding: 5px;
+}
+
+.box-dados-pedido {
+	width: 547px;
+	float: right;
+	margin-top: -80px;
+}
+
+.box-dados-pedido .dados-entrega {
+	width: 547px;
+}
+
+.box-dados-pedido h3 {
+	display: none;
+}
+
+.box-dados-pedido h4 {
+	background: whiteSmoke;
+	padding: 10px 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #5A5283;
+	width: 535px;
+}
+
+.minha-conta.meus-pedidos-detalhes dt {
+	float: left;
+	margin-right: 5px;
+}
+
+.minha-conta.meus-pedidos-detalhes dt {
+	margin: 2px 5px 0;
+	font-weight: bold;
+}
+
+.dados-entrega .numero-entrega {
+	display: none;
+}
+
+.minha-conta.meus-pedidos-detalhes dd {
+	padding: 2px;
+}
+
+#ctl00_Conteudo_rptCompraEntrega_ctl00_lnkCompraEntregaStatusLogTop {
+	background: #5A5283;
+	color: white;
+	font-size: 13px;
+	border-radius: 10px;
+	padding: 2px 11px;
+	text-decoration: none;
+	position: relative;
+	top: -3px;
+}
+
+.descricao-entrega {
+	margin-top: 20px;
+}
+
+.descricao-compra {
+	margin-top: 20px;
+}
+
+.descricao-compra thead th {
+	background: whiteSmoke;
+	font-weight: bold;
+	padding: 10px 5px;
+}
+
+.descricao-compra th {
+	padding: 5px;
+}
+
+.descricao-compra .quantidade-produto {
+	text-align: center;
+}
+
+.descricao-compra tbody tr {
+	border-bottom: dotted 1px whiteSmoke;
+}
+
+th.preco-unitario {
+	width: 116px;
+	text-align: center;
+}
+
+td.preco-unitario {text-align:center;}
+
+th.valor-total {
+width: 100px;
+}
+
+.descricao-entrega p {
+	float: left;
+	clear: both;
+	width: 545px;
+	margin: 3px 0;
+}
+
+.descricao-compra tfoot th {
+	text-align: right;
+	font-weight: bold;
+}
+
+.descricao-compra tfoot tr {
+	background: whiteSmoke;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+td.valor-total {
+	text-align:center;
+}
+
+.minha-conta.meus-pedidos-detalhes .voltar {
+	position: absolute;
+	bottom: 20px;
+}
+
+.minha-conta.meus-pedidos-detalhes .voltar a {
+	width: 105px;
+	height: 41px;
+	display: block;
+	background: url("/arquivos/btn_voltar.png") no-repeat top center;
+	text-indent: -9999px;
+}
+
+.minha-conta.minha-conta-meus-pedidos.meus-pedidos.rastrear-pedido .content {
+	height: auto;
+}
+
+.minha-conta.minha-conta-meus-pedidos.meus-pedidos.rastrear-pedido .box-dados-pagamento.first {
+	float: right;
+	margin: -75px 185px 0 0;
+}
+
+.minha-conta.minha-conta-meus-pedidos.meus-pedidos.rastrear-pedido .box-dados-pagamento.first h3{
+	background: whiteSmoke;
+	padding: 10px 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #5A5283;
+	width: 535px;
+}
+
+.minha-conta.minha-conta-meus-pedidos.meus-pedidos.rastrear-pedido .content {
+	height: auto;
+	padding: 20px;
+}
+
+.minha-conta.minha-conta-meus-pedidos.meus-pedidos.rastrear-pedido .box-dados-pagamento.first dt {
+	float: left;
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+.minha-conta.minha-conta-meus-pedidos.meus-pedidos.rastrear-pedido .box-dados-pagamento.first dd{
+	margin: 5px 0;
+}
+
+.minha-conta.minha-conta-meus-pedidos.meus-pedidos.rastrear-pedido .voltar {
+	position: absolute;
+	bottom: 20px;
+}
+
+.minha-conta.minha-conta-meus-pedidos.meus-pedidos.rastrear-pedido .voltar a {
+	width: 105px;
+	height: 41px;
+	display: block;
+	background: url("/arquivos/btn_voltar.png") no-repeat top center;
+	text-indent: -9999px;
+}
+
+.checkout.embalagem .contentWrapper h4 {
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	background: url("/arquivos/bg_sep_dots_pink.png") repeat-x bottom center;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+}
+
+.checkout.embalagem .contentWrapper h5 {
+	font-weight: bold;
+}
+
+.checkout.embalagem .contentWrapper .msg {
+	margin: 10px 0;
+}
+
+.checkout.embalagem .contentWrapper .msg label {
+	float: left;
+	width: 50px;
+	margin: 6px 5px 0 0;
+}
+
+.checkout.embalagem .contentWrapper .msg input {
+	margin: 3px 0;
+}
+
+.checkout.embalagem .contentWrapper .msg textarea {
+	width: 255px;
+	height: 55px;
+}
+
+#ctl00_BreadCrumb_ctrlBreadCrumb_BreadCrumbConteudo {
+	display: none;
+}
+
+.servico .continuar.top {
+	display: none;
+}
+
+.servico h2 {
+	font-size: 18px;
+	text-transform: none;
+}
+
+.servico .more-products {
+	display: none;
+}
+
+.servico .box-image {
+	float: left;
+}
+
+.servico .box-garantia-extendida {
+	float: left;
+	width: 400px;
+}
+
+.servico .continuar {
+	float: right;
+	clear: both;
+}
+
+#ctl00_Conteudo_ctrlServicos_btnContinuar {
+	width: 157px;
+	height: 41px;
+	border: none;
+	background: url(/arquivos/btn_continuar.png) no-repeat center center;
+	text-indent: -9999px;
+	display: block;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.servico #TB_window {
+	width: 296px !important;
+	height: 117px !important;
+	margin-left: -150px !important;
+}
+
+.servico #TB_iframeContent {
+	width: 295px;
+	height: 130px;
+}
+
+.fale-conosco .content > h2 {
+	text-indent: 0;
+}
+
+.fale-conosco .wrapper legend {
+	display: none;
+}
+
+.fale-conosco .content h3 {
+	font-size: 18px;
+	color: #F16787;
+	margin-bottom: 20px;
+}
+
+#ctl00_Conteudo_fldMainForm label {
+	width: 130px;
+	float: left;
+	text-align: right;
+	padding: 11px 5px 0 0;
+}
+
+#ctl00_Conteudo_fldMainForm input {
+	width: 200px;
+	padding: 8px;
+	margin: 3px 0;
+	border-radius: 10px;
+}
+
+#ctl00_Conteudo_fldMainForm select {
+	width: 210px;
+	padding: 8px;
+	border-radius: 10px;
+	margin: 4px 0;
+}
+
+#ctl00_Conteudo_fldMainForm textarea {
+	width: 400px;
+	border-radius: 10px;
+	height: 100px;
+	margin: 4px 0;
+}
+
+.box-outras-opcoes {
+	display: none;
+}
+
+.fale-conosco #ctl00_Conteudo_txtRemetenteTelefoneDDD,
+.fale-conosco #ctl00_Conteudo_txtRemetenteCelularDDD{
+	width: 45px;
+}
+
+.fale-conosco #ctl00_Conteudo_txtRemetenteTelefoneNum,
+.fale-conosco #ctl00_Conteudo_txtRemetenteCelularNum {
+	width: 130px;
+}
+
+.fale-conosco .voltar a {
+        display:none;
+	width: 105px;
+	height: 41px;
+	background: url(/arquivos/btn_voltar.png) no-repeat top center;
+	text-indent: -9999px;
+}
+
+.fale-conosco .enviar {
+	float: right;
+}
+
+.fale-conosco .enviar a {
+	width: 145px;
+	height: 41px;
+	background: url(/arquivos/btn_enviar.jpg) no-repeat top center;
+	padding: 0;
+	text-indent: -9999px;
+}
+
+body.fale-conosco {
+	background: none;
+	float: left;
+	width: 690px;
+}
+
+.fale-conosco #ctl00_TopBar_TopBar1_ulServicos {
+	display: none;
+}
+
+.fale-conosco #aspnetForm {
+	width: 690px;
+	float: left;
+}
+
+.fale-conosco .content {
+	width: 690px;
+	float: left;
+	padding: 0;
+	border: none;
+}
+
+.fale-conosco .footer {
+	display: none;
+}
+
+.fale-conosco .bts {
+	margin-top: 35px;
+
+}
+
+#ctl00_Conteudo_divInstrucao{
+    float:left;
+    margin-bottom:30px;
+}
+
+#ctl00_Conteudo_divOpcoesPagamento{
+    float:left;
+    margin-top:30px;
+    margin-bottom:20px;
+    position:relative;
+    left:-410px
+}
+
+.checkout.finaliza-compra .warning{
+    left:0;
+}
+
+.link-redes-sociais-rodape{
+    position:absolute;
+    display:block;
+
+    top:208px;
+    font-size:0px;
+}
+
+.linkTwitter{
+    left:92px;
+    height:15px;
+    width:150px;
+}
+.linkFacebook{
+    left:645px;
+    height:15px;
+    width:172px;
+}
