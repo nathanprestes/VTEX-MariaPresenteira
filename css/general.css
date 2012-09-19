@@ -2810,8 +2810,10 @@ body.resultado-busca .search-single-navigator h4 a:hover{
 
 .vitrine .add {
 	position: absolute;
-	bottom: 73px;
-	left: 49px;
+	/*bottom: 73px;
+	left: 49px;*/
+	bottom: 43px;
+    left: 50px;
 }
 
 .btn-add-buy-button-asynchronous {

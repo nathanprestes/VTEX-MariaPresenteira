@@ -97,19 +97,19 @@ $(document).ready(function() {
 		$('.fbComments.n1colunas #especificacoesTecnicas').appendTo('#content #caracteristicas');	
 	}*/
 	
-	$('#abasEspCom #abas .comentarios').click(function(){
-		$('.fbComments.n1colunas').show();
-		$('#abasEspCom #caracteristicas').hide();
-		$('#abasEspCom #abas .comentarios').addClass('active');
-		$('#abasEspCom #abas .especificacoes').removeClass('active');
-	});
-
-	$('#abasEspCom #abas .especificacoes').click(function(){
-		$('.fbComments.n1colunas').hide();
-		$('#abasEspCom #caracteristicas').show();
-		$('#abasEspCom #abas .especificacoes').addClass('active');
-		$('#abasEspCom #abas .comentarios').removeClass('active');
-	});
+	//$('#abasEspCom #abas .comentarios').click(function(){
+//		$('.fbComments.n1colunas').show();
+//		$('#abasEspCom #caracteristicas').hide();
+//		$('#abasEspCom #abas .comentarios').addClass('active');
+//		$('#abasEspCom #abas .especificacoes').removeClass('active');
+//	});
+//
+//	$('#abasEspCom #abas .especificacoes').click(function(){
+//		$('.fbComments.n1colunas').hide();
+//		$('#abasEspCom #caracteristicas').show();
+//		$('#abasEspCom #abas .especificacoes').addClass('active');
+//		$('#abasEspCom #abas .comentarios').removeClass('active');
+//	});
 	
 	$('a.listToggle').click(function(){
 		$('#productList').slideToggle();
@@ -360,11 +360,12 @@ $(document).ajaxStop(function(){
 			$(this).find('.ouAte').css('color', '#8786C0');
 			$(this).find('.ouAte').css('position', 'relative');
 			$(this).find('.ouAte').css('top', '5px');
+			$(this).find('.ouAte').css('font-size', '15px');
 			$(this).find('.prices').css('position', 'absolute');
 			$(this).find('.prices').css('width', '240px');
 			$(this).find('.prices').css('left', '0');
 			$(this).find('.prices').css('text-align', 'center');
-			$(this).find('.prices').css('bottom', '135px');
+			$(this).find('.prices').css('bottom', '148px');
 		};
 	});
 

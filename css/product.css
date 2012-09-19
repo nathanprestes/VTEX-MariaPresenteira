@@ -124,12 +124,15 @@ ul.rating,
 .valor-dividido span span {
 	float: left;
 	clear: both;
+	font-size:14px;
+	margin-top:2px;
 }
 
 .valor-dividido strong {
 	float: left;
 	clear: both;
 	font-size: 36px;
+	font-weight:bold;
 }
 
 .economia-de {
@@ -933,48 +936,28 @@ ul.rating,
 }
 
 #abasEspCom #caracteristicas {
-    display: none;
+    /*display: none;*/
     background: #fff;
     padding: 10px;
 }
 
-#abas {
+.abas {
     height: 58px;
     margin-bottom: 5px;
 }
 
-#abas a:hover{text-decoration:none;}
-
-#abas .comentarios {
-    width: 165px;
+.abas div {
+    width: 958px;
     display: block;
     float: left;
     font-size: 22px;
     font-weight: normal;
     color: white;
     font-family: Myriad Web Pro, Myriad Pro, Arial, sans-serif;
-    background: #F8B3C3;
-    padding: 15px;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-
-#abas .especificacoes {
-    width: 750px;
-    display: block;
-    float: left;
-    font-size: 22px;
-    font-weight: normal;
-    color: white;
-    font-family: Myriad Web Pro, Myriad Pro, Arial, sans-serif;
-    background: #F8B3C3;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-#abas .active {
     background: #f16787;
+    padding: 15px;
+    border-radius: 5px;
+	text-decoration:none;
 }
 
 #caracteristicas h4 {
